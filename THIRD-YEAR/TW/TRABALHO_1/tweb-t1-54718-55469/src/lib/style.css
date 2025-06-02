@@ -1,0 +1,201 @@
+/**
+ * styles - fundo do website
+ */
+body {
+    background: #d2dc9d;
+}
+/**
+ * styles - cabeçalho
+ */
+
+topo .container h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 0.06em solid rgba(34, 49, 73, 0.928);
+    margin-top: 1.0em;
+}
+
+principal h1 {
+    font: bold 2em Georgi a, serif;
+    text-shadow: .1em .1em .2em black;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 2.76em;
+}
+/**
+ * styles - Menu
+ */
+.login {
+    display: flex;
+    gap: 12.5em;
+    justify-content: center;
+    margin-top: 7em;
+}
+
+.login img {
+    border: 0.07em solid #000;
+    border-radius: 3em;
+    border-style: groove;
+    padding: 2.5em;
+    box-shadow: 1.3em 1.3em 1.3em rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.login img:hover {
+    transform: scale(1.05);
+}
+
+.login-text {
+    color: orangered;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 0.3em;
+}
+/**
+ * styles - footer
+ */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(34, 49, 73, 0.928);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    text-align: center;
+    height: 5em;
+}
+
+.creditos {
+    flex-grow: 1;
+    color: white;
+    font-size: 1.4em;
+}
+
+.ue img {
+    margin-right: 3em;
+    transition: transform 0.3s ease;
+}
+
+.ue img:hover {
+    transform: scale(1.05);
+}
+/**
+ * styles - Login (IdentificacaoCondutor.html & IdentificacaoPassageiro.html) 
+ */
+
+
+principal .Login2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5em;
+}
+
+principal .Login2 button {
+    position: absolute;
+    top: 4em;
+    padding: 1em 3em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    font: 1.2em Georgi a, serif;
+}
+
+principal .Login2 input[type=text],
+select {
+    width: 30%;
+    padding: 0.5em 0.2em;
+    font-size: 1.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/**
+ * styles - Conteudo
+ */
+principal .conta {
+    text-align: center;
+    padding-top: 3.0em;
+    font-size: 1.6em;
+    position: relative;
+}
+
+principal .conta .borda {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1.0em;
+    margin: 0 auto;
+    display: inline-block;
+    box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.1);
+    border-radius: 0.5em;
+}
+
+principal .conta p1 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+principal .RegistoRemover input[type=text],
+select {
+    width: 30%;
+    padding: 0.1em 0.5em;
+    font-size: 0.8em;
+}
+
+principal .RegistoRemover button {
+    padding: 0.6em 1em;
+    border-radius: 0.1em;
+    cursor: pointer;
+    font: 0.8em Georgi a, serif;
+}
+
+principal .RegistoRemover input[type=date] {
+    width: 30%;
+    padding: 0.5em 0.5em;
+    font-size: 0.9em;
+}
+
+principal .conta .botoes button {
+    padding: 0.6em 1em;
+    border-radius: 0.2em;
+    cursor: pointer;
+    font: 0.8em Georgi a, serif;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+principal .conta ul.lista {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+principal .conta p1 {
+    display: block;
+    margin: 0;
+    line-height: 1.5;
+}
+
+principal .conta p1 .spacing {
+    margin-left: 8em;
+}
+/**
+ *  styles - menu em baixo do cabeçalho (usado em todos 
+    os documento, excepto no Menu.html e nos
+    IdentificacaoCondutor.html & IdentificacaoPassageiro.html
+ */
+principal .conta .info a {
+    position: relative;
+    top: -3em;
+    text-decoration: none;
+    color: red;
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}

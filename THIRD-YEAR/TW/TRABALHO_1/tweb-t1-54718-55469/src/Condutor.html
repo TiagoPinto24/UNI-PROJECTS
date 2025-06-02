@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="widViagemth=device-widViagemth, initial-scale=1.0">
+    <title>Boleias - UniversidViagemade de Évora</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lib/script.js"></script>
+</head>
+
+<body>
+    <topo>
+        <div class="container">
+            <h1 class="h1">
+                Sistema de Boleias <img src="media/carro.svg" height="50">
+            </h1>
+        </div>
+        </div>
+    </topo>
+    <principal>
+        <div class="conta">
+            <div class = "info"><a href="listasCond.html"> Listas |</a><a href="InfToCondutores.html"> Informação de Passageiros |</a><a href="../Menu.html"> Menu </a></div>
+            <div class="borda">
+                <p1> Registar Viagem </p1>
+                <div class="RegistoRemover">
+                    <form>
+                        <p>
+                            <label for="localPartidaCond">Local de Partida:</label>
+                            <input type="text" id="localPartidaCond" name="localPartidaCond" required>
+                        </p>
+                        <p>
+                            <label for="LocalChegadaCond">Local de Chegada:</label>
+                            <input type="text" id="LocalChegadaCond" name="LocalChegadaCond" required>
+                        </p>
+                        <p>
+                            <label for="DataCond">Data da Viagem:</label>
+                            <input type="date" id="DataCond" name="DataCond" value="2024-01-12" required>
+                        </p>
+                        <p>
+                            <button type="button" onclick="ServerOperacoes(0,1)">Registar</button>
+                            <button type="reset">Reset</button>
+                        </p>
+                    </form>
+                    <p1>Remover Viagem</p1>
+
+                    <form>
+                        <p>
+                            <label for="IDViagem">ID da Viagem:</label>
+                            <input type="text" id="IDViagem" name="IDViagem" required>
+                        </p>
+
+                        <p>
+                            <button type="button" onclick="ServerOperacoes(0,5); Reset()">Remover</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </principal>
+    <div class="footer">
+        <div class="creditos">
+            Executado por:<br> Tiago Pinto 54718 & João Lóios 55469
+        </div>
+        <div class="ue">
+            <a href="https://www.uevora.pt/" class="logo" target="_blank">
+                <img src="media/logo_ue.svg" alt="logo da ue" height=80>
+            </a>
+        </div>
+    </div>
+
+</body>

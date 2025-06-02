@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleias - Universidade de Évora</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lib/script.js"></script>
+</head>
+
+<body>
+    <!--cabeçalho-->
+    <topo>
+        <div class="container">
+            <h1 class="h1">
+                Sistema de Boleias <img src="media/carro.svg" height="50">
+            </h1>
+        </div>
+        </div>
+    </topo>
+
+    <principal>
+        <div class="conta">
+            <div class="info"><a href="Passageiro.html">Pedidos |</a><a href="listasPass.html"> Listas | </a><a href="Filtros.html"> Juntar-se a uma Viagem | </a><a href="../../../../../Menu.html">Menu</a></div>
+        </div>
+        <h1> Insira o ID do Condutor:</h1>
+        <div class="conta">
+            <div class="RegistoRemover">
+                <form>
+                    <p>
+                        <label for="IDToPassageiro">ID:</label>
+                        <input type="text" id="IDToPassageiro" name="IDToPassageiro" required>
+                    </p>
+                    <p>
+                        <button type="button" onclick="ServerOperacoes(0,0,8)">Inserir</button>
+                    </p>
+                    <ul id="itemList" class="lista"></ul><br>
+                </form>
+            </div>
+        </div>
+    </principal>
+    <div class="footer">
+        <div class="creditos">
+            Executado por:<br> Tiago Pinto 54718 & João Lóios 55469
+        </div>
+        <div class="ue">
+            <a href="https://www.uevora.pt/" class="logo" target="_blank">
+                <img src="media/logo_ue.svg" alt="logo da ue" height=80>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>

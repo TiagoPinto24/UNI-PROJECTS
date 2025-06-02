@@ -1,0 +1,492 @@
+/**
+ * styles - fundo do website
+ */
+ body {
+  background: #d2dc9d;
+}
+/**
+ * styles - cabeçalho
+ */
+
+topo .container h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  border-bottom: 0.06em solid rgba(34, 49, 73, 0.928);
+  margin-top: 1em;
+}
+
+principal h1 {
+  font: bold 2em Georgi a, serif;
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 2.76em;
+}
+principal h3 {
+  font: bold 2em Georgia, serif;
+  text-shadow: 0.08em 0.08em 0.15em black;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 2em;
+}
+
+@media (max-width: 768px) {
+  principal h3 {
+    font-size: 1.5em;
+    top: 1.5em;
+  }
+}
+/**
+ * styles - Menu
+ */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4em;
+  gap: 2em;
+}
+
+@media (min-width: 768px) {
+  .login {
+    flex-direction: row;
+    gap: 5em;
+    justify-content: center;
+  }
+}
+
+.login img {
+  border: 0.07em solid #000;
+  border-radius: 3em;
+  border-style: groove;
+  padding: 1.5em;
+  box-shadow: 1.3em 1.3em 1.3em rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  width: 80%;
+  max-width: 250px;
+  margin-top: 5em; 
+}
+
+.login img:hover {
+  transform: scale(1.05);
+}
+
+.login-text {
+  color: orangered;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  top: 3em; 
+}
+
+@media (min-width: 768px) {
+  .login-text {
+    font-size: 1.6em;
+  }
+}
+/**
+ * styles - footer
+ */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(34, 49, 73, 0.928);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7em;
+  text-align: center;
+  height: 5em;
+  flex-wrap: wrap;
+}
+
+.creditos {
+  flex-grow: 1;
+  color: white;
+  font-size: 1em;
+  text-align: center;
+  margin-bottom: 1.5em;
+  position: relative;
+  top: 0.5em;
+}
+
+.ue {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 0.5em;
+  width: 100%;
+  position: absolute;
+  right: 1em;
+  bottom: -0.2em; 
+}
+
+.ue img {
+  transition: transform 0.3s ease;
+  width: 10vw; 
+  max-width: 80px;
+  height: auto;
+}
+
+.ue img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .creditos {
+    font-size: 1.4em;
+  }
+
+  .ue {
+    right: 3em;
+  }
+}
+/**
+ * styles - Login (IdentificacaoCondutor.html & IdentificacaoPassageiro.html) 
+ */
+
+principal .Login2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 5em;
+}
+
+principal .Login2 button {
+  position: absolute;
+  top: 4em;
+  padding: 0.7em 1em; 
+  border-radius: 0.3em;
+  cursor: pointer;
+  font: 1.2em Georgia, serif;
+  width: 100%;
+  max-width: 150px;
+}
+
+principal .Login2 input[type="text"],
+select {
+  padding: 0.5em 0.2em;
+  font-size: 1.6em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+}
+/**
+ * styles - Conteudo
+ */
+principal .conta {
+  text-align: center;
+  padding-top: 3em;
+  font-size: 1em;
+  position: relative;
+}
+
+principal .conta .borda {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1em;
+  margin: 0 auto;
+  display: inline-block;
+  box-shadow: 0em 1em 1em rgba(0, 0, 0, 0.1);
+  border-radius: 0.5em;
+}
+
+principal .conta p1 {
+  font-weight: bold;
+  font-size: larger;
+}
+
+principal .RegistoRemover input[type="text"],
+select {
+  width: 30%;
+  padding: 0.1em 0.5em;
+  font-size: 0.8em;
+}
+
+principal .RegistoRemover button {
+  padding: 0.6em 1em;
+  border-radius: 0.1em;
+  cursor: pointer;
+  font: 0.8em Georgia, serif;
+}
+
+principal .RegistoRemover input[type="date"] {
+  width: 30%;
+  padding: 0.5em 0.5em;
+  font-size: 0.9em;
+}
+
+principal .conta .botoes button {
+  padding: 0.6em 1em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  font: 0.8em Georgia, serif;
+  margin-left: 8em;
+  margin-right: 8em;
+}
+
+@media (min-width: 700px) {
+  principal .conta {
+    font-size: 1.6em;
+  }
+
+  principal .conta .borda {
+    padding: 0.8em;
+    border-radius: 0.4em;
+  }
+
+  principal .RegistoRemover input[type="text"],
+  select,
+  principal .RegistoRemover input[type="date"] {
+    width: 25%;
+    font-size: 0.7em;
+  }
+
+  principal .RegistoRemover button,
+  principal .conta .botoes button {
+    padding: 0.5em 0.8em;
+    font: 0.7em Georgia, serif;
+  }
+}
+
+principal .conta ul.lista {
+  list-style-type: none;
+  font-size: 0.8em;
+  margin-left: -1em;
+}
+
+principal .conta p1 {
+  display: block;
+  margin: 0;
+  line-height: 1.5;
+}
+
+principal .conta p1 .spacing {
+  margin-left: 8em;
+}
+/**
+ *  styles - menu em baixo do cabeçalho (usado em todos 
+	os documento, excepto no Menu.html e nos
+	IdentificacaoCondutor.html & IdentificacaoPassageiro.html
+ */
+principal .info a {
+  position: relative;
+  top: -3em;
+  text-decoration: none;
+  color: red;
+  text-align: center;
+  font-family: serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 1800px) {
+  principal .boleia {
+    position: fixed; 
+    bottom: 0.1em; 
+    left: -5%; 
+    width: auto; 
+    height: auto; 
+    transform: scale(1.2); 
+    z-index: 10; 
+  }
+}
+
+@media (max-width: 1800px) {
+  principal .boleia {
+    display: none; 
+  }
+}
+
+/*imagens*/
+.exemplosViagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  gap: 3em;
+  border: 5px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.5em 1em; 
+  border-radius: 20px;
+}
+
+.imagem {
+  width: 300px; 
+  height: 200px;
+  object-fit: cover; 
+}
+
+@media (max-width: 1800px) {
+  .exemplosViagens {
+    display: none; 
+  }
+}
+
+principal .exemplosViagens p {
+  font: bold 1.5em Georgi a, serif;
+  text-shadow: 0.1em 0.1em 0.2em rgb(255, 255, 255);
+  color: rgb(14, 95, 161);
+  text-align: center;
+  position: relative;
+  top: 1em;
+}
+
+.exemplosViagens img {
+  border-radius: 10px;
+}
+.legenda1 {
+  position: absolute;
+  bottom: 255px;
+  left: 20px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+}
+.legenda2 {
+  position: absolute;
+  bottom: 12px;
+  left: 20px;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+/*Listas */
+principal .conta1 {
+	text-align: center;
+	padding-top: 3em;
+	font-size: 1em;
+	position: relative;
+  }
+  
+  principal .conta1 p1 {
+	font-weight: bold;
+	font-size: larger;
+	display: block;
+	margin: 0;
+	line-height: 1.5;
+  }
+  
+  principal .conta1 .botoes button {
+	padding: 0.6em 1em;
+	border-radius: 0.2em;
+	cursor: pointer;
+	font: 0.8em Georgia, serif;
+	margin-left: 8em;
+	margin-right: 8em;
+  }
+  
+  principal .conta1 ul.lista {
+	list-style-type: none;
+	font-size: 0.8em;
+	margin-left: -1em;
+  }
+  
+  principal .conta1 p1 .spacing {
+	margin-left: 8em;
+  }
+  
+  @media (max-width: 799px) {
+	principal .conta1 {
+	  padding-top: 2em;
+	  font-size: 0.7em; 
+	}
+  
+	principal .conta1 p1 {
+	  font-size: 1.5em; 
+	}
+  
+	principal .conta1 .botoes {
+	  display: flex;
+	  justify-content: space-between;
+	}
+  
+	principal .conta1 .botoes button {
+	  font: 0.7em Georgia, serif; 
+	  margin-left: 1em; 
+	  margin-right: 1em;
+	}
+  
+	principal .conta1 .botoes button:nth-child(2) {
+	 left: 30em;
+	 right: 20em;
+	}
+  
+	principal .conta1 ul.lista {
+	  font-size: 0.9em; 
+	  margin-left: -5em; 
+	}
+  }
+  
+  @media (max-width: 585px) {
+	principal .conta1 {
+	  font-size: 0.6em; 
+	}
+  
+	principal .conta1 p1 {
+	  font-size: 1em; 
+	}
+  
+	principal .conta1 .botoes button {
+	  font: 0.8em Georgia, serif; 
+	  margin-left: 0.5em;
+	  margin-right: 0.5em;
+	}
+  
+	principal .conta1 ul.lista {
+	  font-size: 1em; 
+	}
+  }
+  /*Registo de Passageiro e Condutor*/
+  principal .Registo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 5em;
+  }
+  
+  principal .Registo button {
+    position: absolute;
+    top: 8.5em;
+    padding: 0.7em 1em; 
+    border-radius: 0.3em;
+    cursor: pointer;
+    font: 1em Georgia, serif;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  principal .Registo input[type="text"],
+  principal .Registo input[type="password"] {
+    padding: 0.5em 0.2em;
+    font-size: 1.4em;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 1em;
+  }
+
+  principal .Registo .info2 {
+    position: absolute;
+    top: 12em;
+    font: bold 1.2em Georgia, serif;
+    color: rgb(100, 9, 9)
+  }

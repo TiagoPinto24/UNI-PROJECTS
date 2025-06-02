@@ -1,0 +1,14 @@
+TW/Controllers/UsuarioController.class
+TW/Enteties/Viagem.class
+TW/Corsconfig.class
+TW/Services/UsuarioService.class
+TW/Services/PedidoService.class
+TW/repositories/UsuarioRepository.class
+TW/Services/ViagemService.class
+TW/repositories/ViagemRepository.class
+TW/Controllers/ViagemController.class
+TW/Enteties/Usuario.class
+TW/MainTest.class
+TW/Controllers/PedidoController.class
+TW/repositories/PedidoRepository.class
+TW/Enteties/Pedido.class

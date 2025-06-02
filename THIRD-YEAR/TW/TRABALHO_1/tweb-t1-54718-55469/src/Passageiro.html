@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boleias - Universidade de Évora</title>
+    <link rel="stylesheet" href="lib/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="lib/script.js"></script>
+</head>
+
+<body>
+    <topo>
+        <div class="container">
+            <h1 class="h1">
+                Sistema de Boleias <img src="media/carro.svg" height="50">
+            </h1>
+        </div>
+        </div>
+    </topo>
+    <principal>
+        <div class="conta">
+            <div class = "info"><a href="listasPass.html"> Listas |</a><a href="InfToPassageiros.html"> Informação de Condutores | </a><a href="Filtros.html"> Juntar-se a uma Viagem | </a><a href="../Menu.html"> Menu </a></div>
+            <div class="borda">
+                <p1>Novo Pedido</p1>
+                <div class="RegistoRemover">
+                    <form>
+                        <p>
+                            <label for="localPartidaPass">Local Inicial:</label>
+                            <input type="text" id="localPartidaPass" name="localPartidaPass" required>
+                        </p>
+                        <p>
+                            <label for="localChegadaPass">Local Final:</label>
+                            <input type="text" id="localChegadaPass" name="localChegadaPass" required>
+                        </p>
+                        <p>
+                            <label for="DataPass">Data do Requisito da Boleia:</label>
+                            <input type="date" id="DataPass" name="DataPass" value="2024-01-12" required>
+                        </p>
+                        <p>
+                            <button type="button" onclick="ServerOperacoes(0,2)">Registar</button>
+                            <button type="reset">Reset</button>
+                        </p>
+                    </form>
+
+                    <p1>Remover Pedidos:</p1>
+
+                    <form>
+                        <p>
+                            <label for="IDPedido">ID do Pedido:</label>
+                            <input type="text" id="IDPedido" name="IDPedido" required>
+                        </p>
+
+                        <p>
+                            <button type="button" onclick="ServerOperacoes(0,6)">Remover</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </principal>
+
+    <div class="footer">
+        <div class="creditos">
+            Executado por:<br> Tiago Pinto 54718 & João Lóios 55469
+        </div>
+        <div class="ue">
+            <a href="https://www.uevora.pt/" class="logo" target="_blank">
+                <img src="media/logo_ue.svg" alt="logo da ue" height=80>
+            </a>
+        </div>
+    </div>
+
+</body>
