@@ -1,0 +1,24 @@
+time inst | th1           | th2           | th3           | th4
+1	        	            	            EXECUTING	    	            
+2	        	            	            EXECUTING	    READY	        
+3	        	            READY	        INTERRUPTIBLE   READY	        
+4	        READY	        READY	        INTERRUPTIBLE   EXECUTING	    
+5	        READY	        READY	        INTERRUPTIBLE   EXECUTING	    
+6	        READY	        READY	        INTERRUPTIBLE   EXECUTING	    
+7	        READY	        READY	        INTERRUPTIBLE   ZOMBIE	        
+8	        READY	        READY	        INTERRUPTIBLE   ZOMBIE	        
+9	        READY	        READY	        INTERRUPTIBLE   	            
+10	        READY	        EXECUTING	    INTERRUPTIBLE   	            
+11	        READY	        EXECUTING	    INTERRUPTIBLE   	            
+12	        READY	        EXECUTING	    INTERRUPTIBLE   	            
+13	        READY	        ZOMBIE	        INTERRUPTIBLE   	            
+14	        EXECUTING	    ZOMBIE	        INTERRUPTIBLE   	            
+15	        EXECUTING	    	            READY	        	            
+16	        EXECUTING	    	            READY	        	            
+17	        ZOMBIE	        	            READY	        	            
+18	        ZOMBIE	        	            READY	        	            
+19	        	            	            READY	        	            
+20	        	            	            EXECUTING	    	            
+21	        	            	            EXECUTING	    	            
+22	        	            	            ZOMBIE	        	            
+23	        	            	            ZOMBIE	        	            

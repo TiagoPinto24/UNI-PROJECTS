@@ -1,0 +1,63 @@
+time inst | th1           | th2           | th3
+1	        	            EXECUTING	    	            
+2	        READY	        EXECUTING	    	            
+3	        READY	        EXECUTING	    	            
+4	        READY	        READY	        READY	        
+5	        EXECUTING	    READY	        READY	        
+6	        EXECUTING	    READY	        READY	        
+7	        INTERRUPTIBLE   READY	        READY	        
+8	        INTERRUPTIBLE   READY	        READY	        
+9	        READY	        READY	        READY	        
+10	        READY	        READY	        EXECUTING	    
+11	        READY	        READY	        EXECUTING	    
+12	        READY	        READY	        INTERRUPTIBLE   
+13	        READY	        READY	        READY	        
+14	        READY	        READY	        READY	        
+15	        READY	        EXECUTING	    READY	        
+16	        READY	        INTERRUPTIBLE   READY	        
+17	        EXECUTING	    INTERRUPTIBLE   READY	        
+18	        EXECUTING	    READY	        READY	        
+19	        EXECUTING	    READY	        READY	        
+20	        READY	        READY	        READY	        
+21	        READY	        READY	        READY	        
+22	        READY	        READY	        READY	        
+23	        READY	        READY	        EXECUTING	    
+24	        READY	        READY	        EXECUTING	    
+25	        READY	        READY	        EXECUTING	    
+26	        READY	        READY	        READY	        
+27	        READY	        READY	        READY	        
+28	        READY	        READY	        READY	        
+29	        READY	        EXECUTING	    READY	        
+30	        READY	        EXECUTING	    READY	        
+31	        READY	        INTERRUPTIBLE   READY	        
+32	        EXECUTING	    INTERRUPTIBLE   READY	        
+33	        INTERRUPTIBLE   READY	        READY	        
+34	        READY	        READY	        READY	        
+35	        READY	        READY	        READY	        
+36	        READY	        READY	        EXECUTING	    
+37	        READY	        READY	        EXECUTING	    
+38	        READY	        READY	        EXECUTING	    
+39	        READY	        READY	        INTERRUPTIBLE   
+40	        READY	        READY	        READY	        
+41	        READY	        READY	        READY	        
+42	        READY	        EXECUTING	    READY	        
+43	        READY	        EXECUTING	    READY	        
+44	        READY	        EXECUTING	    READY	        
+45	        READY	        READY	        READY	        
+46	        EXECUTING	    READY	        READY	        
+47	        ZOMBIE	        READY	        READY	        
+48	        ZOMBIE	        READY	        READY	        
+49	        	            READY	        READY	        
+50	        	            READY	        EXECUTING	    
+51	        	            READY	        EXECUTING	    
+52	        	            READY	        EXECUTING	    
+53	        	            READY	        INTERRUPTIBLE   
+54	        	            READY	        READY	        
+55	        	            READY	        READY	        
+56	        	            EXECUTING	    READY	        
+57	        	            ZOMBIE	        READY	        
+58	        	            ZOMBIE	        READY	        
+59	        	            	            READY	        
+60	        	            	            EXECUTING	    
+61	        	            	            ZOMBIE	        
+62	        	            	            ZOMBIE	        

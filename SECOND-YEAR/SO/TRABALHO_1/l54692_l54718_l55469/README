@@ -1,0 +1,14 @@
+# Trabalho 1 - Sistemas Operativos
+## Descrição do trabalho
+Neste trabalho pretendemos simular um modelo de 4 estados, utilizando a liguagem C, baseado numa simplificação do Linux para
+threads. O modelo inclui os seguintes estados: READY, EXECUTING (RUNNING), INTERRUPTIBLE (BLOCKED) e ZOMBIE (EXIT).
+As tarefas estão definidas por um conjunto de pseudo-instruções-máquina representadas por números.
+
+## Instruções de utilização do programa
+Para executar o programa, primeiro deve compilá-lo utilizando o makefile. De seguida deve executa-lo, e depois o programa irá pedir um número de 0 a 4, que significam os diferentes inputs que podem ser selecionados. Após escolher um input válido irá ser gerado o output correspondido, num ficheiro á parte.
+
+## Autores
+Este projeto foi realizado por:\
+Mauro Serpa 54692\
+Tiago Pinto 54718\
+João Lóios 55469
