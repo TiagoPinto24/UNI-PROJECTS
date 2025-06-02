@@ -1,0 +1,4 @@
+-cp
+.:lib/postgresql.jar
+sd/Server.java
+sd/PostgresConnector.java
