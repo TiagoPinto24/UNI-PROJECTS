@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Next Scene</string>
+    <string name="Signin">Sign in</string>
+    <string name="back_button">Back</string>
+</resources>
