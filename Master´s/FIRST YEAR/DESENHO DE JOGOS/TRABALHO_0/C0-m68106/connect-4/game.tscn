@@ -1,0 +1,439 @@
+[gd_scene load_steps=18 format=3 uid="uid://pwu2j7did6b8"]
+
+[ext_resource type="Script" uid="uid://2uqthvme3h1d" path="res://game.gd" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://b1hp6nqea7ldd" path="res://grid_container.gd" id="2_feb5d"]
+[ext_resource type="Texture2D" uid="uid://ex7n85f08d7v" path="res://assets/background.jpg" id="2_hve3p"]
+[ext_resource type="FontFile" uid="uid://dino040qn1b4l" path="res://assets/PixelOperator.ttf" id="3_j5wjh"]
+[ext_resource type="Texture2D" uid="uid://lwy5mobnuqo4" path="res://assets/howtoplay.png" id="5_ryrav"]
+[ext_resource type="Texture2D" uid="uid://brycifj36nea6" path="res://assets/play.png" id="6_7sc4i"]
+[ext_resource type="Texture2D" uid="uid://k22h5tap8w4u" path="res://assets/play2.PNG" id="6_80cx4"]
+[ext_resource type="Texture2D" uid="uid://b22lghkkakbdd" path="res://assets/title.png" id="7_hve3p"]
+[ext_resource type="Texture2D" uid="uid://bxn1xeaupotur" path="res://assets/howtoplay2.PNG" id="8_80cx4"]
+[ext_resource type="Texture2D" uid="uid://bkre8c5i8x8gc" path="res://assets/leave.png" id="8_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://cm6nhtpycib2x" path="res://assets/leave2.PNG" id="9_mfdv2"]
+[ext_resource type="Texture2D" uid="uid://bgdu2ktcnhe1u" path="res://assets/back.png" id="9_vef74"]
+[ext_resource type="Texture2D" uid="uid://cjd2r3qq8m1cm" path="res://assets/playagain.png" id="13_e8heu"]
+[ext_resource type="Texture2D" uid="uid://bafd8noeehart" path="res://assets/playagain2.PNG" id="13_rvswv"]
+[ext_resource type="Texture2D" uid="uid://chg7t6l4oaf5l" path="res://assets/back2.PNG" id="15_rvswv"]
+[ext_resource type="Texture2D" uid="uid://dwshxjcqqm5pt" path="res://assets/back3.png" id="16_e8heu"]
+[ext_resource type="Texture2D" uid="uid://dfks2lsci1ons" path="res://assets/back4.PNG" id="17_rvswv"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_e2o6t")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(577, 326.24997)
+scale = Vector2(1.1445545, 0.9512374)
+texture = ExtResource("2_hve3p")
+
+[node name="Turn" type="Label" parent="."]
+offset_top = 28.0
+offset_right = 1152.0
+offset_bottom = 223.0
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 65
+text = "X Turn
+"
+horizontal_alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 312.0
+offset_top = 114.0
+offset_right = 826.0
+offset_bottom = 554.0
+columns = 7
+script = ExtResource("2_feb5d")
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button11" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button12" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button13" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button14" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button15" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button16" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button17" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button18" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button19" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button20" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button21" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button22" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button23" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button24" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button25" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button26" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button27" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button28" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button29" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button30" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button31" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button32" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button33" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button34" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button35" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button36" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button37" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button38" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button39" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button40" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button41" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button42" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Menu" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Menu"]
+layout_mode = 0
+offset_left = 706.0
+offset_top = 533.0
+offset_right = 981.0
+offset_bottom = 621.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 52
+text = "You Won"
+
+[node name="Background" type="Sprite2D" parent="Menu"]
+position = Vector2(577, 326.24997)
+scale = Vector2(1.1445545, 0.9512374)
+texture = ExtResource("2_hve3p")
+
+[node name="Play" type="TextureButton" parent="Menu"]
+layout_mode = 0
+offset_left = 457.0
+offset_top = 434.0
+offset_right = 669.0
+offset_bottom = 519.0
+texture_normal = ExtResource("6_7sc4i")
+texture_hover = ExtResource("6_80cx4")
+
+[node name="HowToPlay" type="TextureButton" parent="Menu"]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 327.0
+offset_right = 335.0
+offset_bottom = 409.0
+texture_normal = ExtResource("5_ryrav")
+texture_hover = ExtResource("8_80cx4")
+
+[node name="Title" type="Sprite2D" parent="Menu"]
+position = Vector2(570.00006, 167.00002)
+scale = Vector2(0.4250488, 0.40295407)
+texture = ExtResource("7_hve3p")
+
+[node name="Leave" type="TextureButton" parent="Menu"]
+layout_mode = 0
+offset_left = 803.0
+offset_top = 324.0
+offset_right = 1006.0
+offset_bottom = 406.0
+texture_normal = ExtResource("8_mfdv2")
+texture_hover = ExtResource("9_mfdv2")
+
+[node name="Result" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="Result"]
+position = Vector2(577, 326.24997)
+scale = Vector2(1.1445545, 0.9512374)
+texture = ExtResource("2_hve3p")
+
+[node name="Winner" type="Label" parent="Result"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 69.0
+offset_right = 1152.0
+offset_bottom = 264.0
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 96
+text = "X Won!
+Congrats!!"
+horizontal_alignment = 1
+
+[node name="Play" type="TextureButton" parent="Result"]
+layout_mode = 0
+offset_left = 101.0
+offset_top = 316.0
+offset_right = 305.0
+offset_bottom = 401.0
+texture_normal = ExtResource("13_e8heu")
+texture_hover = ExtResource("13_rvswv")
+
+[node name="Back" type="TextureButton" parent="Result"]
+layout_mode = 0
+offset_left = 852.0
+offset_top = 312.0
+offset_right = 1058.0
+offset_bottom = 398.0
+texture_normal = ExtResource("9_vef74")
+texture_hover = ExtResource("15_rvswv")
+
+[node name="HowToPlay" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Sprite2D" parent="HowToPlay"]
+position = Vector2(577, 326.24997)
+scale = Vector2(1.1445545, 0.9512374)
+texture = ExtResource("2_hve3p")
+
+[node name="ColorRect" type="ColorRect" parent="HowToPlay"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 31.0
+offset_right = 1127.0
+offset_bottom = 550.0
+color = Color(0.05882353, 0.05882353, 0.05882353, 0.47843137)
+
+[node name="Instructions" type="Label" parent="HowToPlay"]
+layout_mode = 0
+offset_left = 52.0
+offset_top = 37.0
+offset_right = 1113.0
+offset_bottom = 601.0
+theme_override_fonts/font = ExtResource("3_j5wjh")
+theme_override_font_sizes/font_size = 21
+text = "Objective:
+
+Be the first player to connect four of your pieces in a row – horizontally, vertically, or diagonally.
+
+Setup:
+
+- The game is played on a vertical grid with 7 columns and 6 rows.
+
+- Two players take turns, each using a different color of pieces (red and blue).
+
+How to Play:
+
+1. Players take turns dropping one piece into any of the columns.
+
+2. The piece will fall to the lowest available space in that column.
+
+3. Keep playing, taking turns, until one player forms a line of four of their own pieces in a row – it can be horizontal, vertical, 
+    or diagonal.
+
+4. If the board fills up before anyone connects four, the game ends in a draw."
+
+[node name="Back" type="TextureButton" parent="HowToPlay"]
+layout_mode = 0
+offset_left = 485.0
+offset_top = 573.0
+offset_right = 670.0
+offset_bottom = 647.0
+texture_normal = ExtResource("16_e8heu")
+texture_hover = ExtResource("17_rvswv")
+
+[connection signal="pressed" from="Menu/Play" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Menu/HowToPlay" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="Result/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="HowToPlay/Back" to="." method="_on_back_pressed"]
