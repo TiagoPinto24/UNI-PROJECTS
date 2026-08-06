@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://home.uevora.pt/~fc/years/2526/dj/C1/challenge.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>C1: A Path Through Swarms</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">C1: A Path Through Swarms</h1>
+</header>
+<h1 id="challenge">Challenge</h1>
+<blockquote>
+<p>For this challenge, you are going to explore the <strong>race to the
+end</strong> core dynamic (see the <a href="https://home.uevora.pt/~fc/dj/11-the_basics.html#types-of-game-cores">Types
+of Games Cores</a>).</p>
+<p>Additionally, your game must adhere to the theme “<a href="https://en.wikipedia.org/wiki/Swarm_behaviour"><strong>Swarms</strong></a>”
+and support <strong>one to four players</strong>.</p>
+</blockquote>
+<p><strong>Design and Implement a game</strong> that:</p>
+<ul>
+<li>Has a <strong>race to the end</strong> core dynamics;</li>
+<li>Is based on the theme “<strong>Swarms</strong>”;</li>
+<li>Features <strong>one to four players</strong>;</li>
+<li>Respects the course contents.</li>
+</ul>
+<p><strong>Make sure that you are following Game Design
+basics:</strong></p>
+<ul>
+<li>Think about the player’s viewpoint:
+<ul>
+<li>What’s this game about?</li>
+<li>How do I play?</li>
+<li>How do I win?</li>
+<li>Why do I want to play?</li>
+<li>What things do I need to do?</li>
+</ul></li>
+<li>Create meaningful decisions:
+<ul>
+<li>Consider the player’s options.</li>
+<li>Choices must affect the game’s outcome.</li>
+<li>Look to keep the player’s mind busy.</li>
+</ul></li>
+<li>Consider the core of the game.
+<ul>
+<li>Set polished core <em>mechanics</em> considering the
+<em>dynamics</em> and the <em>theme</em>.</li>
+</ul></li>
+</ul>
+<p><strong>If you are stuck in the design process</strong>, look at the
+tips to “<a href="https://home.uevora.pt/~fc/dj/11-the_basics.html#overcoming-designers-block"><em>Overcome
+Designer’s Block</em></a>” in <a href="https://home.uevora.pt/~fc/dj/11-the_basics.html">The Basics</a>
+notes and book chapter.</p>
+<blockquote>
+<p>The game should allow one to four players, be about progressing on a
+path, and make them go from point A to point B. The first player to get
+to point B wins.</p>
+</blockquote>
+<p><em>As the game’s designer, it’s up to you to figure out how to fit
+the theme, select the gamebits/assets, and the mechanics.</em></p>
+<h2 id="deliverable">Deliverable</h2>
+<p>An archive (<code>zip</code> file) with:</p>
+<ul>
+<li>A <strong>beta</strong> prototype of the game (All systems have been
+implemented and all code is theoretically complete. No major bugs are
+expected.).</li>
+<li>A <strong>concept document</strong> of the game (a PDF file) as
+outlined in the <a href="https://home.uevora.pt/~fc/dj/91-extra_material/concept_document_structure.html">Concept
+Document Structure</a> chapter of the course notes.</li>
+</ul>
+<h2 id="optional-game-features">Optional Game Features</h2>
+<h3 id="hard-mode">“Hard” Mode</h3>
+<p>Implement an “Hard” Mode where chance against you is higher.</p>
+<h3 id="easy-mode">“Easy” Mode</h3>
+<p>Implement an “Easy” Mode where you have items and mechanics that help
+you.</p>
+<h3 id="against-the-clock-mode">“Against The Clock” Mode</h3>
+<p>Implement a mode with a time limit to achieve intermediate goals.</p>
+<h3 id="other-features">Other Features</h3>
+<p>Describe and implement other features, not listed here, that might
+improve the game experience.</p>
+<p>The game has instructions? A tutorial mode? Can it be paused, saved,
+loaded? The player has some kind of score?</p>
+<h2 id="suggested-process">Suggested Process</h2>
+<ol type="1">
+<li><p><strong>Determine the goal.</strong> Where are the players going,
+and why are they going there? Choose how the theme involves some
+interaction between the participants, to make things
+interesting.</p></li>
+<li><p><strong>Identify mechanics.</strong></p>
+<ul>
+<li><strong>Start simple.</strong> Visualize a track that goes from
+beginning to end that’s broken up into a bunch of different sections. It
+may be 100 spaces or tiles or cards that ultimately build the track on
+which your players are going to “race.”</li>
+<li>Now think of the mechanic that will <strong>get your players moving
+on that track.</strong> The simplest one is rolling a die.</li>
+<li>Next consider things you could do to <strong>make play more
+interesting.</strong></li>
+<li>You could have an action that speeds you up or slows your opponent
+down. Does the narrative suggest any obvious mechanics?</li>
+<li>If your game is about a relay foot race, you’ll need a way to pass
+the baton (perhaps suggesting a tradeoff where maintaining a higher
+running speed gives a higher chance of accidentally dropping the
+baton).</li>
+<li>To add some player interaction in a foot race, perhaps you’d adapt
+the theme so that the racers are robots with lasers that can shoot at
+one another, which suggests mechanics for shooting and dodging.</li>
+</ul></li>
+<li><p><strong>Identify the conflict between players.</strong> How can
+you screw up someone else’s progress or accelerate yours? What’s the
+tradeoff?</p></li>
+<li><p><strong>Playtest.</strong> Every time you add a mechanic to the
+game, test it. Does it make the game more fun or less fun? Does it
+support the core of the game? Does it work the way you originally
+thought it would?</p></li>
+<li><p><strong>Create a beta version.</strong></p></li>
+</ol>
+
+
+</body></html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://home.uevora.pt/~fc/years/2526/dj/C4/challenge.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>C4: Social Platformer</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      text-align: justify;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">C4: Social Platformer</h1>
+</header>
+<h1 id="challenge">Challenge</h1>
+<div style="display:flex">
+
+<div style="flex:2">
+
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><img src="./C4_ Social Platformer_files/baka-empire_of_one.png" alt="Social Platformer"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Social Platformer (image credits: <a href="https://www.reddit.com/user/ArtOfBaka/submitted/">u/ArtOfBaka</a>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div style="flex:1;align-self:center;padding:1em;text-align:left">
+
+<p>In this challenge, your goal is to modify a <a href="https://en.wikipedia.org/wiki/Platformer"><em>platformer</em></a>
+game, making it adequate to <a href="https://home.uevora.pt/~fc/dj/17-balance_chance_and_skill.html#social-gamers"><em>social
+gamers</em></a> by placing <a href="https://home.uevora.pt/~fc/dj/15-elements_of_strategy.html#auctions"><em>auctions</em></a>
+in the core mechanics.</p>
+<hr>
+<p>The game must use the theme "<strong>Running Out of
+Power</strong>".</p>
+</div>
+
+</div>
+
+<p><strong>Design and Implement a game</strong> that:</p>
+<ul>
+<li>Is derived from a <strong>platformer</strong> game.</li>
+<li>The usual platformer mechanics are replaced (or dominated) by
+<strong>auction mechanics</strong> to make the game <strong>adequate to
+social gamers</strong> .
+<ul>
+<li>Other social oriented features are allowed but with less influence
+than auctions.</li>
+<li>You can keep platformer mechanics, but they must not have great
+influence in the game outcome.</li>
+</ul></li>
+<li>Uses the theme "<strong>Running Out of Power</strong>".</li>
+<li>Respects the course contents.</li>
+</ul>
+<blockquote>
+<p>Notice that most platformer games are <em>single-player</em> while
+social games are... well... social, <em>multi-player</em>.</p>
+</blockquote>
+<h2 id="resolution">Resolution</h2>
+<blockquote>
+<p>Consider that the core of the game <strong>is no longer a platformer,
+but a social game, featuring auctions.</strong> Set polished core
+<em>mechanics</em> considering the <em>target audience</em>,
+<em>features</em>, <em>dynamics</em> and the <em>theme</em>.</p>
+</blockquote>
+<h3 id="think-about-the-players-viewpoint">Think about the player's
+viewpoint</h3>
+<ul>
+<li>What's this game about?</li>
+<li>How do I play?</li>
+<li>How do I win?</li>
+<li>Why do I want to play?</li>
+<li>What things do I need to do?</li>
+</ul>
+<h3 id="ensure-meaningful-decisions">Ensure meaningful decisions</h3>
+<ul>
+<li>Consider the players' options.</li>
+<li>Choices must affect the game's outcome.</li>
+<li>Look to keep the players' minds busy.</li>
+</ul>
+<h3 id="apply-auction-mechanics">Apply auction mechanics</h3>
+<ul>
+<li>How do players gather <strong>resources</strong> to make their
+bids?</li>
+<li>What are the <strong>items</strong>? How do they affect the game
+outcome?</li>
+<li>What specific auction types are used?</li>
+</ul>
+<h2 id="deliverable">Deliverable</h2>
+<p>An archive (a <code>zip</code> file) with:</p>
+<ul>
+<li>A <strong>beta</strong> prototype of the game (<em>All systems have
+been implemented and all code is theoretically complete. No major bugs
+are expected.</em>).</li>
+<li>A <strong>concept document</strong> of the game (a <code>pdf</code>
+file) as outlined in the <a href="https://home.uevora.pt/~fc/dj/91-extra_material/concept_document_structure.html">Concept
+Document Structure</a> chapter of the course notes.</li>
+</ul>
+<h2 id="optional-game-features">Optional Game Features</h2>
+<h3 id="a-player-skips-its-move">A Player Skips its Move</h3>
+<p>Consider that some players will be momentarily unavailable. How can
+the game progress in that situation?</p>
+<ul>
+<li>Define some rules that enable the game to continue —so that the
+other players remain engaged— but without much penalty to the absent
+player —so that she remains motivated to continue playing.</li>
+</ul>
+<h3 id="the-kids-want-to-play">The Kids Want to Play</h3>
+<p>Sometimes children want to be part of the adult's activities. Will it
+be possible to also engage younger players while keeping the adults
+motivated?</p>
+<ul>
+<li>Consider "player profiles" that enable "pure luck" progress.</li>
+</ul>
+<h3 id="other-features">Other Features</h3>
+<p>Describe and implement other features, not listed here, that might
+improve the game experience.</p>
+<h2 id="suggested-process">Suggested Process</h2>
+<p>Think about the <strong>theme</strong>:</p>
+<ul>
+<li>What is the "power" used to?</li>
+<li>What is making it "running out"?</li>
+<li>What are the consequences if it "runs out"?</li>
+<li>What are the options to avoiding that?</li>
+</ul>
+<p>Think about the <strong>requirements</strong>: how to make a
+<strong>challenge</strong> for the player result from to the
+<strong>trade-off</strong> in the <strong>auctions</strong>?</p>
+<ol type="1">
+<li><p>Adapt a platformer game around that theme — you can use a
+template such as the "<a href="https://godotengine.org/asset-library/asset/2201">2D Platformer -
+Starter Kit</a>" in <a href="https://godotengine.org/asset-library/asset">Godot's assets
+library</a>.</p></li>
+<li><p>Remove the impact that <em>player skill</em> has on the outcome
+of the game, to make it more accessible to less skilled players —
+consider, for example, how to <a href="https://home.uevora.pt/~fc/dj/17-balance_chance_and_skill.html#exchanging-luck-and-skill">exchange
+skill by luck</a>.</p></li>
+<li><p>Introduce <em>auction</em> mechanics engaging for <em>social
+gamers</em> and that support those exchanges.</p></li>
+</ol>
+
+
+</body></html>
