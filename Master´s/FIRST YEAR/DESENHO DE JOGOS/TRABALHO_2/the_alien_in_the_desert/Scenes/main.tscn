@@ -1,0 +1,2249 @@
+[gd_scene load_steps=27 format=3 uid="uid://np22d3k5sufm"]
+
+[ext_resource type="Script" uid="uid://cqicjrylof13t" path="res://Scenes/main.gd" id="1_344ge"]
+[ext_resource type="Texture2D" uid="uid://cpkvdga6wicxv" path="res://Assets/BoardTiles.png" id="2_344ge"]
+[ext_resource type="Texture2D" uid="uid://bgthkq2m1bhja" path="res://Assets/terrain.png" id="3_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://cf25j3gjqw6jv" path="res://Assets/predator_alien.png" id="5_344ge"]
+[ext_resource type="Texture2D" uid="uid://cpfsvh237yocg" path="res://Assets/green_alien.png" id="6_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://bta7hw032q8wp" path="res://Assets/red_alien.png" id="7_hptm8"]
+[ext_resource type="Texture2D" uid="uid://73ccmq03afrj" path="res://Assets/blue_alien.png" id="8_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://c1n4jghdotjdg" path="res://Assets/banner.jpg" id="9_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://dd1iqer48d571" path="res://Assets/health_bar_decoration.png" id="10_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://c2wy3xm70rfb8" path="res://Assets/health_bar.png" id="11_6iyac"]
+[ext_resource type="Texture2D" uid="uid://c62xd81nrcwf3" path="res://Assets/PixelDice_White.png" id="12_6iyac"]
+[ext_resource type="Texture2D" uid="uid://c0tqatjm52ytl" path="res://Assets/ButtonText_Large_Orange_Round.png" id="13_fevyy"]
+[ext_resource type="Texture2D" uid="uid://btpg8h5hbxtxx" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="14_hibaj"]
+[ext_resource type="Texture2D" uid="uid://da8d5651edo4p" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="15_pdsj5"]
+[ext_resource type="FontFile" uid="uid://8voo3u4svded" path="res://Assets/ARCADECLASSIC.TTF" id="16_ee4r6"]
+[ext_resource type="Texture2D" uid="uid://doegv27myoxcw" path="res://Assets/ButtonText_Large_Round.png" id="17_gt3je"]
+[ext_resource type="Texture2D" uid="uid://c3rqbdg4yqjcw" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="18_3pmx8"]
+[ext_resource type="Texture2D" uid="uid://cv7kfpn8xa6r7" path="res://Assets/UFO.png" id="19_fevyy"]
+[ext_resource type="Texture2D" uid="uid://wdhyl8o64062" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="19_u50mg"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
+texture = ExtResource("2_344ge")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h2yge"]
+texture = ExtResource("3_ynf5e")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+9:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_1bvp3"]
+sources/2 = SubResource("TileSetAtlasSource_h2yge")
+sources/0 = SubResource("TileSetAtlasSource_1bvp3")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lquwl"]
+texture = ExtResource("3_ynf5e")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+9:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_7mycd"]
+sources/0 = SubResource("TileSetAtlasSource_lquwl")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fevyy"]
+texture = ExtResource("3_ynf5e")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+9:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+7:11/0 = 0
+9:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+3:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+6:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+9:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+8:13/0 = 0
+9:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+7:14/0 = 0
+8:14/0 = 0
+9:14/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hibaj"]
+sources/0 = SubResource("TileSetAtlasSource_fevyy")
+
+[node name="main" type="Node2D"]
+script = ExtResource("1_344ge")
+
+[node name="board" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_set = SubResource("TileSet_1bvp3")
+format = 2
+layer_0/tile_data = PackedInt32Array(2031643, 0, 0, 2031644, 0, 0, 2097180, 0, 0, 2097179, 0, 0, 786432, 196610, 2, 720896, 196610, 2, 655360, 196610, 2, 589824, 196610, 2, 524288, 196610, 2, 458752, 196610, 2, 393216, 196610, 2, 327680, 196610, 2, 262144, 196610, 2, 196608, 196610, 2, 22, 262146, 1, 21, 262146, 1, 20, 262146, 1, 19, 262146, 1, 18, 262146, 1, 17, 262146, 1, 16, 262146, 1, 15, 262146, 1, 13, 262146, 1, 12, 262146, 1, 14, 262146, 1, 11, 262146, 1, 10, 262146, 1, 9, 262146, 1, 8, 262146, 1, 7, 262146, 1, 6, 262146, 1, 5, 262146, 1, 4, 262146, 1, 3, 262146, 1, 2, 262146, 1, 1, 262146, 1, 0, 196610, 1, 65536, 196610, 2, 131072, 196610, 2, 65538, 262146, 2, 65537, 262146, 2, 131073, 262146, 2, 851968, 196610, 2, 917504, 196610, 2, 983040, 196610, 2, 1048576, 196610, 2, 1114112, 196610, 2, 1179648, 196610, 2, 1245184, 196610, 2, 1310720, 196610, 3, 1310721, 262146, 3, 1310722, 262146, 3, 1310723, 262146, 3, 1310724, 262146, 3, 1310725, 262146, 3, 1310726, 262146, 3, 1310727, 262146, 3, 1310728, 262146, 3, 1310729, 262146, 3, 1310730, 262146, 3, 1310731, 262146, 3, 1310732, 262146, 3, 1310733, 262146, 3, 1310734, 262146, 3, 1310735, 262146, 3, 1310736, 262146, 3, 1310737, 262146, 3, 1310738, 262146, 3, 1310739, 262146, 3, 1310740, 262146, 3, 1310741, 262146, 3, 1310742, 262146, 3, 1310743, 262146, 3, 1310744, 262146, 3, 1310745, 262146, 3, 1310746, 262146, 3, 1310747, 262146, 3, 1310748, 262146, 3, 1310749, 262146, 3, 1310750, 262146, 3, 1310751, 262146, 3, 1310752, 262146, 3, 1310753, 262146, 3, 1310754, 262146, 3, 1310755, 327682, 3, 1245219, 327682, 2, 1179683, 327682, 2, 1114147, 327682, 2, 1048611, 327682, 2, 983075, 327682, 2, 917539, 327682, 2, 852003, 327682, 2, 786467, 327682, 2, 720931, 327682, 2, 655395, 327682, 2, 589859, 327682, 2, 524323, 327682, 2, 458787, 327682, 2, 393251, 327682, 2, 327715, 327682, 2, 262179, 327682, 2, 196643, 327682, 2, 131107, 327682, 2, 65571, 327682, 2, 35, 327682, 1, 23, 262146, 1, 24, 262146, 1, 25, 262146, 1, 26, 262146, 1, 27, 262146, 1, 28, 262146, 1, 29, 262146, 1, 30, 262146, 1, 31, 262146, 1, 32, 262146, 1, 33, 262146, 1, 34, 262146, 1, 1179649, 262146, 2, 1245185, 262146, 2, 1245186, 262146, 2, 65569, 262146, 2, 65570, 262146, 2, 131106, 262146, 2, 1179682, 262146, 2, 1245218, 262146, 2, 1245217, 262146, 2, 1245187, 262146, 2, 1245188, 262146, 2, 1245189, 262146, 2, 1245190, 262146, 2, 1245191, 262146, 2, 1245192, 262146, 2, 1245193, 262146, 2, 1245194, 262146, 2, 1245195, 262146, 2, 1245196, 262146, 2, 1245197, 262146, 2, 1245198, 262146, 2, 1245199, 262146, 2, 1245200, 262146, 2, 1245201, 262146, 2, 1245202, 262146, 2, 1245203, 262146, 2, 1245204, 262146, 2, 1245205, 262146, 2, 1245206, 262146, 2, 1245207, 262146, 2, 1245208, 262146, 2, 1245209, 262146, 2, 1245210, 262146, 2, 1245211, 262146, 2, 1245212, 262146, 2, 1245213, 262146, 2, 1245214, 262146, 2, 1245215, 262146, 2, 1245216, 262146, 2, 196642, 262146, 2, 262178, 262146, 2, 327714, 262146, 2, 393250, 262146, 2, 458786, 262146, 2, 524322, 262146, 2, 589858, 262146, 2, 655394, 262146, 2, 720930, 262146, 2, 786466, 262146, 2, 852002, 262146, 2, 917538, 262146, 2, 983074, 262146, 2, 1048610, 262146, 2, 1114146, 262146, 2, 196609, 262146, 2, 262145, 262146, 2, 327681, 262146, 2, 393217, 262146, 2, 458753, 262146, 2, 524289, 262146, 2, 589825, 262146, 2, 655361, 262146, 2, 720897, 262146, 2, 786433, 262146, 2, 851969, 262146, 2, 917505, 262146, 2, 983041, 262146, 2, 1048577, 262146, 2, 1114113, 262146, 2, 65539, 262146, 2, 65540, 262146, 2, 65541, 262146, 2, 65542, 262146, 2, 65543, 262146, 2, 65544, 262146, 2, 65545, 262146, 2, 65546, 262146, 2, 65547, 262146, 2, 65548, 262146, 2, 65549, 262146, 2, 65550, 262146, 2, 65551, 262146, 2, 65552, 262146, 2, 65553, 262146, 2, 65554, 262146, 2, 65555, 262146, 2, 65556, 262146, 2, 65557, 262146, 2, 65558, 262146, 2, 65559, 262146, 2, 65560, 262146, 2, 65561, 262146, 2, 65562, 262146, 2, 65563, 262146, 2, 65564, 262146, 2, 65565, 262146, 2, 65566, 262146, 2, 65567, 262146, 2, 65568, 262146, 2, 131074, 262146, 2, 196610, 262146, 2, 262146, 262146, 2, 131075, 262146, 2, 131076, 262146, 2, 131103, 262146, 2, 131104, 262146, 2, 131105, 262146, 2, 196641, 262146, 2, 262177, 262146, 2, 1179650, 262146, 2, 1179651, 262146, 2, 1114114, 262146, 2, 1048578, 262146, 2, 1179652, 262146, 2, 1048609, 262146, 2, 1114145, 262146, 2, 1179681, 262146, 2, 1179680, 262146, 2, 1179679, 262146, 2, 1179653, 65538, 2, 1179654, 65538, 2, 1179655, 65538, 2, 1179656, 65538, 2, 1179657, 65538, 2, 1179658, 65538, 2, 1179659, 65538, 2, 1179660, 65538, 2, 1179661, 65538, 2, 1114125, 0, 0, 1114126, 0, 0, 1114127, 0, 0, 1114128, 65538, 2, 1114129, 65538, 2, 1179663, 65538, 2, 1179662, 65538, 2, 1179664, 65538, 2, 1179665, 65538, 2, 1179666, 65538, 2, 1179667, 65538, 2, 1179668, 65538, 2, 1179669, 65538, 2, 1179670, 65538, 2, 1179671, 65538, 2, 1179672, 65538, 2, 1179673, 65538, 2, 1179674, 65538, 2, 1179675, 65538, 2, 1179676, 65538, 2, 1179677, 65538, 2, 1179678, 65538, 2, 1114142, 131072, 0, 1048606, 65538, 2, 1048605, 65538, 2, 983069, 0, 0, 983068, 0, 0, 917532, 65538, 2, 917531, 65538, 2, 917530, 0, 0, 917529, 65538, 2, 917528, 0, 0, 917527, 65538, 2, 917526, 0, 0, 917525, 65538, 2, 917524, 0, 0, 917523, 0, 0, 917522, 65538, 2, 851986, 65538, 2, 851985, 65538, 2, 851984, 0, 0, 786448, 0, 0, 655375, 65538, 2, 655380, 65538, 2, 720917, 65538, 2, 720918, 65538, 2, 786455, 65538, 2, 851991, 0, 0, 983061, 65538, 2, 983060, 0, 0, 1048595, 65538, 2, 1048594, 65538, 2, 1048593, 65538, 2, 1048592, 65538, 2, 983055, 0, 0, 983054, 65538, 2, 983053, 0, 0, 917516, 65538, 2, 851980, 0, 0, 786443, 65538, 2, 786444, 65538, 2, 720908, 65538, 2, 720909, 65538, 2, 720910, 65538, 2, 786449, 65538, 2, 786450, 65538, 2, 917520, 0, 0, 917519, 0, 0, 917518, 65538, 2, 917517, 0, 0, 851979, 0, 0, 851978, 65538, 2, 786441, 65538, 2, 786440, 65538, 2, 720903, 65538, 2, 655367, 65538, 2, 655368, 65538, 2, 655369, 65538, 2, 655370, 65538, 2, 720907, 65538, 2, 786445, 65538, 2, 851981, 0, 0, 917515, 0, 0, 851977, 0, 0, 720906, 65538, 2, 786446, 65538, 2, 655371, 65538, 2, 589836, 65538, 2, 589837, 65538, 2, 589838, 65538, 2, 655374, 65538, 2, 655373, 65538, 2, 655372, 65538, 2, 589834, 65538, 2, 589833, 65538, 2, 524296, 65538, 2, 458759, 0, 0, 393223, 65538, 2, 327687, 0, 0, 327688, 65538, 2, 327689, 0, 0, 327690, 65538, 2, 327691, 0, 0, 327692, 65538, 2, 327693, 0, 0, 327694, 65538, 2, 393231, 0, 0, 458766, 65538, 2, 458768, 0, 0, 458769, 65538, 2, 524306, 65538, 2, 524307, 0, 0, 524305, 65538, 2, 458770, 65538, 2, 458771, 0, 0, 458773, 65538, 2, 524309, 65538, 2, 524310, 65538, 2, 589847, 65538, 2, 589848, 65538, 2, 589849, 65538, 2, 589850, 65538, 2, 589851, 65538, 2, 524315, 65538, 2, 458780, 0, 0, 393244, 65538, 2, 393243, 65538, 2, 393242, 0, 0, 393241, 65538, 2, 393240, 0, 0, 393239, 65538, 2, 393238, 0, 0, 786451, 0, 0, 655382, 65538, 2, 655383, 65538, 2, 524312, 65538, 2, 458777, 65538, 2, 458776, 0, 0, 655381, 65538, 2, 524313, 65538, 2, 327701, 65538, 2, 327700, 0, 0, 393235, 0, 0, 589845, 65538, 2, 589846, 65538, 2, 458781, 0, 0, 393246, 0, 0, 327710, 0, 0, 327709, 0, 0, 327708, 0, 0, 458779, 0, 0, 524316, 65538, 2, 589852, 65538, 2, 589853, 65538, 2, 524318, 65538, 2, 458782, 0, 0, 655387, 65538, 2, 720923, 65538, 2, 786459, 65538, 2, 786460, 65538, 2, 720925, 65538, 2, 720926, 65538, 2, 655390, 65538, 2, 589854, 65538, 2, 720922, 65538, 2, 786457, 65538, 2, 786456, 65538, 2, 851992, 0, 0, 851995, 0, 0, 720924, 65538, 2, 655388, 65538, 2, 655386, 65538, 2, 655385, 65538, 2, 720920, 65538, 2, 786458, 65538, 2, 524311, 65538, 2, 720919, 65538, 2, 720921, 65538, 2, 655384, 65538, 2, 851990, 0, 0, 851989, 65538, 2, 786453, 65538, 2, 786454, 65538, 2, 851987, 0, 0, 458774, 0, 0, 393237, 65538, 2, 393236, 0, 0, 393234, 65538, 2, 393233, 65538, 2, 458765, 0, 0, 327698, 65538, 2, 327699, 65538, 2, 262164, 0, 0, 262163, 65538, 2, 262162, 65538, 2, 262161, 65538, 2, 262160, 65538, 2, 262159, 0, 0, 327696, 65538, 2, 327695, 0, 0, 327697, 65538, 2, 524304, 0, 0, 393232, 0, 0, 393230, 65538, 2, 524302, 65538, 2, 524301, 65538, 2, 393229, 0, 0, 524300, 65538, 2, 393228, 65538, 2, 458764, 0, 0, 393227, 0, 0, 458763, 0, 0, 524299, 65538, 2, 589835, 65538, 2, 393226, 65538, 2, 458762, 65538, 2, 524297, 65538, 2, 458761, 0, 0, 393225, 0, 0, 393224, 65538, 2, 458760, 0, 0, 524298, 65538, 2, 786442, 65538, 2, 983052, 65538, 2, 1048588, 65538, 2, 1114124, 65538, 2, 1114123, 0, 0, 1114122, 0, 0, 1114121, 0, 0, 1048585, 0, 0, 983049, 0, 0, 917513, 0, 0, 917514, 65538, 2, 983051, 0, 0, 983050, 65538, 2, 1048587, 0, 0, 1048586, 65538, 2, 1114120, 65538, 2, 1048584, 65538, 2, 983048, 65538, 2, 917512, 65538, 2, 851976, 0, 0, 786439, 65538, 2, 589831, 65538, 2, 524295, 65538, 2, 720904, 65538, 2, 589832, 65538, 2, 720905, 65538, 2, 983047, 0, 0, 1048583, 0, 0, 1114119, 0, 0, 917511, 65538, 2, 851975, 0, 0, 1048582, 65538, 2, 983046, 0, 0, 917510, 65538, 2, 851974, 0, 0, 786438, 65538, 2, 1114118, 0, 0, 1114117, 131072, 0, 1114116, 65538, 2, 1114115, 2, 2, 1048579, 2, 2, 983043, 65538, 2, 983042, 2, 2, 917506, 2, 2, 851970, 2, 2, 786434, 2, 2, 720898, 2, 2, 655362, 2, 2, 589826, 2, 2, 524290, 2, 2, 458754, 2, 2, 393218, 2, 2, 327682, 2, 1, 327683, 65538, 2, 262147, 2, 2, 196611, 2, 1, 196612, 65538, 1, 196613, 131072, 0, 131077, 2, 1, 131078, 65538, 1, 131079, 65538, 1, 131080, 65538, 1, 131081, 65538, 1, 131082, 65538, 1, 131083, 65538, 1, 131084, 65538, 1, 131085, 65538, 1, 131086, 65538, 1, 131087, 65538, 1, 131088, 65538, 1, 131089, 65538, 1, 131090, 65538, 1, 131091, 65538, 1, 131092, 65538, 1, 131093, 65538, 1, 131094, 65538, 1, 131095, 65538, 1, 131096, 65538, 1, 131097, 65538, 1, 131098, 65538, 1, 131099, 65538, 1, 131100, 65538, 1, 131101, 65538, 1, 131102, 131074, 1, 196638, 131072, 0, 262174, 65538, 2, 262173, 65538, 2, 196637, 0, 0, 196636, 0, 0, 262172, 0, 0, 327707, 65538, 2, 262171, 65538, 2, 327706, 0, 0, 262170, 0, 0, 196634, 0, 0, 196635, 65538, 2, 196633, 0, 0, 196632, 0, 0, 196631, 65538, 2, 262167, 65538, 2, 327703, 65538, 2, 327704, 0, 0, 262168, 0, 0, 262166, 0, 0, 327702, 0, 0, 262169, 65538, 2, 327705, 65538, 2, 196630, 0, 0, 262165, 65538, 2, 196629, 0, 0, 196628, 0, 0, 196627, 65538, 2, 196626, 65538, 2, 196625, 65538, 2, 196624, 65538, 2, 196623, 0, 0, 196622, 0, 0, 196621, 0, 0, 196620, 65538, 2, 196619, 0, 0, 196618, 0, 0, 196617, 0, 0, 196616, 65538, 2, 196615, 0, 0, 196614, 0, 0, 262150, 65538, 2, 327686, 0, 0, 393222, 65538, 2, 458758, 0, 0, 524294, 65538, 2, 589830, 65538, 2, 655366, 65538, 2, 720902, 65538, 2, 655365, 65538, 2, 720901, 65538, 2, 786437, 65538, 2, 851973, 0, 0, 917509, 0, 0, 983045, 0, 0, 1048581, 65538, 2, 1048580, 65538, 2, 983044, 65538, 2, 917508, 65538, 2, 917507, 65538, 2, 851971, 65538, 2, 786435, 65538, 2, 786436, 65538, 2, 851972, 65538, 2, 720900, 65538, 2, 655364, 65538, 2, 655363, 65538, 2, 720899, 65538, 2, 589827, 65538, 2, 524291, 65538, 2, 458755, 65538, 2, 393219, 65538, 2, 458756, 65538, 2, 524292, 65538, 2, 589828, 65538, 2, 393220, 65538, 2, 327684, 65538, 2, 262148, 65538, 2, 262149, 65538, 2, 327685, 0, 0, 393221, 0, 0, 458757, 0, 0, 524293, 65538, 2, 589829, 65538, 2, 262151, 0, 0, 262153, 0, 0, 262152, 65538, 2, 262154, 65538, 2, 262155, 0, 0, 262156, 65538, 2, 262157, 0, 0, 262158, 65538, 2, 393245, 65538, 2, 524317, 65538, 2, 655389, 65538, 2, 786462, 65538, 2, 786461, 65538, 2, 851994, 0, 0, 851993, 65538, 2, 458778, 0, 0, 524314, 65538, 2, 458775, 0, 0, 851982, 65538, 2, 1048590, 65538, 2, 1048589, 0, 0, 1048591, 0, 0, 983057, 65538, 2, 917521, 65538, 2, 983056, 65538, 2, 983058, 65538, 2, 983059, 65538, 2, 983062, 0, 0, 983063, 65538, 2, 983064, 0, 0, 983065, 65538, 2, 983066, 0, 0, 983067, 65538, 2, 1048604, 0, 0, 1114141, 0, 0, 1114140, 0, 0, 1114139, 65538, 2, 1114138, 0, 0, 1114137, 0, 0, 1114132, 0, 0, 1114131, 65538, 2, 1114133, 0, 0, 1114134, 0, 0, 1114135, 65538, 2, 1114136, 0, 0, 1048601, 65538, 2, 1048602, 0, 0, 1048603, 65538, 2, 1048600, 0, 0, 1048599, 65538, 2, 1048598, 0, 0, 1048597, 65538, 2, 1048596, 0, 0, 1114130, 65538, 2, 196639, 65538, 1, 262175, 65538, 2, 327711, 65538, 2, 393247, 65538, 2, 458783, 65538, 2, 524319, 65538, 2, 589855, 65538, 2, 655391, 65538, 2, 720927, 65538, 2, 786463, 65538, 2, 851999, 65538, 2, 917535, 65538, 2, 917534, 0, 0, 917533, 65538, 2, 851997, 0, 0, 851998, 0, 0, 851996, 0, 0, 1048607, 65538, 2, 983071, 65538, 2, 983070, 0, 0, 983072, 65538, 2, 1048608, 131074, 2, 1114144, 131074, 2, 1114143, 65538, 2, 983073, 131074, 2, 917537, 131074, 2, 852001, 131074, 2, 786465, 131074, 2, 720929, 131074, 2, 655393, 131074, 2, 589857, 131074, 2, 524321, 131074, 2, 458785, 131074, 2, 393249, 131074, 2, 393248, 65538, 2, 458784, 65538, 2, 524320, 65538, 2, 589856, 65538, 2, 655392, 65538, 2, 720928, 65538, 2, 786464, 65538, 2, 852000, 65538, 2, 917536, 65538, 2, 196640, 131074, 1, 262176, 131074, 2, 327712, 65538, 2, 327713, 131074, 1, 720911, 65538, 2, 786447, 65538, 2, 851983, 65538, 2, 589839, 65538, 2, 524303, 65538, 2, 458767, 65538, 2, 458772, 65538, 2, 524308, 65538, 2, 589844, 65538, 2, 720916, 65538, 2, 786452, 65538, 2, 851988, 65538, 2, 589840, 65538, 2, 589841, 65538, 2, 589842, 65538, 2, 589843, 65538, 2, 655379, 65538, 2, 655378, 65538, 2, 655377, 65538, 2, 655376, 65538, 2, 720912, 65538, 2, 720913, 65538, 2, 720914, 65538, 2, 720915, 65538, 2)
+
+[node name="Decorations" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_set = SubResource("TileSet_7mycd")
+format = 2
+layer_0/z_index = 3
+layer_0/tile_data = PackedInt32Array(262175, 262144, 12, 327711, 262144, 13, 393247, 262144, 14, 262146, 262144, 12, 327682, 262144, 13, 393218, 262144, 14, 262147, 327680, 12, 327683, 327680, 13, 393219, 327680, 14, 262148, 393216, 12, 327684, 393216, 13, 393220, 393216, 14, 393248, 327680, 14, 327712, 327680, 13, 262176, 327680, 12, 262177, 393216, 12, 327713, 393216, 13, 393249, 393216, 14, 786434, 458752, 12, 851970, 458752, 13, 917506, 458752, 14, 786435, 524288, 12, 851971, 524288, 13, 917507, 524288, 14, 786436, 589824, 12, 851972, 589824, 13, 917508, 589824, 14, 786463, 458752, 12, 851999, 458752, 13, 917535, 458752, 14, 786464, 524288, 12, 852000, 524288, 13, 917536, 524288, 14, 786465, 589824, 12, 852001, 589824, 13, 917537, 589824, 14, 983043, 131072, 12, 1048579, 131072, 13, 1114115, 131072, 14, 983044, 196608, 12, 1048580, 196608, 13, 1114116, 196608, 14, 983071, 131072, 12, 1048607, 131072, 13, 1114143, 131072, 14, 983072, 196608, 12, 1048608, 196608, 13, 1114144, 196608, 14, 65539, 0, 12, 131075, 0, 13, 196611, 0, 14, 65540, 65536, 12, 131076, 65536, 13, 196612, 65536, 14, 65567, 0, 12, 131103, 0, 13, 196639, 0, 14, 65568, 65536, 12, 131104, 65536, 13, 196640, 65536, 14, 458772, 65536, 11, 458767, 65536, 11, 262154, 65536, 11, 262169, 65536, 11, 1179662, 131072, 10, 1179673, 131072, 10, 458758, 262144, 12, 524294, 262144, 13, 589830, 262144, 14, 458759, 327680, 12, 524295, 327680, 13, 589831, 327680, 14, 458760, 393216, 12, 524296, 393216, 13, 589832, 393216, 14, 458779, 262144, 12, 524315, 262144, 13, 589851, 262144, 14, 458780, 327680, 12, 524316, 327680, 13, 589852, 327680, 14, 458781, 393216, 12, 524317, 393216, 13, 589853, 393216, 14, 524300, 65536, 10, 524311, 65536, 10)
+
+[node name="Decorations2" type="TileMap" parent="."]
+texture_filter = 1
+scale = Vector2(2, 2)
+tile_set = SubResource("TileSet_hibaj")
+format = 2
+layer_0/z_index = 2
+layer_0/tile_data = PackedInt32Array(786439, 65536, 11, 786440, 589824, 9, 851983, 65536, 11, 851988, 65536, 11, 1048601, 65536, 11, 786460, 65536, 11, 786459, 589824, 9, 655382, 458752, 12, 720918, 458752, 13, 786454, 458752, 14, 655383, 524288, 12, 720919, 524288, 13, 786455, 524288, 14, 655384, 589824, 12, 720920, 589824, 13, 786456, 589824, 14, 655371, 458752, 12, 720907, 458752, 13, 786443, 458752, 14, 655372, 524288, 12, 720908, 524288, 13, 786444, 524288, 14, 655373, 589824, 12, 720909, 589824, 13, 786445, 589824, 14, 1048586, 65536, 11, 589843, 393216, 9, 655379, 393216, 10, 589844, 458752, 9, 655380, 458752, 10, 720916, 458752, 11, 589845, 524288, 9, 655381, 524288, 10, 589840, 393216, 268435465, 589839, 458752, 268435465, 589838, 524288, 268435465, 655376, 393216, 268435466, 655375, 458752, 268435466, 655374, 524288, 268435466, 720911, 458752, 268435467, 131082, 131072, 10, 131097, 131072, 10)
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="Character1" type="Sprite2D" parent="Characters"]
+texture_filter = 1
+position = Vector2(175, 553)
+scale = Vector2(0.116, 0.094)
+texture = ExtResource("5_344ge")
+
+[node name="Character2" type="Sprite2D" parent="Characters"]
+texture_filter = 1
+position = Vector2(977, 551)
+scale = Vector2(0.116, 0.094)
+texture = ExtResource("6_ynf5e")
+flip_h = true
+
+[node name="Character3" type="Sprite2D" parent="Characters"]
+position = Vector2(976.00006, 102.999985)
+scale = Vector2(0.116, 0.094)
+texture = ExtResource("7_hptm8")
+flip_h = true
+
+[node name="Character4" type="Sprite2D" parent="Characters"]
+texture_filter = 1
+position = Vector2(174, 100.99994)
+scale = Vector2(0.116, 0.094)
+texture = ExtResource("8_d1ilt")
+
+[node name="TurnUI" type="Node2D" parent="."]
+
+[node name="Border" type="ColorRect" parent="TurnUI"]
+offset_left = 460.0
+offset_top = 2.9999998
+offset_right = 500.0
+offset_bottom = 43.0
+scale = Vector2(5.580188, 2.162711)
+color = Color(0, 0, 0, 1)
+
+[node name="Banner" type="TextureRect" parent="TurnUI"]
+texture_filter = 1
+offset_left = 469.00003
+offset_top = 10.999999
+offset_right = 1081.0
+offset_bottom = 186.0
+scale = Vector2(0.33442464, 0.3974073)
+texture = ExtResource("9_ynf5e")
+
+[node name="Characters" type="Node" parent="TurnUI"]
+
+[node name="Character1" type="Sprite2D" parent="TurnUI/Characters"]
+texture_filter = 1
+position = Vector2(494.00006, 44.999966)
+scale = Vector2(0.14317681, 0.12740381)
+texture = ExtResource("5_344ge")
+
+[node name="Character2" type="Sprite2D" parent="TurnUI/Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(494.00003, 46)
+scale = Vector2(0.143, 0.106)
+texture = ExtResource("6_ynf5e")
+
+[node name="Character3" type="Sprite2D" parent="TurnUI/Characters"]
+visible = false
+position = Vector2(494, 45.99999)
+scale = Vector2(0.143, 0.116)
+texture = ExtResource("7_hptm8")
+
+[node name="Character4" type="Sprite2D" parent="TurnUI/Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(494, 44.99999)
+scale = Vector2(0.143, 0.116)
+texture = ExtResource("8_d1ilt")
+
+[node name="Dice" type="Node" parent="TurnUI"]
+
+[node name="Dice1" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(0.22945786, 0, 27.744108, 28.5)
+
+[node name="Dice2" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(27.704206, 1.7918491, 27.205393, 24.88889)
+
+[node name="Dice3" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(56.99691, -0.21100521, 25.858582, 27.474747)
+
+[node name="Dice4" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(85.61667, 0.0032577515, 25.050499, 27.74411)
+
+[node name="Dice5" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(113.36077, 0.13428497, 25.050499, 26.93603)
+
+[node name="Dice6" type="Sprite2D" parent="TurnUI/Dice"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(645, 49)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("12_6iyac")
+region_enabled = true
+region_rect = Rect2(140.83551, 1.0723972, 25.589233, 25.858587)
+
+[node name="PlayersBars" type="Node" parent="TurnUI"]
+
+[node name="Player1Bar" type="TextureProgressBar" parent="TurnUI/PlayersBars"]
+unique_name_in_owner = true
+offset_left = 517.0
+offset_top = 33.0
+offset_right = 581.0
+offset_bottom = 50.0
+scale = Vector2(1.5475352, 1.6398487)
+max_value = 2.0
+step = 0.5
+value = 2.0
+texture_under = ExtResource("10_d1ilt")
+texture_progress = ExtResource("11_6iyac")
+texture_progress_offset = Vector2(14, 0)
+
+[node name="Player2Bar" type="TextureProgressBar" parent="TurnUI/PlayersBars"]
+unique_name_in_owner = true
+offset_left = 517.0
+offset_top = 33.0
+offset_right = 581.0
+offset_bottom = 50.0
+scale = Vector2(1.5475352, 1.6398487)
+max_value = 2.0
+step = 0.5
+value = 2.0
+texture_under = ExtResource("10_d1ilt")
+texture_progress = ExtResource("11_6iyac")
+texture_progress_offset = Vector2(14, 0)
+
+[node name="Player3Bar" type="TextureProgressBar" parent="TurnUI/PlayersBars"]
+unique_name_in_owner = true
+offset_left = 517.0
+offset_top = 33.0
+offset_right = 581.0
+offset_bottom = 50.0
+scale = Vector2(1.5475352, 1.6398487)
+max_value = 2.0
+step = 0.5
+value = 2.0
+texture_under = ExtResource("10_d1ilt")
+texture_progress = ExtResource("11_6iyac")
+texture_progress_offset = Vector2(14, 0)
+
+[node name="Player4Bar" type="TextureProgressBar" parent="TurnUI/PlayersBars"]
+unique_name_in_owner = true
+offset_left = 517.0
+offset_top = 33.0
+offset_right = 581.0
+offset_bottom = 50.0
+scale = Vector2(1.5475352, 1.6398487)
+max_value = 2.0
+step = 0.5
+value = 2.0
+texture_under = ExtResource("10_d1ilt")
+texture_progress = ExtResource("11_6iyac")
+texture_progress_offset = Vector2(14, 0)
+
+[node name="MapMarkers" type="Node" parent="."]
+
+[node name="MapMarkers1" type="Node" parent="MapMarkers"]
+
+[node name="Mark0" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(177, 554)
+
+[node name="Mark1" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(208, 554)
+
+[node name="Mark2" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(240, 554)
+
+[node name="Mark3" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(241, 521)
+
+[node name="Mark4" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(240, 489)
+
+[node name="Mark5" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(208, 489)
+
+[node name="Mark6" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(175, 489)
+
+[node name="Mark7" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(175, 456)
+
+[node name="Mark8" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(175, 424)
+
+[node name="Mark9" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(208, 424)
+
+[node name="Mark10" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(240, 424)
+
+[node name="Mark11" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(272, 424)
+
+[node name="Mark12" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(303, 424)
+
+[node name="Mark13" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(304, 456)
+
+[node name="Mark14" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(304, 487)
+
+[node name="Mark15" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(303, 519)
+
+[node name="Mark16" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(304, 552)
+
+[node name="Mark17" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(335, 552)
+
+[node name="Mark18" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(367, 552)
+
+[node name="Mark19" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(366, 520)
+
+[node name="Mark20" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(367, 488)
+
+[node name="Mark21" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(367, 455)
+
+[node name="Mark22" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(367, 423)
+
+[node name="Mark23" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(400, 423)
+
+[node name="Mark24" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(431, 423)
+
+[node name="Mark25" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(431, 456)
+
+[node name="Mark26" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(432, 487)
+
+[node name="Mark27" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(432, 519)
+
+[node name="Mark28" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(432, 552)
+
+[node name="Mark29" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(464, 552)
+
+[node name="Mark30" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(497, 552)
+
+[node name="Mark31" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(496, 519)
+
+[node name="Mark32" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(496, 487)
+
+[node name="Mark33" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(496, 456)
+
+[node name="Mark34" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(529, 456)
+
+[node name="Mark35" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(528, 424)
+
+[node name="Mark36" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(527, 392)
+
+[node name="Mark37" type="Marker2D" parent="MapMarkers/MapMarkers1"]
+position = Vector2(528, 360)
+
+[node name="MapMarkers2" type="Node" parent="MapMarkers"]
+
+[node name="Mark0" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(976, 553)
+
+[node name="Mark1" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(943, 553)
+
+[node name="Mark2" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(912, 553)
+
+[node name="Mark3" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(912, 521)
+
+[node name="Mark4" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(912, 490)
+
+[node name="Mark5" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(944, 490)
+
+[node name="Mark6" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(977, 490)
+
+[node name="Mark7" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(976, 457)
+
+[node name="Mark8" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(976, 424)
+
+[node name="Mark9" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(943, 424)
+
+[node name="Mark10" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(912, 424)
+
+[node name="Mark11" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(880, 424)
+
+[node name="Mark12" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(848, 424)
+
+[node name="Mark13" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(848, 457)
+
+[node name="Mark14" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(848, 487)
+
+[node name="Mark15" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(849, 519)
+
+[node name="Mark16" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(849, 553)
+
+[node name="Mark17" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(817, 553)
+
+[node name="Mark18" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(784, 553)
+
+[node name="Mark19" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(784, 519)
+
+[node name="Mark20" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(785, 488)
+
+[node name="Mark21" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(784, 457)
+
+[node name="Mark22" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(784, 424)
+
+[node name="Mark23" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(752, 424)
+
+[node name="Mark24" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(721, 424)
+
+[node name="Mark25" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(721, 456)
+
+[node name="Mark26" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(721, 488)
+
+[node name="Mark27" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(720, 519)
+
+[node name="Mark28" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(720, 552)
+
+[node name="Mark29" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(687, 552)
+
+[node name="Mark30" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(656, 552)
+
+[node name="Mark31" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(656, 520)
+
+[node name="Mark32" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(657, 488)
+
+[node name="Mark33" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(656, 455)
+
+[node name="Mark34" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(623, 455)
+
+[node name="Mark35" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(623, 423)
+
+[node name="Mark36" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(623, 392)
+
+[node name="Mark37" type="Marker2D" parent="MapMarkers/MapMarkers2"]
+position = Vector2(623, 360)
+
+[node name="MapMarkers3" type="Node" parent="MapMarkers"]
+
+[node name="Mark0" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(976, 105)
+
+[node name="Mark1" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(943, 105)
+
+[node name="Mark2" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(912, 105)
+
+[node name="Mark3" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(912, 135)
+
+[node name="Mark4" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(912, 168)
+
+[node name="Mark5" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(942, 168)
+
+[node name="Mark6" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(976, 168)
+
+[node name="Mark7" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(977, 199)
+
+[node name="Mark8" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(977, 233)
+
+[node name="Mark9" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(944, 233)
+
+[node name="Mark10" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(912, 233)
+
+[node name="Mark11" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(880, 233)
+
+[node name="Mark12" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(848, 233)
+
+[node name="Mark13" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(848, 201)
+
+[node name="Mark14" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(848, 169)
+
+[node name="Mark15" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(848, 137)
+
+[node name="Mark16" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(848, 105)
+
+[node name="Mark17" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(816, 105)
+
+[node name="Mark18" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(785, 105)
+
+[node name="Mark19" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(784, 136)
+
+[node name="Mark20" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(784, 167)
+
+[node name="Mark21" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(784, 200)
+
+[node name="Mark22" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(785, 232)
+
+[node name="Mark23" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(752, 232)
+
+[node name="Mark24" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(721, 232)
+
+[node name="Mark25" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(720, 200)
+
+[node name="Mark26" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(720, 168)
+
+[node name="Mark27" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(720, 135)
+
+[node name="Mark28" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(720, 105)
+
+[node name="Mark29" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(688, 105)
+
+[node name="Mark30" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(656, 105)
+
+[node name="Mark31" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(656, 135)
+
+[node name="Mark32" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(657, 168)
+
+[node name="Mark33" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(656, 200)
+
+[node name="Mark34" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(624, 201)
+
+[node name="Mark35" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(623, 232)
+
+[node name="Mark36" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(624, 263)
+
+[node name="Mark37" type="Marker2D" parent="MapMarkers/MapMarkers3"]
+position = Vector2(624, 294)
+
+[node name="MapMarkers4" type="Node" parent="MapMarkers"]
+
+[node name="Mark0" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(176, 105)
+
+[node name="Mark1" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(208, 105)
+
+[node name="Mark2" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(240, 105)
+
+[node name="Mark3" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(240, 137)
+
+[node name="Mark4" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(240, 168)
+
+[node name="Mark5" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(207, 168)
+
+[node name="Mark6" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(176, 168)
+
+[node name="Mark7" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(177, 200)
+
+[node name="Mark8" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(177, 233)
+
+[node name="Mark9" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(208, 233)
+
+[node name="Mark10" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(239, 233)
+
+[node name="Mark11" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(270, 233)
+
+[node name="Mark12" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(303, 233)
+
+[node name="Mark13" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(303, 200)
+
+[node name="Mark14" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(303, 169)
+
+[node name="Mark15" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(304, 136)
+
+[node name="Mark16" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(303, 105)
+
+[node name="Mark17" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(336, 105)
+
+[node name="Mark18" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(368, 105)
+
+[node name="Mark19" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(368, 137)
+
+[node name="Mark20" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(368, 168)
+
+[node name="Mark21" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(369, 201)
+
+[node name="Mark22" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(369, 232)
+
+[node name="Mark23" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(400, 232)
+
+[node name="Mark24" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(432, 232)
+
+[node name="Mark25" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(432, 202)
+
+[node name="Mark26" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(431, 169)
+
+[node name="Mark27" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(431, 137)
+
+[node name="Mark28" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(432, 105)
+
+[node name="Mark29" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(463, 105)
+
+[node name="Mark30" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(495, 105)
+
+[node name="Mark31" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(496, 136)
+
+[node name="Mark32" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(496, 169)
+
+[node name="Mark33" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(497, 200)
+
+[node name="Mark34" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(528, 200)
+
+[node name="Mark35" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(528, 231)
+
+[node name="Mark36" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(529, 263)
+
+[node name="Mark37" type="Marker2D" parent="MapMarkers/MapMarkers4"]
+position = Vector2(529, 294)
+
+[node name="FogLayers" type="Node" parent="."]
+
+[node name="FogLayer1" type="Node2D" parent="FogLayers"]
+
+[node name="Fog0" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 192.0
+offset_top = 544.0
+offset_right = 225.0
+offset_bottom = 577.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog1" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 224.0
+offset_top = 544.0
+offset_right = 257.0
+offset_bottom = 577.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog2" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 224.0
+offset_top = 511.0
+offset_right = 257.0
+offset_bottom = 544.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog3" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 224.0
+offset_top = 479.0
+offset_right = 257.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog4" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 191.0
+offset_top = 479.0
+offset_right = 224.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog5" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 160.0
+offset_top = 479.0
+offset_right = 193.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog6" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 160.0
+offset_top = 446.0
+offset_right = 193.0
+offset_bottom = 479.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog7" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 160.0
+offset_top = 415.0
+offset_right = 193.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog8" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 193.0
+offset_top = 415.0
+offset_right = 226.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog9" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 225.0
+offset_top = 415.0
+offset_right = 258.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog10" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 255.0
+offset_top = 415.0
+offset_right = 288.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog11" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 288.0
+offset_top = 415.0
+offset_right = 321.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog12" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 288.0
+offset_top = 447.0
+offset_right = 321.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog13" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 288.0
+offset_top = 478.0
+offset_right = 321.0
+offset_bottom = 511.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog14" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 288.0
+offset_top = 511.0
+offset_right = 321.0
+offset_bottom = 544.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog15" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 288.0
+offset_top = 543.0
+offset_right = 321.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog16" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 320.0
+offset_top = 543.0
+offset_right = 353.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog17" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 352.0
+offset_top = 543.0
+offset_right = 385.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog18" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 352.0
+offset_top = 510.0
+offset_right = 385.0
+offset_bottom = 543.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog19" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 352.0
+offset_top = 480.0
+offset_right = 385.0
+offset_bottom = 513.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog20" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 352.0
+offset_top = 448.0
+offset_right = 385.0
+offset_bottom = 481.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog21" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 352.0
+offset_top = 415.0
+offset_right = 385.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog22" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 384.0
+offset_top = 415.0
+offset_right = 417.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog23" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 416.0
+offset_top = 415.0
+offset_right = 449.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog24" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 416.0
+offset_top = 447.0
+offset_right = 449.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog25" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 416.0
+offset_top = 480.0
+offset_right = 449.0
+offset_bottom = 513.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog26" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 416.0
+offset_top = 512.0
+offset_right = 449.0
+offset_bottom = 545.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog27" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 416.0
+offset_top = 543.0
+offset_right = 449.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog28" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 449.0
+offset_top = 543.0
+offset_right = 482.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog29" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 480.0
+offset_top = 543.0
+offset_right = 513.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog30" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 480.0
+offset_top = 510.0
+offset_right = 513.0
+offset_bottom = 543.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog31" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 480.0
+offset_top = 480.0
+offset_right = 513.0
+offset_bottom = 513.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog32" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 480.0
+offset_top = 447.0
+offset_right = 513.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog33" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 512.0
+offset_top = 447.0
+offset_right = 545.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog34" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 512.0
+offset_top = 414.0
+offset_right = 545.0
+offset_bottom = 447.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog35" type="ColorRect" parent="FogLayers/FogLayer1"]
+offset_left = 512.0
+offset_top = 381.0
+offset_right = 545.0
+offset_bottom = 414.0
+color = Color(0, 0, 0, 1)
+
+[node name="FogLayer2" type="Node2D" parent="FogLayers"]
+
+[node name="Fog0" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 928.0
+offset_top = 544.0
+offset_right = 961.0
+offset_bottom = 577.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog1" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 895.0
+offset_top = 544.0
+offset_right = 928.0
+offset_bottom = 577.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog2" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 895.0
+offset_top = 511.0
+offset_right = 928.0
+offset_bottom = 544.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog3" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 895.0
+offset_top = 479.0
+offset_right = 928.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog4" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 928.0
+offset_top = 479.0
+offset_right = 961.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog5" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 960.0
+offset_top = 479.0
+offset_right = 993.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog6" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 960.0
+offset_top = 446.0
+offset_right = 993.0
+offset_bottom = 479.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog7" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 960.0
+offset_top = 415.0
+offset_right = 993.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog8" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 927.0
+offset_top = 415.0
+offset_right = 960.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog9" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 896.0
+offset_top = 415.0
+offset_right = 929.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog10" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 865.0
+offset_top = 415.0
+offset_right = 898.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog11" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 832.0
+offset_top = 415.0
+offset_right = 865.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog12" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 832.0
+offset_top = 446.0
+offset_right = 865.0
+offset_bottom = 479.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog13" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 832.0
+offset_top = 478.0
+offset_right = 865.0
+offset_bottom = 511.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog14" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 832.0
+offset_top = 511.0
+offset_right = 865.0
+offset_bottom = 544.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog15" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 832.0
+offset_top = 543.0
+offset_right = 865.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog16" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 799.0
+offset_top = 543.0
+offset_right = 832.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog17" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 767.0
+offset_top = 543.0
+offset_right = 800.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog18" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 767.0
+offset_top = 510.0
+offset_right = 800.0
+offset_bottom = 543.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog19" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 767.0
+offset_top = 478.0
+offset_right = 800.0
+offset_bottom = 511.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog20" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 767.0
+offset_top = 446.0
+offset_right = 800.0
+offset_bottom = 479.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog21" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 767.0
+offset_top = 415.0
+offset_right = 800.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog22" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 734.0
+offset_top = 415.0
+offset_right = 767.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog23" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 703.0
+offset_top = 415.0
+offset_right = 736.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog24" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 703.0
+offset_top = 448.0
+offset_right = 736.0
+offset_bottom = 481.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog25" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 703.0
+offset_top = 481.0
+offset_right = 736.0
+offset_bottom = 514.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog26" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 703.0
+offset_top = 510.0
+offset_right = 736.0
+offset_bottom = 543.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog27" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 703.0
+offset_top = 543.0
+offset_right = 736.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog28" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 671.0
+offset_top = 543.0
+offset_right = 704.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog29" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 639.0
+offset_top = 543.0
+offset_right = 672.0
+offset_bottom = 576.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog30" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 639.0
+offset_top = 512.0
+offset_right = 672.0
+offset_bottom = 545.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog31" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 639.0
+offset_top = 479.0
+offset_right = 672.0
+offset_bottom = 512.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog32" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 639.0
+offset_top = 447.0
+offset_right = 672.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog33" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 607.0
+offset_top = 447.0
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog34" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 607.0
+offset_top = 416.0
+offset_right = 640.0
+offset_bottom = 449.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog35" type="ColorRect" parent="FogLayers/FogLayer2"]
+offset_left = 607.0
+offset_top = 383.0
+offset_right = 640.0
+offset_bottom = 416.0
+color = Color(0, 0, 0, 1)
+
+[node name="FogLayer3" type="Node2D" parent="FogLayers"]
+
+[node name="Fog0" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 929.0
+offset_top = 96.0
+offset_right = 962.0
+offset_bottom = 129.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog1" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 896.0
+offset_top = 96.0
+offset_right = 929.0
+offset_bottom = 129.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog2" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 896.0
+offset_top = 127.0
+offset_right = 929.0
+offset_bottom = 160.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog3" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 896.0
+offset_top = 159.0
+offset_right = 929.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog4" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 929.0
+offset_top = 159.0
+offset_right = 962.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog5" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 959.0
+offset_top = 159.0
+offset_right = 992.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog6" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 959.0
+offset_top = 190.0
+offset_right = 992.0
+offset_bottom = 223.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog7" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 959.0
+offset_top = 223.0
+offset_right = 992.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog8" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 926.0
+offset_top = 223.0
+offset_right = 959.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog9" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 897.0
+offset_top = 223.0
+offset_right = 930.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog10" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 864.0
+offset_top = 223.0
+offset_right = 897.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog11" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 831.0
+offset_top = 223.0
+offset_right = 864.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog12" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 831.0
+offset_top = 192.0
+offset_right = 864.0
+offset_bottom = 225.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog13" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 831.0
+offset_top = 160.0
+offset_right = 864.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog14" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 831.0
+offset_top = 128.0
+offset_right = 864.0
+offset_bottom = 161.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog15" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 831.0
+offset_top = 95.0
+offset_right = 864.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog16" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 798.0
+offset_top = 95.0
+offset_right = 831.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog17" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 767.0
+offset_top = 95.0
+offset_right = 800.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog18" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 767.0
+offset_top = 128.0
+offset_right = 800.0
+offset_bottom = 161.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog19" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 767.0
+offset_top = 160.0
+offset_right = 800.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog20" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 767.0
+offset_top = 190.0
+offset_right = 800.0
+offset_bottom = 223.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog21" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 767.0
+offset_top = 223.0
+offset_right = 800.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog22" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 734.0
+offset_top = 223.0
+offset_right = 767.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog23" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 703.0
+offset_top = 223.0
+offset_right = 736.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog24" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 703.0
+offset_top = 190.0
+offset_right = 736.0
+offset_bottom = 223.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog25" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 703.0
+offset_top = 158.0
+offset_right = 736.0
+offset_bottom = 191.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog26" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 703.0
+offset_top = 125.0
+offset_right = 736.0
+offset_bottom = 158.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog27" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 703.0
+offset_top = 95.0
+offset_right = 736.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog28" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 671.0
+offset_top = 95.0
+offset_right = 704.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog29" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 639.0
+offset_top = 95.0
+offset_right = 672.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog30" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 639.0
+offset_top = 127.0
+offset_right = 672.0
+offset_bottom = 160.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog31" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 639.0
+offset_top = 159.0
+offset_right = 672.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog32" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 639.0
+offset_top = 191.0
+offset_right = 672.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog33" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 639.0
+offset_top = 191.0
+offset_right = 672.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog34" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 608.0
+offset_top = 191.0
+offset_right = 641.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog35" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 608.0
+offset_top = 223.0
+offset_right = 641.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog36" type="ColorRect" parent="FogLayers/FogLayer3"]
+offset_left = 608.0
+offset_top = 256.0
+offset_right = 641.0
+offset_bottom = 289.0
+color = Color(0, 0, 0, 1)
+
+[node name="FogLayer4" type="Node2D" parent="FogLayers"]
+
+[node name="Fog0" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 192.0
+offset_top = 95.0
+offset_right = 225.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog1" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 224.0
+offset_top = 95.0
+offset_right = 257.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog2" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 224.0
+offset_top = 128.0
+offset_right = 257.0
+offset_bottom = 161.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog3" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 224.0
+offset_top = 160.0
+offset_right = 257.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog4" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 192.0
+offset_top = 160.0
+offset_right = 225.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog5" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 159.0
+offset_top = 160.0
+offset_right = 192.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog6" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 159.0
+offset_top = 191.0
+offset_right = 192.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog7" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 159.0
+offset_top = 223.0
+offset_right = 192.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog8" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 192.0
+offset_top = 223.0
+offset_right = 225.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog9" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 224.0
+offset_top = 223.0
+offset_right = 257.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog10" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 256.0
+offset_top = 223.0
+offset_right = 289.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog11" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 288.0
+offset_top = 223.0
+offset_right = 321.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog12" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 288.0
+offset_top = 191.0
+offset_right = 321.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog13" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 288.0
+offset_top = 158.0
+offset_right = 321.0
+offset_bottom = 191.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog14" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 288.0
+offset_top = 126.0
+offset_right = 321.0
+offset_bottom = 159.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog15" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 288.0
+offset_top = 95.0
+offset_right = 321.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog16" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 320.0
+offset_top = 95.0
+offset_right = 353.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog17" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 352.0
+offset_top = 95.0
+offset_right = 385.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog18" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 352.0
+offset_top = 127.0
+offset_right = 385.0
+offset_bottom = 160.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog19" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 352.0
+offset_top = 160.0
+offset_right = 385.0
+offset_bottom = 193.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog20" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 352.0
+offset_top = 191.0
+offset_right = 385.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog21" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 352.0
+offset_top = 223.0
+offset_right = 385.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog22" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 384.0
+offset_top = 223.0
+offset_right = 417.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog23" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 415.0
+offset_top = 223.0
+offset_right = 448.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog24" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 415.0
+offset_top = 190.0
+offset_right = 448.0
+offset_bottom = 223.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog25" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 415.0
+offset_top = 159.0
+offset_right = 448.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog26" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 415.0
+offset_top = 127.0
+offset_right = 448.0
+offset_bottom = 160.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog27" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 415.0
+offset_top = 95.0
+offset_right = 448.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog28" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 447.0
+offset_top = 95.0
+offset_right = 480.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog29" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 479.0
+offset_top = 95.0
+offset_right = 512.0
+offset_bottom = 128.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog30" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 479.0
+offset_top = 127.0
+offset_right = 512.0
+offset_bottom = 160.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog31" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 479.0
+offset_top = 159.0
+offset_right = 512.0
+offset_bottom = 192.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog32" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 479.0
+offset_top = 191.0
+offset_right = 512.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog33" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 511.0
+offset_top = 191.0
+offset_right = 544.0
+offset_bottom = 224.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog34" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 511.0
+offset_top = 223.0
+offset_right = 544.0
+offset_bottom = 256.0
+color = Color(0, 0, 0, 1)
+
+[node name="Fog35" type="ColorRect" parent="FogLayers/FogLayer4"]
+offset_left = 511.0
+offset_top = 255.0
+offset_right = 544.0
+offset_bottom = 288.0
+color = Color(0, 0, 0, 1)
+
+[node name="Buttons" type="Node" parent="."]
+
+[node name="ButtonDice" type="TextureButton" parent="Buttons"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 497.0
+offset_top = 584.0
+offset_right = 1656.0
+offset_bottom = 942.0
+scale = Vector2(0.14873725, 0.15023234)
+texture_normal = ExtResource("13_fevyy")
+texture_pressed = ExtResource("14_hibaj")
+texture_hover = ExtResource("15_pdsj5")
+
+[node name="text" type="Label" parent="Buttons/ButtonDice"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 67.232666
+offset_top = 86.53223
+offset_right = 217.23267
+offset_bottom = 109.53223
+scale = Vector2(6.8378854, 7.609082)
+theme_override_fonts/font = ExtResource("16_ee4r6")
+theme_override_font_sizes/font_size = 22
+text = "Roll  The    Dice"
+
+[node name="Advance2" type="TextureButton" parent="Buttons"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 116.99999
+offset_top = 322.0
+offset_right = 1258.0
+offset_bottom = 667.0
+scale = Vector2(0.19600284, 0.16747016)
+texture_normal = ExtResource("17_gt3je")
+texture_pressed = ExtResource("18_3pmx8")
+texture_hover = ExtResource("19_u50mg")
+
+[node name="text" type="Label" parent="Buttons/Advance2"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 57.028748
+offset_top = 98.47473
+offset_right = 208.02875
+offset_bottom = 117.47473
+scale = Vector2(6.8378854, 7.609082)
+theme_override_fonts/font = ExtResource("16_ee4r6")
+theme_override_font_sizes/font_size = 18
+text = "Advance   2   spaces"
+
+[node name="AdvanceX" type="TextureButton" parent="Buttons"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 815.00006
+offset_top = 322.0
+offset_right = 1956.0
+offset_bottom = 667.0
+scale = Vector2(0.196, 0.167)
+texture_normal = ExtResource("17_gt3je")
+texture_pressed = ExtResource("18_3pmx8")
+texture_hover = ExtResource("19_u50mg")
+
+[node name="text" type="Label" parent="Buttons/AdvanceX"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 57.02832
+offset_top = 98.47473
+offset_right = 208.02832
+offset_bottom = 117.47473
+scale = Vector2(6.8378854, 7.609082)
+theme_override_fonts/font = ExtResource("16_ee4r6")
+theme_override_font_sizes/font_size = 18
+text = "Advance   X   spaces"
+
+[node name="UFO" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(573.00006, 325.00003)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("19_fevyy")
+
+[connection signal="pressed" from="Buttons/ButtonDice" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Buttons/Advance2" to="." method="_on_advance_2_pressed"]
+[connection signal="pressed" from="Buttons/AdvanceX" to="." method="_on_advance_x_pressed"]

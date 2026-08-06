@@ -1,0 +1,100 @@
+[gd_scene load_steps=11 format=3 uid="uid://b3tyxrqbkpno7"]
+
+[ext_resource type="Script" uid="uid://c07keelw62ty" path="res://Scenes/victory.gd" id="1_e08bu"]
+[ext_resource type="Texture2D" uid="uid://csd8v4ic4ldp7" path="res://Assets/DesertSunset.png" id="2_6of35"]
+[ext_resource type="FontFile" uid="uid://8voo3u4svded" path="res://Assets/ARCADECLASSIC.TTF" id="3_xtutm"]
+[ext_resource type="Texture2D" uid="uid://c0tqatjm52ytl" path="res://Assets/ButtonText_Large_Orange_Round.png" id="4_6e874"]
+[ext_resource type="Texture2D" uid="uid://btpg8h5hbxtxx" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="5_b14db"]
+[ext_resource type="Texture2D" uid="uid://da8d5651edo4p" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="6_qokpw"]
+[ext_resource type="Texture2D" uid="uid://cf25j3gjqw6jv" path="res://Assets/predator_alien.png" id="7_3cb74"]
+[ext_resource type="Texture2D" uid="uid://cpfsvh237yocg" path="res://Assets/green_alien.png" id="8_3qu6g"]
+[ext_resource type="Texture2D" uid="uid://bta7hw032q8wp" path="res://Assets/red_alien.png" id="9_31rx2"]
+[ext_resource type="Texture2D" uid="uid://73ccmq03afrj" path="res://Assets/blue_alien.png" id="10_u226h"]
+
+[node name="Victory" type="Node"]
+script = ExtResource("1_e08bu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2300.0
+offset_bottom = 2000.0
+scale = Vector2(0.5014023, 0.32454485)
+texture = ExtResource("2_6of35")
+
+[node name="Result" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -344.5
+offset_top = 213.0
+offset_right = 344.5
+offset_bottom = 268.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_xtutm")
+theme_override_font_sizes/font_size = 40
+text = "The   Winner  is  pLayer   1
+CONGRATS !!!"
+horizontal_alignment = 1
+
+[node name="BackToMenu" type="TextureButton" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = 202.0
+offset_right = 1055.0
+offset_bottom = 560.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.20265822, 0.21283087)
+texture_normal = ExtResource("4_6e874")
+texture_pressed = ExtResource("5_b14db")
+texture_hover = ExtResource("6_qokpw")
+
+[node name="Label" type="Label" parent="BackToMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.08179
+offset_top = 79.875565
+offset_right = 357.0818
+offset_bottom = 127.875565
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("3_xtutm")
+theme_override_font_sizes/font_size = 46
+text = "Back   to   menu"
+horizontal_alignment = 1
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="Character1" type="Sprite2D" parent="Characters"]
+texture_filter = 1
+position = Vector2(583, 405.00003)
+scale = Vector2(0.40917763, 0.36409387)
+texture = ExtResource("7_3cb74")
+
+[node name="Character2" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(587.00006, 400.00003)
+scale = Vector2(0.45, 0.364)
+texture = ExtResource("8_3qu6g")
+
+[node name="Character3" type="Sprite2D" parent="Characters"]
+visible = false
+position = Vector2(586, 400)
+scale = Vector2(0.409, 0.364)
+texture = ExtResource("9_31rx2")
+
+[node name="Character4" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(586.00006, 400.00003)
+scale = Vector2(0.409, 0.364)
+texture = ExtResource("10_u226h")
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]

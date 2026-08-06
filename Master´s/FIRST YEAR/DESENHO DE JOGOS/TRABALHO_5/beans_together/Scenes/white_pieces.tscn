@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://pplprtn2kd8c"]
+
+[ext_resource type="Texture2D" uid="uid://cfrrye6t3qilq" path="res://Assets/checkers.png" id="1_v178y"]
+
+[node name="WhitePieces" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_v178y")
+region_enabled = true
+region_rect = Rect2(0, 0, 15.95591, 16)

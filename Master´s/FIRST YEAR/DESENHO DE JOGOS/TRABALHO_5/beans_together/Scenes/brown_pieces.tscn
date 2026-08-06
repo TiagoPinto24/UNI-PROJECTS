@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://crh54x8gp1o72"]
+
+[ext_resource type="Texture2D" uid="uid://cfrrye6t3qilq" path="res://Assets/checkers.png" id="1_8htxs"]
+
+[node name="BrownPieces" type="Sprite2D"]
+texture_filter = 1
+scale = Vector2(4, 4)
+texture = ExtResource("1_8htxs")
+region_enabled = true
+region_rect = Rect2(31.736496, 0, 16.326538, 16)

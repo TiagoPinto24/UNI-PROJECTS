@@ -1,0 +1,329 @@
+[gd_scene load_steps=28 format=3 uid="uid://stwlqfccrd8x"]
+
+[ext_resource type="Script" uid="uid://bguq5ht2h4lnb" path="res://Scenes/howtoplay.gd" id="1_7tpqe"]
+[ext_resource type="Texture2D" uid="uid://djruiifyefbnl" path="res://Assets/Gray.png" id="1_k11ng"]
+[ext_resource type="Texture2D" uid="uid://crfg28od8ov0o" path="res://Assets/ButtonText_Large_Orange_Round.png" id="2_1fxla"]
+[ext_resource type="Texture2D" uid="uid://3ns87qc3plhs" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="3_7tpqe"]
+[ext_resource type="Texture2D" uid="uid://blewlp81temgw" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="4_dlcvi"]
+[ext_resource type="FontFile" uid="uid://dleo46fj0y3gw" path="res://Assets/ARCADECLASSIC.TTF" id="5_2iagx"]
+[ext_resource type="FontFile" uid="uid://d3b1u5fsoiexk" path="res://Assets/good timing bd.otf" id="7_us3ly"]
+[ext_resource type="Texture2D" uid="uid://ctfx7y2tp2wkh" path="res://Assets/gate.png" id="8_2taib"]
+[ext_resource type="Texture2D" uid="uid://rx2h5tupl8ii" path="res://Assets/bar_1.png" id="9_a40yy"]
+[ext_resource type="Texture2D" uid="uid://dhcrxi46a6scn" path="res://Assets/coin.png" id="10_2gums"]
+[ext_resource type="Texture2D" uid="uid://kql07foamr8p" path="res://Assets/bar_2.png" id="11_o7q4o"]
+[ext_resource type="Texture2D" uid="uid://bcdsrqfymfv0q" path="res://Assets/MaskDudeIdle.png" id="12_44qy4"]
+[ext_resource type="Texture2D" uid="uid://cvrghpt4jr2cc" path="res://Assets/miniplatform.png" id="13_yyuko"]
+[ext_resource type="Texture2D" uid="uid://cltp46t0d0emu" path="res://Assets/dice.png" id="14_nffq0"]
+[ext_resource type="Texture2D" uid="uid://lqw3aslnkotk" path="res://Assets/auctionID.png" id="15_2taib"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wav4"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eeuvd"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrd3i"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_350wl"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oat01"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k1pmm"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pyjcu"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6w85m"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tx68o"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3ml6"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nb1nl"]
+atlas = ExtResource("12_44qy4")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbf1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wav4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eeuvd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrd3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_350wl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oat01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k1pmm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pyjcu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6w85m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tx68o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d3ml6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nb1nl")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[node name="Howtoplay" type="Node"]
+script = ExtResource("1_7tpqe")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_k11ng")
+stretch_mode = 1
+
+[node name="Menu" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 845.0
+offset_top = 44.99994
+offset_right = 2004.0
+offset_bottom = 402.99994
+scale = Vector2(0.231, 0.264)
+texture_normal = ExtResource("2_1fxla")
+texture_pressed = ExtResource("3_7tpqe")
+texture_hover = ExtResource("4_dlcvi")
+
+[node name="Label" type="Label" parent="Menu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 293.50635
+offset_top = 26.200684
+offset_right = 388.50635
+offset_bottom = 70.20068
+scale = Vector2(6.2240863, 6.7898197)
+theme_override_fonts/font = ExtResource("5_2iagx")
+theme_override_font_sizes/font_size = 43
+text = "BACK"
+horizontal_alignment = 1
+
+[node name="instructions" type="Node" parent="."]
+
+[node name="HowtoPlay" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 18.0
+offset_top = 36.0
+offset_right = 446.0
+offset_bottom = 104.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 56
+text = "HOW TO PLAY"
+
+[node name="inst1" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 152.0
+offset_right = 543.0
+offset_bottom = 189.0
+theme_override_colors/font_color = Color(0.8224733, 0.59136474, 0.27348062, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "A platform racing game for 2 to 4 players."
+
+[node name="inst2" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 216.0
+offset_right = 486.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0.38310686, 0.71157825, 0.99075395, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "Escape from prison by being the first
+to reach the gate."
+
+[node name="inst3" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 314.0
+offset_right = 478.0
+offset_bottom = 344.0
+theme_override_colors/font_color = Color(1, 0.79607844, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "Energy bar depletes during the race."
+
+[node name="inst4" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 378.0
+offset_right = 538.0
+offset_bottom = 408.0
+theme_override_colors/font_color = Color(0.6560068, 0.58185554, 0.5273021, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "Without energy, the player is immobilized."
+
+[node name="inst5" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 442.0
+offset_right = 555.0
+offset_bottom = 505.0
+theme_override_colors/font_color = Color(0.12176774, 0.7263387, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "To recharge, players must spend coins and
+win an auction."
+
+[node name="inst6" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 540.0
+offset_right = 395.0
+offset_bottom = 570.0
+theme_override_colors/font_color = Color(1, 0.42352942, 0.08235294, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "Everyone starts with 10 coins."
+
+[node name="inst7" type="Label" parent="instructions"]
+texture_filter = 1
+offset_left = 19.0
+offset_top = 605.0
+offset_right = 545.0
+offset_bottom = 668.0
+theme_override_colors/font_color = Color(0.99999994, 0.22929761, 0.585179, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 24
+text = "Each round, a dice roll awards more coins 
+to the players."
+
+[node name="Images" type="Node" parent="."]
+
+[node name="gate" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(558, 254.00002)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("8_2taib")
+
+[node name="bar" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(569, 331)
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("9_a40yy")
+
+[node name="coin" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(443, 559)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("10_2gums")
+
+[node name="Energy1" type="TextureProgressBar" parent="Images"]
+texture_filter = 1
+offset_left = 569.0
+offset_top = 449.0
+offset_right = 2466.0
+offset_bottom = 727.0
+scale = Vector2(0.07, 0.07)
+value = 100.0
+texture_under = ExtResource("9_a40yy")
+texture_progress = ExtResource("11_o7q4o")
+texture_progress_offset = Vector2(14, 0)
+
+[node name="Character1" type="AnimatedSprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(581, 396)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_kbf1n")
+autoplay = "default"
+frame_progress = 0.34193498
+
+[node name="platform" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(579.99994, 171)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("13_yyuko")
+
+[node name="dice" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(595, 637)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("14_nffq0")
+
+[node name="BlackBackground" type="ColorRect" parent="."]
+offset_left = 751.0
+offset_top = 495.0
+offset_right = 791.0
+offset_bottom = 535.0
+scale = Vector2(9.560577, 5.7077203)
+color = Color(0, 0, 0, 1)
+
+[node name="menu" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(942, 608)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("15_2taib")
+
+[node name="HowtoPlay" type="Label" parent="."]
+texture_filter = 1
+offset_left = 845.0
+offset_top = 459.0
+offset_right = 1029.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("7_us3ly")
+theme_override_font_sizes/font_size = 25
+text = "Auction Menu"
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]

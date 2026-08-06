@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://botleyvb1tocc"]
+
+[ext_resource type="Texture2D" uid="uid://bvwfcrv8m4jgc" path="res://Assets/hurricane.png" id="1_20emq"]
+
+[node name="Hurricane" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, 7.0000005)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("1_20emq")

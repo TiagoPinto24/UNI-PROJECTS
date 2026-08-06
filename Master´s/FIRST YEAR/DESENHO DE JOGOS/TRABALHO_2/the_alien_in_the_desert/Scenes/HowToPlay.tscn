@@ -1,0 +1,184 @@
+[gd_scene load_steps=14 format=3 uid="uid://8a8hjiu7td8c"]
+
+[ext_resource type="Script" uid="uid://btm2r5xjsrrrm" path="res://Scenes/how_to_play.gd" id="1_w7xx1"]
+[ext_resource type="Texture2D" uid="uid://csd8v4ic4ldp7" path="res://Assets/DesertSunset.png" id="1_yx4y8"]
+[ext_resource type="FontFile" uid="uid://bkwhhahbhja0s" path="res://Assets/good timing bd.otf" id="2_4vhkj"]
+[ext_resource type="Texture2D" uid="uid://c0tqatjm52ytl" path="res://Assets/ButtonText_Large_Orange_Round.png" id="3_uktic"]
+[ext_resource type="Texture2D" uid="uid://btpg8h5hbxtxx" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="4_t7rns"]
+[ext_resource type="Texture2D" uid="uid://da8d5651edo4p" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="5_wpjo1"]
+[ext_resource type="FontFile" uid="uid://8voo3u4svded" path="res://Assets/ARCADECLASSIC.TTF" id="6_adxoq"]
+[ext_resource type="Texture2D" uid="uid://cv7kfpn8xa6r7" path="res://Assets/UFO.png" id="7_t15hf"]
+[ext_resource type="Texture2D" uid="uid://cgc6gna3u503g" path="res://Assets/dice.png" id="8_w7xx1"]
+[ext_resource type="Texture2D" uid="uid://bvwfcrv8m4jgc" path="res://Assets/hurricane.png" id="9_s1303"]
+[ext_resource type="Texture2D" uid="uid://dh06twd8hgxda" path="res://Assets/skull.png" id="10_w7mqw"]
+[ext_resource type="Texture2D" uid="uid://dh4uawal7kgl5" path="res://Assets/alien.png" id="11_nctm4"]
+[ext_resource type="Texture2D" uid="uid://fvrr2pd8j8mv" path="res://Assets/ufo2.png" id="12_icywa"]
+
+[node name="HowToPlay" type="Node"]
+script = ExtResource("1_w7xx1")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2300.0
+offset_bottom = 2000.0
+scale = Vector2(0.5014023, 0.32454485)
+texture = ExtResource("1_yx4y8")
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 137.0
+offset_right = 688.0
+offset_bottom = 233.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 21
+text = "In this game, the players are aliens competing to be 
+the first to reach the UFO at the center of the board.
+"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 221.0
+offset_right = 711.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 21
+text = "On their turn, each player rolls the die. They can 
+choose to move forward the number of spaces 
+shown on the die, or only the number they can see (2)."
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 339.0
+offset_right = 624.0
+offset_bottom = 400.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 21
+text = "Each player has only 2 lives. 
+A life is lost if a player lands on a hurricane space."
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 424.0
+offset_right = 587.0
+offset_bottom = 485.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 21
+text = "If a player loses both lives, they are eliminated 
+from the game."
+
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 519.0
+offset_right = 200.0
+offset_bottom = 560.0
+theme_override_colors/font_color = Color(0.46634227, 0.14308953, 0.48032415, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 33
+text = "Have Fun!"
+
+[node name="Label6" type="Label" parent="Labels"]
+offset_left = 27.0
+offset_top = 51.0
+offset_right = 806.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0.46634227, 0.14308953, 0.48032415, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("2_4vhkj")
+theme_override_font_sizes/font_size = 40
+text = "Welcome to \"The Alien in the Desert\"!"
+
+[node name="BackToMenu" type="TextureButton" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 284.0
+offset_top = -277.0
+offset_right = 1443.0
+offset_bottom = 81.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.20265822, 0.21283087)
+texture_normal = ExtResource("3_uktic")
+texture_pressed = ExtResource("4_t7rns")
+texture_hover = ExtResource("5_wpjo1")
+
+[node name="Label" type="Label" parent="BackToMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.08179
+offset_top = 79.875565
+offset_right = 357.0818
+offset_bottom = 127.875565
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("6_adxoq")
+theme_override_font_sizes/font_size = 46
+text = "Back   to   menu"
+horizontal_alignment = 1
+
+[node name="Images" type="Node" parent="."]
+
+[node name="UFO" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(690, 159)
+rotation = 0.34197763
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("7_t15hf")
+
+[node name="Dice" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(676.00006, 263.00006)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_w7xx1")
+
+[node name="Hurricane" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(627.00006, 373)
+scale = Vector2(0.17, 0.17)
+texture = ExtResource("9_s1303")
+
+[node name="Skull" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(593, 451)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("10_w7mqw")
+
+[node name="Alien" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(249, 537)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("11_nctm4")
+
+[node name="UFO2" type="Sprite2D" parent="Images"]
+texture_filter = 1
+position = Vector2(975.00006, 398)
+scale = Vector2(1.1776587, 1.3826201)
+texture = ExtResource("12_icywa")
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]

@@ -1,0 +1,215 @@
+[gd_scene load_steps=10 format=3 uid="uid://08bbe1ckou1j"]
+
+[ext_resource type="Script" uid="uid://cdu3d3kjv7rsg" path="res://scenes/results.gd" id="1_dd547"]
+[ext_resource type="Texture2D" uid="uid://1w0t6r4pqx2m" path="res://Yellow.png" id="2_ufxfl"]
+[ext_resource type="Texture2D" uid="uid://c6mp57aut0yit" path="res://table.jpg" id="3_3oa2t"]
+[ext_resource type="FontFile" uid="uid://dyrmcfuw3y5he" path="res://SuperMabroz-G3YVP.otf" id="3_ufxfl"]
+[ext_resource type="FontFile" uid="uid://y4iu5s6hakcp" path="res://ARCADECLASSIC.TTF" id="5_217r3"]
+[ext_resource type="Texture2D" uid="uid://da1uhacpg1ptn" path="res://beeMenuu.png" id="6_yyhqm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yyhqm"]
+bg_color = Color(0.8666667, 0.5176471, 0.105882354, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5tciw"]
+bg_color = Color(0.40392157, 0.24313726, 0.03529412, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0otbe"]
+bg_color = Color(0.5137255, 0.3137255, 0.05490196, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="Results" type="Node"]
+script = ExtResource("1_dd547")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ufxfl")
+stretch_mode = 1
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Table" type="TextureRect" parent="Control"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 363.00003
+offset_top = 103.0
+offset_right = 1241.0
+offset_bottom = 806.0
+scale = Vector2(0.5, 0.566)
+texture = ExtResource("3_3oa2t")
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+layout_mode = 0
+offset_left = 384.99997
+offset_top = 137.0
+offset_right = 593.54553
+offset_bottom = 313.0
+scale = Vector2(2.08488, 2.0626106)
+theme_override_constants/h_separation = 42
+theme_override_constants/v_separation = 19
+columns = 2
+
+[node name="Player" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+text = "Player"
+horizontal_alignment = 1
+
+[node name="Time" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+text = "Time"
+horizontal_alignment = 1
+
+[node name="Player1" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.5882353, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Time1" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Player2" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.5882353, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Time2" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Player3" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.5882353, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Time3" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Player4" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.5882353, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="Time4" type="Label" parent="Control/GridContainer"]
+texture_filter = 1
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_ufxfl")
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+
+[node name="BackToMenu" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -136.0
+offset_top = -119.0
+offset_right = 133.54541
+offset_bottom = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.1, 1.1)
+theme_override_colors/font_pressed_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_colors/font_hover_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_fonts/font = ExtResource("5_217r3")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_yyhqm")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5tciw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0otbe")
+text = "Back   to   Menu"
+
+[node name="winner" type="Label" parent="."]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -572.0
+offset_top = 23.0
+offset_right = 576.0
+offset_bottom = 78.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_217r3")
+theme_override_font_sizes/font_size = 40
+horizontal_alignment = 1
+
+[node name="Bee1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1056.5, 90.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_yyhqm")
+
+[node name="Bee2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(253.5, 90.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_yyhqm")
+
+[node name="Bee3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(125.5, 219.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_yyhqm")
+
+[node name="Bee4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(918, 219)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("6_yyhqm")
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_button_pressed"]

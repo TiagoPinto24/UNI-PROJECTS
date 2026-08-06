@@ -1,0 +1,90 @@
+[gd_scene load_steps=9 format=3 uid="uid://b4prpvbllwu7b"]
+
+[ext_resource type="Script" uid="uid://ep146iscqmoy" path="res://scenes/main_character.gd" id="1_ig48j"]
+[ext_resource type="Texture2D" uid="uid://7ea2foet7dlh" path="res://bee.png" id="2_ig48j"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqm6u"]
+atlas = ExtResource("2_ig48j")
+region = Rect2(0, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6tc2"]
+atlas = ExtResource("2_ig48j")
+region = Rect2(25, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0aba"]
+atlas = ExtResource("2_ig48j")
+region = Rect2(50, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogw1n"]
+atlas = ExtResource("2_ig48j")
+region = Rect2(75, 0, 25, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0d0nc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqm6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6tc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0aba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogw1n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nrcqd"]
+radius = 11.333334
+height = 25.333334
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(3, 3)
+script = ExtResource("1_ig48j")
+
+[node name="Mother" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+scale = Vector2(-1, 1)
+sprite_frames = SubResource("SpriteFrames_0d0nc")
+autoplay = "default"
+frame_progress = 0.1331624
+
+[node name="son1" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(-13.666669, -16.333334)
+rotation = 3.1415927
+scale = Vector2(0.4, -0.4)
+sprite_frames = SubResource("SpriteFrames_0d0nc")
+autoplay = "default"
+frame_progress = 0.1331624
+
+[node name="son2" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(-23, -4.333336)
+rotation = -3.1415925
+scale = Vector2(0.40000004, -0.40000004)
+sprite_frames = SubResource("SpriteFrames_0d0nc")
+autoplay = "default"
+frame_progress = 0.1331624
+
+[node name="son3" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(-15.666667, 9.666664)
+rotation = -3.1415925
+scale = Vector2(0.40000004, -0.40000004)
+sprite_frames = SubResource("SpriteFrames_0d0nc")
+autoplay = "default"
+frame_progress = 0.1331624
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, -0.33333334)
+shape = SubResource("CapsuleShape2D_nrcqd")

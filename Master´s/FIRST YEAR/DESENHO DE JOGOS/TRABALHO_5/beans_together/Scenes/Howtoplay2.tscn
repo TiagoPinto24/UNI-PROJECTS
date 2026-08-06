@@ -1,0 +1,262 @@
+[gd_scene load_steps=12 format=3 uid="uid://cqocqqdwrh5x4"]
+
+[ext_resource type="Texture2D" uid="uid://bxau35bw14kov" path="res://Assets/Green.png" id="1_8wxh4"]
+[ext_resource type="Script" uid="uid://dc1f7enfodusr" path="res://Scenes/howtoplay_2.gd" id="1_w3b4u"]
+[ext_resource type="FontFile" uid="uid://ds43xle853vgj" path="res://Assets/good timing bd.otf" id="2_mjefl"]
+[ext_resource type="Texture2D" uid="uid://b413cey6iyvao" path="res://Assets/naipes.png" id="3_w3b4u"]
+[ext_resource type="Texture2D" uid="uid://cgg65x16e7ljx" path="res://Assets/joker.png" id="4_7eh48"]
+[ext_resource type="PackedScene" uid="uid://crh54x8gp1o72" path="res://Scenes/brown_pieces.tscn" id="5_o8n26"]
+[ext_resource type="PackedScene" uid="uid://pplprtn2kd8c" path="res://Scenes/white_pieces.tscn" id="6_fauw7"]
+[ext_resource type="Texture2D" uid="uid://b58bswg0r5m7j" path="res://Assets/ButtonText_Small_Green_Round.png" id="7_s2pqp"]
+[ext_resource type="Texture2D" uid="uid://474s3am5yl2l" path="res://Assets/ButtonText_Small_Green_Round_pressed.PNG" id="8_xfmen"]
+[ext_resource type="Texture2D" uid="uid://b6fvxtbj7ixup" path="res://Assets/ButtonText_Small_Green_Round_hoover.PNG" id="9_gfse1"]
+[ext_resource type="FontFile" uid="uid://8rioaf5o8mqi" path="res://Assets/ARCADECLASSIC.TTF" id="10_lo5kt"]
+
+[node name="Howtoplay2" type="Node"]
+script = ExtResource("1_w3b4u")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_8wxh4")
+stretch_mode = 1
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="cardlabel" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 16.0
+offset_top = 120.0
+offset_right = 239.0
+offset_bottom = 162.0
+theme_override_colors/font_color = Color(0, 0.6039216, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 34
+text = "Card Effects"
+
+[node name="cardlabel1" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 76.0
+offset_top = 194.0
+offset_right = 234.0
+offset_bottom = 225.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Lose a bean"
+
+[node name="cardlabel2" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 76.0
+offset_top = 266.0
+offset_right = 225.0
+offset_bottom = 297.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Get a bean"
+
+[node name="cardlabel3" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 76.0
+offset_top = 344.0
+offset_right = 509.0
+offset_bottom = 375.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Choose a player to give a bean to"
+
+[node name="cardlabel4" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 76.0
+offset_top = 409.0
+offset_right = 551.0
+offset_bottom = 474.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Two random players receive a bean, 
+and the other two lose"
+
+[node name="cardlabel5" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 76.0
+offset_top = 501.0
+offset_right = 443.0
+offset_bottom = 532.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Everyone receives one bean"
+
+[node name="checkerlabel" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 786.0
+offset_top = 112.0
+offset_right = 1068.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0, 0.6039216, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 34
+text = "Effect of the 
+checkers pieces"
+horizontal_alignment = 1
+
+[node name="checkerlabel1" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 874.0
+offset_top = 227.0
+offset_right = 1032.0
+offset_bottom = 258.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Lose a bean"
+
+[node name="checkerlabel2" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 874.0
+offset_top = 300.0
+offset_right = 1023.0
+offset_bottom = 331.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "Get a bean"
+
+[node name="movementlabel" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 791.0
+offset_top = 374.0
+offset_right = 1073.0
+offset_bottom = 416.0
+theme_override_colors/font_color = Color(0, 0.6039216, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 34
+text = "Movement"
+horizontal_alignment = 1
+
+[node name="movementlabel1" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 758.0
+offset_top = 434.0
+offset_right = 1130.0
+offset_bottom = 533.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 25
+text = "1 to 3 beans: move 3 spaces
+4 to 5 beans: move 2 spaces
+6 beans: move 1 space"
+
+[node name="Label" type="Label" parent="Labels"]
+texture_filter = 1
+offset_left = 20.0
+offset_top = 27.0
+offset_right = 448.0
+offset_bottom = 110.0
+theme_override_colors/font_color = Color(0.96862745, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("2_mjefl")
+theme_override_font_sizes/font_size = 68
+text = "Game Rules"
+
+[node name="sprites" type="Node" parent="."]
+
+[node name="diamonds" type="Sprite2D" parent="sprites"]
+texture_filter = 1
+position = Vector2(34, 208)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_w3b4u")
+region_enabled = true
+region_rect = Rect2(626.7357, 0, 498.26428, 642.47546)
+
+[node name="spades" type="Sprite2D" parent="sprites"]
+texture_filter = 1
+position = Vector2(34.000004, 278)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_w3b4u")
+region_enabled = true
+region_rect = Rect2(594.6647, 711.36725, 530.3353, 661.6766)
+
+[node name="hearts" type="Sprite2D" parent="sprites"]
+texture_filter = 1
+position = Vector2(36, 358.00003)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_w3b4u")
+region_enabled = true
+region_rect = Rect2(-7.2772217, 711.36725, 611.13184, 661.6766)
+
+[node name="clubs" type="Sprite2D" parent="sprites"]
+texture_filter = 1
+position = Vector2(36, 437.00003)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("3_w3b4u")
+region_enabled = true
+region_rect = Rect2(-7.2772217, -0.42687988, 611.13184, 661.67645)
+
+[node name="joker" type="Sprite2D" parent="sprites"]
+texture_filter = 1
+position = Vector2(36, 522)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_7eh48")
+region_rect = Rect2(-7.2772217, -0.42687988, 611.13184, 661.67645)
+
+[node name="BrownPieces" parent="sprites" instance=ExtResource("5_o8n26")]
+position = Vector2(835, 242)
+
+[node name="WhitePieces" parent="sprites" instance=ExtResource("6_fauw7")]
+position = Vector2(836, 316)
+
+[node name="back" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 899.9999
+offset_top = 548.00006
+offset_right = 1434.9999
+offset_bottom = 797.00006
+scale = Vector2(0.43761075, 0.354545)
+texture_normal = ExtResource("7_s2pqp")
+texture_pressed = ExtResource("8_xfmen")
+texture_hover = ExtResource("9_gfse1")
+
+[node name="Label" type="Label" parent="back"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 93.69078
+offset_top = 11.282196
+offset_right = 489.6908
+offset_bottom = 194.2822
+scale = Vector2(0.9385076, 1.250831)
+theme_override_fonts/font = ExtResource("10_lo5kt")
+theme_override_font_sizes/font_size = 180
+text = "Back"
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]

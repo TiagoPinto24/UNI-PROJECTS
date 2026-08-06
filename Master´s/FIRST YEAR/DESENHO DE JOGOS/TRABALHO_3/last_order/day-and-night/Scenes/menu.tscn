@@ -1,0 +1,101 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqid6op5bdan1"]
+
+[ext_resource type="Script" uid="uid://52w5s3q7dg1w" path="res://Scenes/menu.gd" id="1_6swd7"]
+[ext_resource type="Texture2D" uid="uid://8wtu7x4wdxco" path="res://Assets/Night.png" id="2_7qvly"]
+[ext_resource type="Texture2D" uid="uid://bkghrolrtens4" path="res://Assets/logo.png" id="3_q3rjx"]
+[ext_resource type="Texture2D" uid="uid://dkcaroy6rrgjw" path="res://Assets/ButtonText_Large_Round.png" id="3_wbdvm"]
+[ext_resource type="Texture2D" uid="uid://dpesgsolv63ym" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="4_q3rjx"]
+[ext_resource type="Texture2D" uid="uid://rqo4ge28knjp" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="5_6swd7"]
+[ext_resource type="FontFile" uid="uid://x3dwpkypvliu" path="res://Assets/ARCADECLASSIC.TTF" id="6_7qvly"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_6swd7")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.58431375)
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(3.5977957, 3.6028976)
+texture = ExtResource("2_7qvly")
+
+[node name="Title" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(565.00006, 182.00003)
+scale = Vector2(0.7005738, 0.69626886)
+texture = ExtResource("3_q3rjx")
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 436.0
+offset_top = 341.0
+offset_right = 1577.0
+offset_bottom = 686.0
+scale = Vector2(0.23308049, 0.19406071)
+texture_normal = ExtResource("3_wbdvm")
+texture_pressed = ExtResource("4_q3rjx")
+texture_hover = ExtResource("5_6swd7")
+
+[node name="Label" type="Label" parent="Play"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("6_7qvly")
+theme_override_font_sizes/font_size = 64
+text = "play"
+horizontal_alignment = 1
+
+[node name="HowToPlay" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 436.0
+offset_top = 434.0
+offset_right = 1577.0
+offset_bottom = 779.0
+scale = Vector2(0.233, 0.194)
+texture_normal = ExtResource("3_wbdvm")
+texture_pressed = ExtResource("4_q3rjx")
+texture_hover = ExtResource("5_6swd7")
+
+[node name="Label" type="Label" parent="HowToPlay"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("6_7qvly")
+theme_override_font_sizes/font_size = 64
+text = "HOW   TO   PLAY"
+
+[node name="Leave" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 436.0
+offset_top = 530.0
+offset_right = 1577.0
+offset_bottom = 875.0
+scale = Vector2(0.233, 0.194)
+texture_normal = ExtResource("3_wbdvm")
+texture_pressed = ExtResource("4_q3rjx")
+texture_hover = ExtResource("5_6swd7")
+
+[node name="Label" type="Label" parent="Leave"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("6_7qvly")
+theme_override_font_sizes/font_size = 64
+text = "leave"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="HowToPlay" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="Leave" to="." method="_on_leave_pressed"]

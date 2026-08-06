@@ -1,0 +1,228 @@
+[gd_scene load_steps=17 format=3 uid="uid://dgmxp518vtm"]
+
+[ext_resource type="Script" uid="uid://bha46g2lagbhw" path="res://Scenes/howtoplay.gd" id="1_1fxla"]
+[ext_resource type="Texture2D" uid="uid://8wtu7x4wdxco" path="res://Assets/Night.png" id="2_7tpqe"]
+[ext_resource type="FontFile" uid="uid://blb52yam4gyrm" path="res://Assets/good timing bd.otf" id="3_2iagx"]
+[ext_resource type="Texture2D" uid="uid://dkcaroy6rrgjw" path="res://Assets/ButtonText_Large_Round.png" id="4_dlcvi"]
+[ext_resource type="Texture2D" uid="uid://dpesgsolv63ym" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="5_2iagx"]
+[ext_resource type="Texture2D" uid="uid://rqo4ge28knjp" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="6_6dnjy"]
+[ext_resource type="FontFile" uid="uid://x3dwpkypvliu" path="res://Assets/ARCADECLASSIC.TTF" id="7_2taib"]
+[ext_resource type="Texture2D" uid="uid://pr4nhrtgmqyo" path="res://Assets/clock.png" id="7_6dnjy"]
+[ext_resource type="Texture2D" uid="uid://cqcm2dwhtiw6g" path="res://Assets/drone.png" id="8_lm4jo"]
+[ext_resource type="Texture2D" uid="uid://skyfnptndr4" path="res://Assets/bluebox.png" id="9_lm4jo"]
+[ext_resource type="Texture2D" uid="uid://c7mx3vfsene1o" path="res://Assets/redbox.png" id="10_mxiil"]
+[ext_resource type="Texture2D" uid="uid://dgcxck1gx2d1b" path="res://Assets/blue_truck.png" id="12_a40yy"]
+[ext_resource type="Texture2D" uid="uid://74ac0gvq3k1c" path="res://Assets/connect4.png" id="13_2gums"]
+[ext_resource type="Texture2D" uid="uid://c8pdn25lx5e0m" path="res://Assets/spacebar.png" id="14_o7q4o"]
+[ext_resource type="FontFile" uid="uid://b3vq0df18ue07" path="res://Assets/Sweet Toffee.ttf" id="15_44qy4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yyuko"]
+bg_color = Color(0.24840015, 0.24840018, 0.24840015, 0.54901963)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[node name="Howtoplay" type="Node"]
+script = ExtResource("1_1fxla")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.58431375)
+texture_filter = 1
+offset_right = 320.0
+offset_bottom = 180.0
+scale = Vector2(3.5977957, 3.6028976)
+texture = ExtResource("2_7tpqe")
+
+[node name="Instructions" type="Node" parent="."]
+
+[node name="title" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 41.0
+offset_right = 420.0
+offset_bottom = 105.0
+theme_override_colors/font_color = Color(0, 0.52156866, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 52
+text = "HOW TO PLAY"
+
+[node name="Instructions1" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 159.0
+offset_right = 514.0
+offset_bottom = 222.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 24
+text = "Last Order is a fast-paced, competitive 
+twist on the classic Connect 4."
+
+[node name="Instructions2" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 244.0
+offset_right = 543.0
+offset_bottom = 340.0
+theme_override_colors/font_color = Color(0.36078432, 0.21176471, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 24
+text = "You represent a delivery company racing 
+to complete the day's final route before 
+your competitor."
+
+[node name="Instructions3" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 366.0
+offset_right = 605.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0.15294118, 0.21568628, 0.8156863, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 24
+text = "Be the first to connect four packages in a row 
+(horizontally, vertically, or diagonally)."
+
+[node name="Instructions4" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 26.0
+offset_top = 455.0
+offset_right = 884.0
+offset_bottom = 551.0
+theme_override_colors/font_color = Color(1, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 24
+text = "A logistics drone moves continuously across the 
+board. To drop a package, click when the drone is 
+over your desired column."
+
+[node name="Instructions5" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 25.0
+offset_top = 576.0
+offset_right = 587.0
+offset_bottom = 606.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 24
+text = "Hurry up! You only have 10 seconds per turn."
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 841.00006
+offset_top = 39.0
+offset_right = 1982.0
+offset_bottom = 384.0
+scale = Vector2(0.236, 0.258)
+texture_normal = ExtResource("4_dlcvi")
+texture_pressed = ExtResource("5_2iagx")
+texture_hover = ExtResource("6_6dnjy")
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("7_2taib")
+theme_override_font_sizes/font_size = 64
+text = "Back"
+horizontal_alignment = 1
+
+[node name="GameControls" type="Node" parent="."]
+
+[node name="Panel" type="Panel" parent="GameControls"]
+offset_left = 816.0
+offset_top = 363.0
+offset_right = 856.0
+offset_bottom = 403.0
+scale = Vector2(8.31, 7.091)
+theme_override_styles/panel = SubResource("StyleBoxFlat_yyuko")
+
+[node name="controls" type="Label" parent="GameControls"]
+texture_filter = 1
+offset_left = 837.0
+offset_top = 377.0
+offset_right = 1130.0
+offset_bottom = 424.0
+theme_override_colors/font_color = Color(1, 0.7647059, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("3_2iagx")
+theme_override_font_sizes/font_size = 38
+text = "Game Controls"
+
+[node name="spacebar" type="Sprite2D" parent="GameControls"]
+position = Vector2(984, 576)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_o7q4o")
+
+[node name="controls2" type="Label" parent="GameControls"]
+texture_filter = 1
+offset_left = 823.0
+offset_top = 431.0
+offset_right = 1145.0
+offset_bottom = 506.0
+theme_override_fonts/font = ExtResource("15_44qy4")
+theme_override_font_sizes/font_size = 26
+text = "use space bar to drop your 
+packages/pieces"
+horizontal_alignment = 1
+
+[node name="images" type="Node" parent="."]
+
+[node name="clock" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(631.00006, 580.00006)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("7_6dnjy")
+
+[node name="drone" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(727, 489)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("8_lm4jo")
+
+[node name="box1" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(669.00006, 367.00003)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("9_lm4jo")
+
+[node name="box2" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(652, 406)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("10_mxiil")
+
+[node name="truck" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(598, 294)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("12_a40yy")
+
+[node name="Sprite2D" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(564.00006, 191.00002)
+scale = Vector2(0.12, 0.12)
+texture = ExtResource("13_2gums")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

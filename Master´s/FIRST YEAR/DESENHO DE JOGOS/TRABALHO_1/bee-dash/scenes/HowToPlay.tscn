@@ -1,0 +1,354 @@
+[gd_scene load_steps=30 format=3 uid="uid://chi6q6654gcui"]
+
+[ext_resource type="Script" uid="uid://dpc31kv5uim8r" path="res://scenes/how_to_play.gd" id="1_lilvb"]
+[ext_resource type="Texture2D" uid="uid://1w0t6r4pqx2m" path="res://Yellow.png" id="2_tprqc"]
+[ext_resource type="FontFile" uid="uid://d1achpoax0axy" path="res://good timing bd.otf" id="3_6uvot"]
+[ext_resource type="Texture2D" uid="uid://cr6cwsjodbokq" path="res://hive.png" id="4_6dy36"]
+[ext_resource type="Texture2D" uid="uid://7ea2foet7dlh" path="res://bee.png" id="5_iqfql"]
+[ext_resource type="Texture2D" uid="uid://cfkpvy5ddyah8" path="res://Idle.png" id="6_h3dg1"]
+[ext_resource type="Texture2D" uid="uid://db1c2veeenv3n" path="res://On (38x38).png" id="7_ibvhg"]
+[ext_resource type="Texture2D" uid="uid://bqm3m3stj7q60" path="res://clock.png" id="8_miytd"]
+[ext_resource type="FontFile" uid="uid://y4iu5s6hakcp" path="res://ARCADECLASSIC.TTF" id="10_v8xpp"]
+[ext_resource type="Texture2D" uid="uid://qi7d1wm8s2vc" path="res://controls.png" id="11_6uvot"]
+[ext_resource type="Texture2D" uid="uid://bgsbxt17csj3o" path="res://honeypot.png" id="11_tprqc"]
+[ext_resource type="FontFile" uid="uid://ujvqeeplljj1" path="res://Sweet Toffee.ttf" id="12_6dy36"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tqm6u"]
+atlas = ExtResource("5_iqfql")
+region = Rect2(0, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6tc2"]
+atlas = ExtResource("5_iqfql")
+region = Rect2(25, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k0aba"]
+atlas = ExtResource("5_iqfql")
+region = Rect2(50, 0, 25, 27)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ogw1n"]
+atlas = ExtResource("5_iqfql")
+region = Rect2(75, 0, 25, 27)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_32vvt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tqm6u")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6tc2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k0aba")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ogw1n")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kprxg"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_846d5"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(38, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_161w5"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(76, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cxxip"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(114, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iw68n"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(152, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_878ni"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(190, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hi3xb"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(228, 0, 38, 38)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_578c5"]
+atlas = ExtResource("7_ibvhg")
+region = Rect2(266, 0, 38, 38)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d8otj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kprxg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_846d5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_161w5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cxxip")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iw68n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_878ni")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hi3xb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_578c5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_62g7s"]
+bg_color = Color(0.8666667, 0.5176471, 0.105882354, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17ta0"]
+bg_color = Color(0.40392157, 0.24313726, 0.03529412, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_42kwq"]
+bg_color = Color(0.5137255, 0.3137255, 0.05490196, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="HowToPlay" type="Node"]
+script = ExtResource("1_lilvb")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tprqc")
+stretch_mode = 1
+
+[node name="howtoplay" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.0
+offset_top = -297.0
+offset_right = 144.0
+offset_bottom = -233.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("3_6uvot")
+theme_override_font_sizes/font_size = 52
+text = "How TO PLAY "
+
+[node name="Instructions" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -520.0
+offset_top = -184.0
+offset_right = 265.0
+offset_bottom = 289.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0.40900782, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("3_6uvot")
+theme_override_font_sizes/font_size = 24
+text = "This is a racing game for 1 to 4 players, 
+where each player controls a Queen Bee 
+and her worker bees.
+
+
+The goal is to be the first to reach the hive, 
+while collecting all 9 honey jars along the way.
+
+
+If the Queen Bee hits a trap, 5 seconds 
+will be added to the player's final time.
+
+
+The player who finishes the course
+in the shortest time wins.
+
+"
+
+[node name="hive" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(700, 287.5)
+scale = Vector2(0.08203127, 0.088867195)
+texture = ExtResource("4_6dy36")
+
+[node name="bee" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(634.00006, 139)
+scale = Vector2(3.576, 3.628)
+sprite_frames = SubResource("SpriteFrames_32vvt")
+autoplay = "default"
+
+[node name="spike" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(696, 417)
+scale = Vector2(5.2240214, 5.0606294)
+texture = ExtResource("6_h3dg1")
+
+[node name="saw" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(608, 403)
+scale = Vector2(1.7905476, 1.8384349)
+sprite_frames = SubResource("SpriteFrames_d8otj")
+autoplay = "default"
+
+[node name="clock" type="TextureRect" parent="."]
+texture_filter = 1
+offset_left = 519.9999
+offset_top = 523.0
+offset_right = 1016.0585
+offset_bottom = 1032.9147
+scale = Vector2(0.14950164, 0.14173634)
+texture = ExtResource("8_miytd")
+
+[node name="BackToMenu" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 249.0
+offset_top = -621.0
+offset_right = 518.5454
+offset_bottom = -530.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.1, 1.1)
+theme_override_colors/font_pressed_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_colors/font_hover_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_fonts/font = ExtResource("10_v8xpp")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_62g7s")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_17ta0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_42kwq")
+text = "Back   to   Menu"
+
+[node name="honeypot" type="Sprite2D" parent="."]
+position = Vector2(767, 307.5)
+scale = Vector2(0.06989594, 0.07196472)
+texture = ExtResource("11_tprqc")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 815.99994
+offset_top = 363.0
+offset_right = 855.99994
+offset_bottom = 403.0
+scale = Vector2(8.30987, 7.090649)
+
+[node name="controls2" type="TextureRect" parent="."]
+offset_left = 827.00006
+offset_top = 428.0
+offset_right = 1367.0
+offset_bottom = 788.0
+scale = Vector2(0.5743439, 0.5527529)
+texture = ExtResource("11_6uvot")
+
+[node name="controls" type="Label" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 258.0
+offset_top = 43.0
+offset_right = 563.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.69803923, 0.627451, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("3_6uvot")
+theme_override_font_sizes/font_size = 38
+text = "Game Controls"
+
+[node name="up" type="Label" parent="."]
+offset_left = 983.0
+offset_top = 415.00003
+offset_right = 1054.0
+offset_bottom = 476.00003
+rotation = 0.3453525
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_fonts/font = ExtResource("12_6dy36")
+theme_override_font_sizes/font_size = 26
+text = "move up
+"
+
+[node name="right" type="Label" parent="."]
+offset_left = 1044.9999
+offset_top = 488.0
+offset_right = 1139.9999
+offset_bottom = 549.0
+rotation = 0.20549431
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_fonts/font = ExtResource("12_6dy36")
+theme_override_font_sizes/font_size = 26
+text = "move right
+"
+
+[node name="left" type="Label" parent="."]
+offset_left = 829.0
+offset_top = 513.0001
+offset_right = 906.0
+offset_bottom = 606.0001
+rotation = -0.3262395
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_fonts/font = ExtResource("12_6dy36")
+theme_override_font_sizes/font_size = 26
+text = "move left
+
+"
+
+[node name="down" type="Label" parent="."]
+offset_left = 937.00006
+offset_top = 601.0001
+offset_right = 1032.0
+offset_bottom = 694.0001
+rotation = 0.021673769
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_fonts/font = ExtResource("12_6dy36")
+theme_override_font_sizes/font_size = 26
+text = "move down
+
+"
+
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]

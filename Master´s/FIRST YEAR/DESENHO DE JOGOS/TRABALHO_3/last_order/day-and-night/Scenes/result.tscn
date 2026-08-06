@@ -1,0 +1,119 @@
+[gd_scene load_steps=11 format=3 uid="uid://ca0ba8m6dfr15"]
+
+[ext_resource type="Script" uid="uid://dswyn41pk80h" path="res://Scenes/result.gd" id="1_1b72g"]
+[ext_resource type="FontFile" uid="uid://dino040qn1b4l" path="res://Assets/PixelOperator.ttf" id="2_1b72g"]
+[ext_resource type="Texture2D" uid="uid://8wtu7x4wdxco" path="res://Assets/Night.png" id="2_oe7ho"]
+[ext_resource type="Texture2D" uid="uid://dkcaroy6rrgjw" path="res://Assets/ButtonText_Large_Round.png" id="3_rn4er"]
+[ext_resource type="Texture2D" uid="uid://dpesgsolv63ym" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="4_2r854"]
+[ext_resource type="Texture2D" uid="uid://rqo4ge28knjp" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="5_ym087"]
+[ext_resource type="FontFile" uid="uid://x3dwpkypvliu" path="res://Assets/ARCADECLASSIC.TTF" id="6_wt2fb"]
+[ext_resource type="Texture2D" uid="uid://dt021oysytxk3" path="res://Assets/banner.jpg" id="7_ydgqw"]
+[ext_resource type="Texture2D" uid="uid://cibeih2l03wm0" path="res://Assets/red_truck.png" id="9_2r854"]
+[ext_resource type="Texture2D" uid="uid://dgcxck1gx2d1b" path="res://Assets/blue_truck.png" id="10_ym087"]
+
+[node name="Result" type="Node"]
+script = ExtResource("1_1b72g")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.58431375)
+texture_filter = 1
+offset_right = 320.0
+offset_bottom = 180.0
+scale = Vector2(3.5977957, 3.6028976)
+texture = ExtResource("2_oe7ho")
+
+[node name="Play" type="TextureButton" parent="."]
+offset_left = 429.00003
+offset_top = 419.0
+offset_right = 1570.0
+offset_bottom = 764.0
+scale = Vector2(0.23609509, 0.2584285)
+texture_normal = ExtResource("3_rn4er")
+texture_pressed = ExtResource("4_2r854")
+texture_hover = ExtResource("5_ym087")
+
+[node name="Label" type="Label" parent="Play"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("6_wt2fb")
+theme_override_font_sizes/font_size = 64
+text = "Play  Again"
+horizontal_alignment = 1
+
+[node name="Back" type="TextureButton" parent="."]
+offset_left = 429.00003
+offset_top = 538.99994
+offset_right = 1570.0
+offset_bottom = 883.99994
+scale = Vector2(0.236, 0.258)
+texture_normal = ExtResource("3_rn4er")
+texture_pressed = ExtResource("4_2r854")
+texture_hover = ExtResource("5_ym087")
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 60.0858
+offset_top = 67.01034
+offset_right = 426.08582
+offset_bottom = 132.01035
+scale = Vector2(2.7637765, 3.1396601)
+theme_override_fonts/font = ExtResource("6_wt2fb")
+theme_override_font_sizes/font_size = 64
+text = "MENU"
+horizontal_alignment = 1
+
+[node name="Victory" type="Node" parent="."]
+
+[node name="black" type="ColorRect" parent="Victory"]
+offset_left = 315.0
+offset_top = 162.99998
+offset_right = 355.0
+offset_bottom = 202.99998
+scale = Vector2(12.266036, 5.3328485)
+color = Color(0, 0, 0, 1)
+
+[node name="Background2" type="TextureRect" parent="Victory"]
+modulate = Color(1, 1, 1, 0.46666667)
+texture_filter = 1
+offset_left = 330.0
+offset_top = 177.0
+offset_right = 942.0
+offset_bottom = 425.96265
+scale = Vector2(0.74954844, 0.74807155)
+texture = ExtResource("7_ydgqw")
+
+[node name="Winner" type="Label" parent="Victory"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 314.0
+offset_top = 188.0
+offset_right = 806.0
+offset_bottom = 373.0
+theme_override_fonts/font = ExtResource("2_1b72g")
+theme_override_font_sizes/font_size = 72
+text = "X Won!"
+horizontal_alignment = 1
+
+[node name="red_truck" type="Sprite2D" parent="Victory"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(558, 321)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("9_2r854")
+
+[node name="blue_truck" type="Sprite2D" parent="Victory"]
+unique_name_in_owner = true
+visible = false
+position = Vector2(558, 321.00003)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("10_ym087")
+flip_h = true
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

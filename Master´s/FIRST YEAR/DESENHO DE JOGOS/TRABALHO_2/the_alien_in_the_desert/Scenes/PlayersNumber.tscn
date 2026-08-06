@@ -1,0 +1,167 @@
+[gd_scene load_steps=10 format=3 uid="uid://b2mbwax710c84"]
+
+[ext_resource type="Script" uid="uid://b387upd2jw0s3" path="res://Scenes/players_number.gd" id="1_rj3ox"]
+[ext_resource type="Texture2D" uid="uid://csd8v4ic4ldp7" path="res://Assets/DesertSunset.png" id="1_t1p8e"]
+[ext_resource type="Texture2D" uid="uid://dde51g0w3tbgp" path="res://Assets/ButtonText_Small_Green_Round.png" id="2_vw3ig"]
+[ext_resource type="Texture2D" uid="uid://jkl8cmokjerm" path="res://Assets/ButtonText_Small_Green_Round_pressed.PNG" id="3_34nr2"]
+[ext_resource type="Texture2D" uid="uid://guqrn4jr3vkc" path="res://Assets/ButtonText_Small_Green_Round_hoover.PNG" id="4_qbvgk"]
+[ext_resource type="FontFile" uid="uid://8voo3u4svded" path="res://Assets/ARCADECLASSIC.TTF" id="5_1j5qo"]
+[ext_resource type="Texture2D" uid="uid://c0tqatjm52ytl" path="res://Assets/ButtonText_Large_Orange_Round.png" id="7_hb75b"]
+[ext_resource type="Texture2D" uid="uid://btpg8h5hbxtxx" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="8_23dxk"]
+[ext_resource type="Texture2D" uid="uid://da8d5651edo4p" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="9_br7h7"]
+
+[node name="PlayersNumber" type="Node"]
+script = ExtResource("1_rj3ox")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2300.0
+offset_bottom = 2000.0
+scale = Vector2(0.5014023, 0.32454485)
+texture = ExtResource("1_t1p8e")
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 43.000034
+offset_top = 343.0001
+offset_right = 578.00006
+offset_bottom = 592.0001
+scale = Vector2(0.44746923, 0.3257502)
+texture_normal = ExtResource("2_vw3ig")
+texture_pressed = ExtResource("3_34nr2")
+texture_hover = ExtResource("4_qbvgk")
+
+[node name="Label" type="Label" parent="Play"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 49.165527
+offset_top = 67.53638
+offset_right = 174.16553
+offset_bottom = 95.53638
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 27
+text = "1  player"
+horizontal_alignment = 1
+
+[node name="Play2" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 318.00003
+offset_top = 343.00003
+offset_right = 853.0
+offset_bottom = 592.0
+scale = Vector2(0.44746923, 0.3257502)
+texture_normal = ExtResource("2_vw3ig")
+texture_pressed = ExtResource("3_34nr2")
+texture_hover = ExtResource("4_qbvgk")
+
+[node name="Label" type="Label" parent="Play2"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 49.165527
+offset_top = 67.53638
+offset_right = 174.16553
+offset_bottom = 95.53638
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 27
+text = "2  players"
+horizontal_alignment = 1
+
+[node name="Play3" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 598.00006
+offset_top = 343.00003
+offset_right = 1133.0
+offset_bottom = 592.0
+scale = Vector2(0.44746923, 0.3257502)
+texture_normal = ExtResource("2_vw3ig")
+texture_pressed = ExtResource("3_34nr2")
+texture_hover = ExtResource("4_qbvgk")
+
+[node name="Label" type="Label" parent="Play3"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 49.165527
+offset_top = 67.53638
+offset_right = 174.16553
+offset_bottom = 95.53638
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 27
+text = "3  players"
+horizontal_alignment = 1
+
+[node name="Play4" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 873.00006
+offset_top = 343.00003
+offset_right = 1408.0
+offset_bottom = 592.0
+scale = Vector2(0.44746923, 0.3257502)
+texture_normal = ExtResource("2_vw3ig")
+texture_pressed = ExtResource("3_34nr2")
+texture_hover = ExtResource("4_qbvgk")
+
+[node name="Label" type="Label" parent="Play4"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 49.165527
+offset_top = 67.53638
+offset_right = 174.16553
+offset_bottom = 95.53638
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 27
+text = "4  players"
+
+[node name="Question" type="Label" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -344.5
+offset_top = 213.0
+offset_right = 344.5
+offset_bottom = 268.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 40
+text = "How  many  people  will  play  the game?"
+
+[node name="BackToMenu" type="TextureButton" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -104.0
+offset_top = 202.0
+offset_right = 1055.0
+offset_bottom = 560.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.20265822, 0.21283087)
+texture_normal = ExtResource("7_hb75b")
+texture_pressed = ExtResource("8_23dxk")
+texture_hover = ExtResource("9_br7h7")
+
+[node name="Label" type="Label" parent="BackToMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 69.08179
+offset_top = 79.875565
+offset_right = 357.0818
+offset_bottom = 127.875565
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("5_1j5qo")
+theme_override_font_sizes/font_size = 46
+text = "Back   to   menu"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Play2" to="." method="_on_play_2_pressed"]
+[connection signal="pressed" from="Play3" to="." method="_on_play_3_pressed"]
+[connection signal="pressed" from="Play4" to="." method="_on_play_4_pressed"]
+[connection signal="pressed" from="BackToMenu" to="." method="_on_back_to_menu_pressed"]

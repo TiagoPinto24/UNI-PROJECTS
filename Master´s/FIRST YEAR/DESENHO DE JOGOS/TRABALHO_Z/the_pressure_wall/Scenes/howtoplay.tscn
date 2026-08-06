@@ -1,0 +1,284 @@
+[gd_scene load_steps=19 format=3 uid="uid://dallqjkr70m7p"]
+
+[ext_resource type="Script" uid="uid://bt7sh6cujd4bs" path="res://Scenes/howtoplay.gd" id="1_7tpqe"]
+[ext_resource type="Texture2D" uid="uid://cseuox0775otk" path="res://Assets/Yellow.png" id="2_dlcvi"]
+[ext_resource type="Texture2D" uid="uid://pqipdml886hs" path="res://Assets/ButtonText_Large_Orange_Round.png" id="3_2iagx"]
+[ext_resource type="Texture2D" uid="uid://blrsdxlg2kxwh" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="4_6dnjy"]
+[ext_resource type="Texture2D" uid="uid://dx2ee6kvdrkrc" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="5_lm4jo"]
+[ext_resource type="FontFile" uid="uid://dvbams0qns45g" path="res://Assets/ARCADECLASSIC.TTF" id="6_mxiil"]
+[ext_resource type="FontFile" uid="uid://ds7b04msyubhi" path="res://Assets/good timing bd.otf" id="7_l28jl"]
+[ext_resource type="FontFile" uid="uid://ccx8rt2hlkq0" path="res://Assets/Sweet Toffee.ttf" id="8_ca1k5"]
+[ext_resource type="Texture2D" uid="uid://c4qxv04lgne6c" path="res://Assets/a.png" id="9_us3ly"]
+[ext_resource type="Texture2D" uid="uid://c75ev5yjpa5pb" path="res://Assets/d.png" id="10_2taib"]
+[ext_resource type="Texture2D" uid="uid://dftcmeh6st0pf" path="res://Assets/space.png" id="11_a40yy"]
+[ext_resource type="Texture2D" uid="uid://4dsd2kkp7ucx" path="res://Assets/esc.png" id="12_2gums"]
+[ext_resource type="Texture2D" uid="uid://cowu7upfoe6ne" path="res://Assets/wall.png" id="13_o7q4o"]
+[ext_resource type="PackedScene" uid="uid://c4ewjbh3ofsuy" path="res://Scenes/spikes.tscn" id="14_44qy4"]
+[ext_resource type="Texture2D" uid="uid://egyul0umona" path="res://Assets/gate.png" id="15_yyuko"]
+[ext_resource type="Texture2D" uid="uid://dssjllisgny18" path="res://Assets/skull.png" id="17_kbf1n"]
+[ext_resource type="Texture2D" uid="uid://j6kr7oiq1mnl" path="res://Assets/speed.png" id="18_2jnv5"]
+[ext_resource type="Texture2D" uid="uid://d3bliqrdiepqs" path="res://Assets/character.png" id="18_o7q4o"]
+
+[node name="Howtoplay" type="Node"]
+script = ExtResource("1_7tpqe")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_dlcvi")
+stretch_mode = 1
+
+[node name="Back" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 854.99994
+offset_top = 32.0
+offset_right = 2014.0
+offset_bottom = 390.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("3_2iagx")
+texture_pressed = ExtResource("4_6dnjy")
+texture_hover = ExtResource("5_lm4jo")
+
+[node name="Label" type="Label" parent="Back"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 16.208008
+offset_right = 1422.9004
+offset_bottom = 421.208
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("6_mxiil")
+theme_override_font_sizes/font_size = 350
+text = "BACK"
+horizontal_alignment = 1
+
+[node name="Instructions" type="Node" parent="."]
+
+[node name="Instruction1" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 31.0
+offset_top = 34.0
+offset_right = 404.0
+offset_bottom = 94.0
+theme_override_colors/font_color = Color(0.84313726, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 49
+text = "HOW TO PLAY"
+
+[node name="Instruction2" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 134.0
+offset_right = 283.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(0, 0.69369584, 0.75567466, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "Single-player game."
+
+[node name="Instruction3" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 208.0
+offset_right = 529.0
+offset_bottom = 239.0
+theme_override_colors/font_color = Color(0.84313726, 1, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "A deadly wall chases you from behind."
+
+[node name="Instruction4" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 286.0
+offset_right = 448.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(1, 0.33333334, 0.0627451, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "If the wall catches you, you lose."
+
+[node name="Instruction5" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 445.0
+offset_right = 578.0
+offset_bottom = 476.0
+theme_override_colors/font_color = Color(0.6516034, 0.14609584, 0.8153583, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "Spikes on the ground mean instant death."
+
+[node name="Instruction6" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 366.0
+offset_right = 613.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0, 0.5447549, 0.072072096, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "The wall moves faster if you stop or look left."
+
+[node name="Instruction7" type="Label" parent="Instructions"]
+texture_filter = 1
+offset_left = 28.0
+offset_top = 529.0
+offset_right = 320.0
+offset_bottom = 560.0
+theme_override_colors/font_color = Color(0.67982036, 0.39447933, 0.08441622, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 25
+text = "Reach the gate to win."
+
+[node name="GameControls" type="Node" parent="."]
+
+[node name="backgound" type="Panel" parent="GameControls"]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 154.0
+offset_top = 5.0000305
+offset_right = 194.0
+offset_bottom = 45.00006
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(10, 7.5)
+
+[node name="labels" type="Node" parent="GameControls"]
+
+[node name="title" type="Label" parent="GameControls/labels"]
+texture_filter = 1
+offset_left = 770.0
+offset_top = 344.0
+offset_right = 1094.0
+offset_bottom = 395.0
+theme_override_colors/font_color = Color(0.7137182, 0.71371865, 0, 1)
+theme_override_constants/outline_size = 19
+theme_override_fonts/font = ExtResource("7_l28jl")
+theme_override_font_sizes/font_size = 42
+text = "Game Controls"
+
+[node name="LabelEsc" type="Label" parent="GameControls/labels"]
+texture_filter = 1
+offset_left = 766.0
+offset_top = 416.0
+offset_right = 853.0
+offset_bottom = 440.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_ca1k5")
+theme_override_font_sizes/font_size = 22
+text = "pause menu"
+
+[node name="LabelA" type="Label" parent="GameControls/labels"]
+texture_filter = 1
+offset_left = 889.0
+offset_top = 416.0
+offset_right = 976.0
+offset_bottom = 440.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_ca1k5")
+theme_override_font_sizes/font_size = 22
+text = "move left"
+horizontal_alignment = 1
+
+[node name="LabelD" type="Label" parent="GameControls/labels"]
+texture_filter = 1
+offset_left = 1015.0
+offset_top = 416.0
+offset_right = 1102.0
+offset_bottom = 440.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_ca1k5")
+theme_override_font_sizes/font_size = 22
+text = "move right"
+horizontal_alignment = 1
+
+[node name="LabelSpace" type="Label" parent="GameControls/labels"]
+texture_filter = 1
+offset_left = 890.0
+offset_top = 524.0
+offset_right = 977.0
+offset_bottom = 548.0
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("8_ca1k5")
+theme_override_font_sizes/font_size = 22
+text = "jump"
+horizontal_alignment = 1
+
+[node name="sprites" type="Node" parent="GameControls"]
+
+[node name="a_key" type="Sprite2D" parent="GameControls/sprites"]
+texture_filter = 1
+position = Vector2(933, 481)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("9_us3ly")
+
+[node name="d_key" type="Sprite2D" parent="GameControls/sprites"]
+texture_filter = 1
+position = Vector2(1058, 481)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("10_2taib")
+
+[node name="space_key" type="Sprite2D" parent="GameControls/sprites"]
+texture_filter = 1
+position = Vector2(932.00006, 574)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("11_a40yy")
+
+[node name="esc_key" type="Sprite2D" parent="GameControls/sprites"]
+texture_filter = 1
+position = Vector2(812, 485)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("12_2gums")
+
+[node name="images" type="Node" parent="."]
+
+[node name="wall" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(565.99994, 216.99998)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("13_o7q4o")
+
+[node name="spikes" parent="images" instance=ExtResource("14_44qy4")]
+position = Vector2(629, 437)
+scale = Vector2(4.764143, 5.001258)
+
+[node name="gate" type="Sprite2D" parent="images"]
+position = Vector2(369, 532)
+scale = Vector2(0.13, 0.13)
+texture = ExtResource("15_yyuko")
+
+[node name="skull" type="Sprite2D" parent="images"]
+position = Vector2(489, 303)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("17_kbf1n")
+
+[node name="speed_arrows" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(669.9999, 383.99994)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("18_2jnv5")
+flip_h = true
+
+[node name="character" type="Sprite2D" parent="images"]
+texture_filter = 1
+position = Vector2(320, 149)
+scale = Vector2(1.6, 1.6)
+texture = ExtResource("18_o7q4o")
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

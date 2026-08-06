@@ -1,0 +1,738 @@
+[gd_scene load_steps=20 format=3 uid="uid://b6ergf7bjn1qh"]
+
+[ext_resource type="Texture2D" uid="uid://cst7tuwhncgga" path="res://Assets/Purple.png" id="1_21xkr"]
+[ext_resource type="Script" uid="uid://cslfsmlgfris3" path="res://Scenes/main.gd" id="1_hptm8"]
+[ext_resource type="Texture2D" uid="uid://jd10o86i8hs7" path="res://Assets/board.png" id="2_6bp64"]
+[ext_resource type="Texture2D" uid="uid://dkt0ybayeew6l" path="res://Assets/pieceBlue_border01.png" id="3_344ge"]
+[ext_resource type="PackedScene" uid="uid://pplprtn2kd8c" path="res://Scenes/white_pieces.tscn" id="4_6iyac"]
+[ext_resource type="Texture2D" uid="uid://bhrv3x6g5tavt" path="res://Assets/pieceRed_border00.png" id="4_ynf5e"]
+[ext_resource type="PackedScene" uid="uid://crh54x8gp1o72" path="res://Scenes/brown_pieces.tscn" id="5_fdnlq"]
+[ext_resource type="Texture2D" uid="uid://om3w28alsqbb" path="res://Assets/pieceYellow_border18.png" id="5_hptm8"]
+[ext_resource type="Texture2D" uid="uid://bb1xvpl53gsci" path="res://Assets/pieceGreen_border00.png" id="6_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://cbg3syyye4l26" path="res://Assets/banner.jpg" id="7_6bp64"]
+[ext_resource type="FontFile" uid="uid://8rioaf5o8mqi" path="res://Assets/ARCADECLASSIC.TTF" id="9_d1ilt"]
+[ext_resource type="Texture2D" uid="uid://csw4bs0jdequr" path="res://Assets/bean.png" id="10_6iyac"]
+[ext_resource type="Texture2D" uid="uid://b58bswg0r5m7j" path="res://Assets/ButtonText_Small_Green_Round.png" id="13_k12tt"]
+[ext_resource type="Texture2D" uid="uid://474s3am5yl2l" path="res://Assets/ButtonText_Small_Green_Round_pressed.PNG" id="14_h1bgf"]
+[ext_resource type="Texture2D" uid="uid://b6fvxtbj7ixup" path="res://Assets/ButtonText_Small_Green_Round_hoover.PNG" id="15_b3802"]
+[ext_resource type="FontFile" uid="uid://ds43xle853vgj" path="res://Assets/good timing bd.otf" id="16_fevyy"]
+[ext_resource type="Texture2D" uid="uid://m72wmretmg5c" path="res://Assets/ButtonText_Large_Round.png" id="17_fevyy"]
+[ext_resource type="Texture2D" uid="uid://c0oi8tsoue4yg" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="18_hibaj"]
+[ext_resource type="Texture2D" uid="uid://dknbnioexfs5y" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="19_pdsj5"]
+
+[node name="main" type="Node"]
+script = ExtResource("1_hptm8")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_21xkr")
+stretch_mode = 1
+
+[node name="board" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(573, 324)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_6bp64")
+
+[node name="CheckerPieces" type="Node" parent="."]
+
+[node name="WhitePieces" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(355, 293)
+
+[node name="WhitePieces2" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(669, 356)
+
+[node name="WhitePieces3" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(731, 292)
+
+[node name="WhitePieces4" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(731, 168)
+
+[node name="WhitePieces5" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(605, 168)
+
+[node name="WhitePieces6" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(606, 417)
+
+[node name="WhitePieces7" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(544, 482)
+
+[node name="WhitePieces8" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(481, 293)
+
+[node name="WhitePieces9" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(419, 231)
+
+[node name="WhitePieces10" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(731, 418)
+
+[node name="WhitePieces11" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(792, 231)
+
+[node name="BrownPieces" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(793, 357)
+
+[node name="BrownPieces2" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(418, 481)
+
+[node name="BrownPieces3" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(606, 293)
+
+[node name="BrownPieces4" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(542, 356)
+
+[node name="BrownPieces5" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(417, 357)
+
+[node name="BrownPieces6" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(354, 419)
+
+[node name="BrownPieces7" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(543, 232)
+
+[node name="BrownPieces8" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(354, 171)
+
+[node name="BrownPieces9" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(479, 167)
+
+[node name="BrownPieces10" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(668, 480)
+
+[node name="BrownPieces11" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(793, 481)
+
+[node name="BrownPieces12" parent="CheckerPieces" instance=ExtResource("5_fdnlq")]
+position = Vector2(668, 230)
+
+[node name="WhitePieces12" parent="CheckerPieces" instance=ExtResource("4_6iyac")]
+position = Vector2(480, 418)
+
+[node name="Pieces" type="Node" parent="."]
+
+[node name="BluePiece" type="Sprite2D" parent="Pieces"]
+texture_filter = 1
+position = Vector2(776.6, 527.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_344ge")
+
+[node name="RedPiece" type="Sprite2D" parent="Pieces"]
+texture_filter = 1
+position = Vector2(808.6, 527.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_ynf5e")
+
+[node name="YellowPiece" type="Sprite2D" parent="Pieces"]
+texture_filter = 1
+position = Vector2(808.6, 556.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_hptm8")
+
+[node name="GreenPiece" type="Sprite2D" parent="Pieces"]
+texture_filter = 1
+position = Vector2(776.6, 556.6)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_d1ilt")
+
+[node name="player_huds" type="Node" parent="."]
+
+[node name="hud1" type="ColorRect" parent="player_huds"]
+offset_left = 35.999992
+offset_top = 462.0
+offset_right = 75.999985
+offset_bottom = 502.0
+scale = Vector2(6.1887107, 2.8220687)
+color = Color(0, 0, 0, 1)
+
+[node name="banner" type="Sprite2D" parent="player_huds/hud1"]
+modulate = Color(1, 1, 1, 0.70980394)
+texture_filter = 1
+position = Vector2(19.955698, 20.197952)
+scale = Vector2(0.060990248, 0.19438626)
+texture = ExtResource("7_6bp64")
+
+[node name="player_piece" type="Sprite2D" parent="player_huds/hud1"]
+texture_filter = 1
+position = Vector2(6.3018, 21.260986)
+scale = Vector2(0.19944492, 0.3837424)
+texture = ExtResource("6_d1ilt")
+
+[node name="beans_number" type="Label" parent="player_huds/hud1"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.926758
+offset_top = 9.213104
+offset_right = 28.926762
+offset_bottom = 40.213104
+scale = Vector2(0.34697947, 0.7736906)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="player_huds/hud1"]
+texture_filter = 1
+position = Vector2(30.702148, 23.386963)
+scale = Vector2(0.015993336, 0.04795927)
+texture = ExtResource("10_6iyac")
+
+[node name="hud2" type="ColorRect" parent="player_huds"]
+offset_left = 861.0002
+offset_top = 462.0
+offset_right = 901.0002
+offset_bottom = 502.0
+scale = Vector2(6.1887107, 2.8220687)
+color = Color(0, 0, 0, 1)
+
+[node name="banner" type="Sprite2D" parent="player_huds/hud2"]
+modulate = Color(1, 1, 1, 0.70980394)
+texture_filter = 1
+position = Vector2(19.955704, 20.197952)
+scale = Vector2(0.06099025, 0.19438626)
+texture = ExtResource("7_6bp64")
+
+[node name="player_piece" type="Sprite2D" parent="player_huds/hud2"]
+texture_filter = 1
+position = Vector2(6.3018, 21.260986)
+scale = Vector2(0.19944492, 0.3837424)
+texture = ExtResource("5_hptm8")
+
+[node name="beans_number" type="Label" parent="player_huds/hud2"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.926758
+offset_top = 9.213104
+offset_right = 28.926762
+offset_bottom = 40.213104
+scale = Vector2(0.34697947, 0.7736906)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="player_huds/hud2"]
+texture_filter = 1
+position = Vector2(30.702148, 23.386963)
+scale = Vector2(0.015993336, 0.04795927)
+texture = ExtResource("10_6iyac")
+
+[node name="hud3" type="ColorRect" parent="player_huds"]
+offset_left = 35.99999
+offset_top = 75.00001
+offset_right = 75.999985
+offset_bottom = 115.00001
+scale = Vector2(6.1887107, 2.8220687)
+color = Color(0, 0, 0, 1)
+
+[node name="banner" type="Sprite2D" parent="player_huds/hud3"]
+modulate = Color(1, 1, 1, 0.70980394)
+texture_filter = 1
+position = Vector2(19.9557, 20.197952)
+scale = Vector2(0.06099025, 0.19438626)
+texture = ExtResource("7_6bp64")
+
+[node name="player_piece" type="Sprite2D" parent="player_huds/hud3"]
+texture_filter = 1
+position = Vector2(6.3018, 21.260986)
+scale = Vector2(0.19944492, 0.3837424)
+texture = ExtResource("3_344ge")
+
+[node name="beans_number" type="Label" parent="player_huds/hud3"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.926758
+offset_top = 9.213104
+offset_right = 28.926762
+offset_bottom = 40.213104
+scale = Vector2(0.34697947, 0.7736906)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="player_huds/hud3"]
+texture_filter = 1
+position = Vector2(30.702148, 23.386963)
+scale = Vector2(0.015993336, 0.04795927)
+texture = ExtResource("10_6iyac")
+
+[node name="hud4" type="ColorRect" parent="player_huds"]
+offset_left = 861.0
+offset_top = 75.0
+offset_right = 901.0
+offset_bottom = 115.0
+scale = Vector2(6.1887107, 2.8220687)
+color = Color(0, 0, 0, 1)
+
+[node name="banner" type="Sprite2D" parent="player_huds/hud4"]
+modulate = Color(1, 1, 1, 0.70980394)
+texture_filter = 1
+position = Vector2(19.955704, 20.19795)
+scale = Vector2(0.06099025, 0.19438626)
+texture = ExtResource("7_6bp64")
+
+[node name="player_piece" type="Sprite2D" parent="player_huds/hud4"]
+texture_filter = 1
+position = Vector2(6.3018, 21.260986)
+scale = Vector2(0.19944492, 0.3837424)
+texture = ExtResource("4_ynf5e")
+
+[node name="beans_number" type="Label" parent="player_huds/hud4"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 12.926758
+offset_top = 9.213104
+offset_right = 28.926762
+offset_bottom = 40.213104
+scale = Vector2(0.34697947, 0.7736906)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 30
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="player_huds/hud4"]
+texture_filter = 1
+position = Vector2(30.702148, 23.386963)
+scale = Vector2(0.015993336, 0.04795927)
+texture = ExtResource("10_6iyac")
+
+[node name="DrawCard" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 887.99994
+offset_top = 309.0
+offset_right = 1423.0
+offset_bottom = 558.0
+scale = Vector2(0.35924318, 0.30141386)
+texture_normal = ExtResource("13_k12tt")
+texture_pressed = ExtResource("14_h1bgf")
+texture_hover = ExtResource("15_b3802")
+
+[node name="Label" type="Label" parent="DrawCard"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 44.538452
+offset_top = 66.35388
+offset_right = 498.53845
+offset_bottom = 154.35388
+scale = Vector2(1, 1.3237619)
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 83
+text = "DRAW  A  CARD"
+
+[node name="PlayerTurn" type="Label" parent="."]
+texture_filter = 1
+offset_left = 899.0
+offset_top = 208.0
+offset_right = 1068.0
+offset_bottom = 240.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_spacing = 3
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("16_fevyy")
+theme_override_font_sizes/font_size = 23
+text = "Current Turn: "
+
+[node name="MapMarker" type="Node" parent="."]
+
+[node name="Mark0" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 545)
+
+[node name="Mark1" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 483)
+
+[node name="Mark2" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 419)
+
+[node name="Mark3" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 357)
+
+[node name="Mark4" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 294)
+
+[node name="Mark5" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 233)
+
+[node name="Mark6" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 170)
+
+[node name="Mark7" type="Marker2D" parent="MapMarker"]
+position = Vector2(795, 106)
+
+[node name="Mark8" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 106)
+
+[node name="Mark9" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 169)
+
+[node name="Mark10" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 232)
+
+[node name="Mark11" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 294)
+
+[node name="Mark12" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 356)
+
+[node name="Mark13" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 419)
+
+[node name="Mark14" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 482)
+
+[node name="Mark15" type="Marker2D" parent="MapMarker"]
+position = Vector2(731, 543)
+
+[node name="Mark16" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 543)
+
+[node name="Mark17" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 482)
+
+[node name="Mark18" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 419)
+
+[node name="Mark19" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 357)
+
+[node name="Mark20" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 295)
+
+[node name="Mark21" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 232)
+
+[node name="Mark22" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 169)
+
+[node name="Mark23" type="Marker2D" parent="MapMarker"]
+position = Vector2(669, 107)
+
+[node name="Mark24" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 107)
+
+[node name="Mark25" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 170)
+
+[node name="Mark26" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 232)
+
+[node name="Mark27" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 296)
+
+[node name="Mark28" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 357)
+
+[node name="Mark29" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 421)
+
+[node name="Mark30" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 482)
+
+[node name="Mark31" type="Marker2D" parent="MapMarker"]
+position = Vector2(606, 544)
+
+[node name="Mark32" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 544)
+
+[node name="Mark33" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 482)
+
+[node name="Mark34" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 419)
+
+[node name="Mark35" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 358)
+
+[node name="Mark36" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 294)
+
+[node name="Mark37" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 234)
+
+[node name="Mark38" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 169)
+
+[node name="Mark39" type="Marker2D" parent="MapMarker"]
+position = Vector2(544, 108)
+
+[node name="Mark40" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 108)
+
+[node name="Mark41" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 171)
+
+[node name="Mark42" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 232)
+
+[node name="Mark43" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 295)
+
+[node name="Mark44" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 357)
+
+[node name="Mark45" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 419)
+
+[node name="Mark46" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 483)
+
+[node name="Mark47" type="Marker2D" parent="MapMarker"]
+position = Vector2(480, 545)
+
+[node name="Mark48" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 545)
+
+[node name="Mark49" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 481)
+
+[node name="Mark50" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 418)
+
+[node name="Mark51" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 357)
+
+[node name="Mark52" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 294)
+
+[node name="Mark53" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 233)
+
+[node name="Mark54" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 170)
+
+[node name="Mark55" type="Marker2D" parent="MapMarker"]
+position = Vector2(418, 109)
+
+[node name="Mark56" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 109)
+
+[node name="Mark57" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 170)
+
+[node name="Mark58" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 232)
+
+[node name="Mark59" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 296)
+
+[node name="Mark60" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 357)
+
+[node name="Mark61" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 419)
+
+[node name="Mark62" type="Marker2D" parent="MapMarker"]
+position = Vector2(354, 482)
+
+[node name="Mark63" type="Marker2D" parent="MapMarker"]
+position = Vector2(355, 544)
+
+[node name="CardSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(147, 319)
+
+[node name="TradeMenu" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Background" type="ColorRect" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 397.0
+offset_top = 229.0
+offset_right = 437.0
+offset_bottom = 269.0
+scale = Vector2(8.789204, 4.8486385)
+color = Color(0, 0, 0, 0.58431375)
+
+[node name="LabelMessage" type="Label" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 407.0
+offset_top = 238.0
+offset_right = 744.0
+offset_bottom = 270.0
+theme_override_colors/font_color = Color(0.8295496, 0.26369727, 0.23338911, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_fonts/font = ExtResource("16_fevyy")
+theme_override_font_sizes/font_size = 18
+text = "Who do you want to give a bean to?"
+
+[node name="Green" type="TextureButton" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 421.99994
+offset_top = 364.0
+offset_right = 1563.0
+offset_bottom = 709.0
+scale = Vector2(0.08343043, 0.12870519)
+texture_normal = ExtResource("17_fevyy")
+texture_pressed = ExtResource("18_hibaj")
+texture_hover = ExtResource("19_pdsj5")
+
+[node name="Label" type="Label" parent="TradeMenu/Green"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 143.83386
+offset_top = 46.618164
+offset_right = 968.83386
+offset_bottom = 350.61816
+scale = Vector2(1.0227643, 0.8437531)
+theme_override_colors/font_color = Color(0.3259149, 0.99999994, 0.29823202, 1)
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 300
+text = "Green"
+
+[node name="Yellow" type="TextureButton" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 628.9999
+offset_top = 364.0
+offset_right = 1769.9999
+offset_bottom = 709.0
+scale = Vector2(0.08343043, 0.12870519)
+texture_normal = ExtResource("17_fevyy")
+texture_pressed = ExtResource("18_hibaj")
+texture_hover = ExtResource("19_pdsj5")
+
+[node name="Label" type="Label" parent="TradeMenu/Yellow"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 95.890015
+offset_top = 54.38794
+offset_right = 1026.89
+offset_bottom = 340.38794
+scale = Vector2(1.0227643, 0.8437531)
+theme_override_colors/font_color = Color(1, 0.7647059, 0, 1)
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 282
+text = "Yellow"
+
+[node name="Blue" type="TextureButton" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 421.99997
+offset_top = 299.99997
+offset_right = 1563.0
+offset_bottom = 645.0
+scale = Vector2(0.08343043, 0.12870519)
+texture_normal = ExtResource("17_fevyy")
+texture_pressed = ExtResource("18_hibaj")
+texture_hover = ExtResource("19_pdsj5")
+
+[node name="Label" type="Label" parent="TradeMenu/Blue"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 119.86072
+offset_top = 46.618164
+offset_right = 1022.2435
+offset_bottom = 350.61816
+scale = Vector2(1.0227643, 0.8437531)
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 300
+text = "BLUE"
+horizontal_alignment = 1
+
+[node name="Red" type="TextureButton" parent="TradeMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 629.00006
+offset_top = 299.99997
+offset_right = 1770.0
+offset_bottom = 645.0
+scale = Vector2(0.08343043, 0.12870519)
+texture_normal = ExtResource("17_fevyy")
+texture_pressed = ExtResource("18_hibaj")
+texture_hover = ExtResource("19_pdsj5")
+
+[node name="Label" type="Label" parent="TradeMenu/Red"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 83.90222
+offset_top = 46.618164
+offset_right = 1073.9022
+offset_bottom = 350.61816
+scale = Vector2(1.0227643, 0.8437531)
+theme_override_colors/font_color = Color(1, 0.3019608, 0, 1)
+theme_override_fonts/font = ExtResource("9_d1ilt")
+theme_override_font_sizes/font_size = 300
+text = "Orange"
+horizontal_alignment = 1
+
+[node name="CardsLeft" type="Label" parent="."]
+texture_filter = 1
+offset_left = 192.0
+offset_top = 429.0
+offset_right = 221.0
+offset_bottom = 456.0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("16_fevyy")
+theme_override_font_sizes/font_size = 19
+text = "53"
+
+[node name="CardsLeft2" type="Label" parent="."]
+texture_filter = 1
+offset_left = 74.0
+offset_top = 429.0
+offset_right = 199.0
+offset_bottom = 456.0
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("16_fevyy")
+theme_override_font_sizes/font_size = 19
+text = "Cards Left: "
+
+[node name="Characters" type="Node" parent="."]
+
+[node name="character1" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(980, 272)
+texture = ExtResource("6_d1ilt")
+
+[node name="character2" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(980, 272)
+texture = ExtResource("5_hptm8")
+
+[node name="character3" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(980, 272)
+texture = ExtResource("3_344ge")
+
+[node name="character4" type="Sprite2D" parent="Characters"]
+visible = false
+texture_filter = 1
+position = Vector2(980, 272)
+texture = ExtResource("4_ynf5e")
+
+[connection signal="pressed" from="DrawCard" to="." method="_on_draw_card_pressed"]
+[connection signal="pressed" from="TradeMenu/Green" to="." method="_on_green_pressed"]
+[connection signal="pressed" from="TradeMenu/Yellow" to="." method="_on_yellow_pressed"]
+[connection signal="pressed" from="TradeMenu/Blue" to="." method="_on_blue_pressed"]
+[connection signal="pressed" from="TradeMenu/Red" to="." method="_on_red_pressed"]

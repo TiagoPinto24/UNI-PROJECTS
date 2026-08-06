@@ -1,0 +1,83 @@
+[gd_scene load_steps=7 format=3 uid="uid://bansislyudsc"]
+
+[ext_resource type="Script" uid="uid://cl7i2dkvu6loa" path="res://Scenes/result.gd" id="1_4drmf"]
+[ext_resource type="Texture2D" uid="uid://cseuox0775otk" path="res://Assets/Yellow.png" id="2_1b72g"]
+[ext_resource type="Texture2D" uid="uid://d2025umg2x40w" path="res://Assets/ButtonText_Large_Round.png" id="3_oe7ho"]
+[ext_resource type="Texture2D" uid="uid://dfyk5t23wl2b7" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="4_rn4er"]
+[ext_resource type="Texture2D" uid="uid://to2j72vl3ij3" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="5_2r854"]
+[ext_resource type="FontFile" uid="uid://dvbams0qns45g" path="res://Assets/ARCADECLASSIC.TTF" id="6_ym087"]
+
+[node name="Result" type="Node"]
+script = ExtResource("1_4drmf")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1b72g")
+stretch_mode = 1
+
+[node name="Menu" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 828.0
+offset_top = 383.0
+offset_right = 1969.0
+offset_bottom = 728.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("3_oe7ho")
+texture_pressed = ExtResource("4_rn4er")
+texture_hover = ExtResource("5_2r854")
+
+[node name="Label" type="Label" parent="Menu"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 20.260742
+offset_right = 1422.9004
+offset_bottom = 425.26074
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("6_ym087")
+theme_override_font_sizes/font_size = 350
+text = "MENU"
+horizontal_alignment = 1
+
+[node name="PlayAgain" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 62.999996
+offset_top = 382.99997
+offset_right = 1204.0
+offset_bottom = 728.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("3_oe7ho")
+texture_pressed = ExtResource("4_rn4er")
+texture_hover = ExtResource("5_2r854")
+
+[node name="Label" type="Label" parent="PlayAgain"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 60.781982
+offset_right = 1422.9004
+offset_bottom = 313.78198
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("6_ym087")
+theme_override_font_sizes/font_size = 250
+text = "play  again"
+vertical_alignment = 1
+
+[node name="ResultLabel" type="Label" parent="."]
+texture_filter = 1
+offset_top = 245.0
+offset_right = 1150.0
+offset_bottom = 274.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("6_ym087")
+theme_override_font_sizes/font_size = 45
+text = "A"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="PlayAgain" to="." method="_on_play_again_pressed"]

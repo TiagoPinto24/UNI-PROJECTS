@@ -1,0 +1,97 @@
+[gd_scene load_steps=8 format=3 uid="uid://c0200nunkt5gm"]
+
+[ext_resource type="Script" uid="uid://bpasyrkdngw5k" path="res://Scenes/menu.gd" id="1_wbdvm"]
+[ext_resource type="Texture2D" uid="uid://csd8v4ic4ldp7" path="res://Assets/DesertSunset.png" id="2_q3rjx"]
+[ext_resource type="Texture2D" uid="uid://cy0gk83y56op4" path="res://Assets/title.png" id="3_6swd7"]
+[ext_resource type="Texture2D" uid="uid://dde51g0w3tbgp" path="res://Assets/ButtonText_Small_Green_Round.png" id="4_7qvly"]
+[ext_resource type="Texture2D" uid="uid://jkl8cmokjerm" path="res://Assets/ButtonText_Small_Green_Round_pressed.PNG" id="5_rfqti"]
+[ext_resource type="Texture2D" uid="uid://guqrn4jr3vkc" path="res://Assets/ButtonText_Small_Green_Round_hoover.PNG" id="6_g8i7c"]
+[ext_resource type="FontFile" uid="uid://8voo3u4svded" path="res://Assets/ARCADECLASSIC.TTF" id="7_23t3j"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_wbdvm")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 2300.0
+offset_bottom = 2000.0
+scale = Vector2(0.5014023, 0.32454485)
+texture = ExtResource("2_q3rjx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(576.00006, 155)
+scale = Vector2(0.31803384, 0.30322266)
+texture = ExtResource("3_6swd7")
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 452.0
+offset_top = 461.0
+offset_right = 987.0
+offset_bottom = 710.0
+scale = Vector2(0.4726832, 0.3908757)
+texture_normal = ExtResource("4_7qvly")
+texture_pressed = ExtResource("5_rfqti")
+texture_hover = ExtResource("6_g8i7c")
+
+[node name="Label" type="Label" parent="Play"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 141.74402
+offset_top = 48.608765
+offset_right = 218.74402
+offset_bottom = 84.608765
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("7_23t3j")
+theme_override_font_sizes/font_size = 35
+text = "PLAY"
+
+[node name="HowToPlay" type="TextureButton" parent="."]
+offset_left = 89.00001
+offset_top = 330.99997
+offset_right = 624.0
+offset_bottom = 580.0
+scale = Vector2(0.473, 0.391)
+texture_normal = ExtResource("4_7qvly")
+texture_pressed = ExtResource("5_rfqti")
+texture_hover = ExtResource("6_g8i7c")
+
+[node name="Label" type="Label" parent="HowToPlay"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 40.169098
+offset_top = 69.05383
+offset_right = 160.1691
+offset_bottom = 92.05383
+scale = Vector2(3.876568, 4.437747)
+theme_override_fonts/font = ExtResource("7_23t3j")
+theme_override_font_sizes/font_size = 22
+text = "how  to  PLAY"
+horizontal_alignment = 1
+
+[node name="Leave" type="TextureButton" parent="."]
+offset_left = 800.0
+offset_top = 331.0
+offset_right = 1335.0
+offset_bottom = 580.0
+scale = Vector2(0.473, 0.391)
+texture_normal = ExtResource("4_7qvly")
+texture_pressed = ExtResource("5_rfqti")
+texture_hover = ExtResource("6_g8i7c")
+
+[node name="Label" type="Label" parent="Leave"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 101.47974
+offset_top = 51.15088
+offset_right = 197.47974
+offset_bottom = 87.15088
+scale = Vector2(3.5352495, 4.1024694)
+theme_override_fonts/font = ExtResource("7_23t3j")
+theme_override_font_sizes/font_size = 35
+text = "Leave"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="HowToPlay" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="Leave" to="." method="_on_leave_pressed"]

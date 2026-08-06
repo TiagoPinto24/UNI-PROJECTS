@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4nftxt1w67rv"]
+
+[ext_resource type="Texture2D" uid="uid://skyfnptndr4" path="res://Assets/bluebox.png" id="1_0u8mf"]
+
+[node name="BlueBox" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_0u8mf")

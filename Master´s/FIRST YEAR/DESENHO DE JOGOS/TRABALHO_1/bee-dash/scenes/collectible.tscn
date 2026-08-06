@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhdduhpjtjcpb"]
+
+[ext_resource type="Script" uid="uid://d0p4e2pl47erg" path="res://scenes/collectible.gd" id="1_1pg6c"]
+[ext_resource type="Texture2D" uid="uid://bgsbxt17csj3o" path="res://honeypot.png" id="2_1pg6c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wim3b"]
+radius = 11.694534
+
+[node name="Collectible" type="Area2D"]
+script = ExtResource("1_1pg6c")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(250.4375, -15.000002)
+scale = Vector2(0.046045907, 0.046938777)
+texture = ExtResource("2_1pg6c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(250, -15)
+scale = Vector2(1.4536703, 1.092795)
+shape = SubResource("CapsuleShape2D_wim3b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,157 @@
+[gd_scene load_steps=9 format=3 uid="uid://j5oiool4vmgb"]
+
+[ext_resource type="Script" uid="uid://dlxyty37recc2" path="res://scenes/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://1w0t6r4pqx2m" path="res://Yellow.png" id="1_ekxnf"]
+[ext_resource type="Texture2D" uid="uid://bfa3oldpl0m4d" path="res://title.png" id="3_wu84c"]
+[ext_resource type="FontFile" uid="uid://y4iu5s6hakcp" path="res://ARCADECLASSIC.TTF" id="4_8ln24"]
+[ext_resource type="Texture2D" uid="uid://da1uhacpg1ptn" path="res://beeMenuu.png" id="5_8ln24"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.8666667, 0.5176471, 0.105882354, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.40392157, 0.24313726, 0.03529412, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa1go"]
+bg_color = Color(0.5146414, 0.31485102, 0.054223, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[node name="MainMenu" type="Node"]
+script = ExtResource("1_bqqt6")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ekxnf")
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -258.0
+offset_top = -323.0
+offset_right = 354.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.831623, 0.8298448)
+texture = ExtResource("3_wu84c")
+
+[node name="Play" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -492.0
+offset_top = 40.00003
+offset_right = -274.0
+offset_bottom = 116.00003
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.1662371, 1.2777044)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_colors/font_hover_color = Color(0.52906674, 0.5290667, 0.5290667, 1)
+theme_override_fonts/font = ExtResource("4_8ln24")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+text = "Play"
+
+[node name="Leave" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 215.99994
+offset_top = 40.00006
+offset_right = 433.99994
+offset_bottom = 116.00006
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.278, 1.278)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_colors/font_hover_color = Color(0.52906674, 0.5290667, 0.5290667, 1)
+theme_override_fonts/font = ExtResource("4_8ln24")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+text = "Leave"
+
+[node name="HowToPlay" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -162.43427
+offset_top = -165.0
+offset_right = 130.43433
+offset_bottom = -89.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(1.1662371, 1.2777044)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.5294118, 0.5294118, 0.5294118, 1)
+theme_override_colors/font_hover_color = Color(0.52906674, 0.5290667, 0.5290667, 1)
+theme_override_fonts/font = ExtResource("4_8ln24")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+text = "How  To  Play"
+
+[node name="Bee1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1056.5, 90.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_8ln24")
+
+[node name="Bee2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(253.5, 90.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_8ln24")
+
+[node name="Bee3" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(125.5, 219.5)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_8ln24")
+
+[node name="Bee4" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(918, 219)
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("5_8ln24")
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Leave" to="." method="_on_leave_pressed"]
+[connection signal="pressed" from="HowToPlay" to="." method="_on_how_to_play_pressed"]

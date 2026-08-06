@@ -1,0 +1,369 @@
+[gd_scene load_steps=9 format=3 uid="uid://pwu2j7did6b8"]
+
+[ext_resource type="Script" uid="uid://2uqthvme3h1d" path="res://Scenes/game.gd" id="1_3dryh"]
+[ext_resource type="Texture2D" uid="uid://csxh5xsaqj3x0" path="res://Assets/backgroundgame.png" id="2_3dryh"]
+[ext_resource type="FontFile" uid="uid://dino040qn1b4l" path="res://Assets/PixelOperator.ttf" id="3_i6g32"]
+[ext_resource type="Texture2D" uid="uid://cqcm2dwhtiw6g" path="res://Assets/drone.png" id="4_3dryh"]
+[ext_resource type="Texture2D" uid="uid://cibeih2l03wm0" path="res://Assets/red_truck.png" id="5_1l0tm"]
+[ext_resource type="Texture2D" uid="uid://pr4nhrtgmqyo" path="res://Assets/clock.png" id="6_v158k"]
+[ext_resource type="Texture2D" uid="uid://dgcxck1gx2d1b" path="res://Assets/blue_truck.png" id="7_h4fw4"]
+
+[sub_resource type="GDScript" id="GDScript_wrm1d"]
+script/source = "extends GridContainer
+"
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_3dryh")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.7493536, 0.6342743)
+texture = ExtResource("2_3dryh")
+
+[node name="BoardBackground" type="ColorRect" parent="."]
+offset_left = 301.0
+offset_top = 103.0
+offset_right = 342.88873
+offset_bottom = 145.11084
+scale = Vector2(12.843541, 10.994793)
+color = Color(0, 0, 0, 0.69803923)
+
+[node name="GridContainer" type="GridContainer" parent="."]
+modulate = Color(6.5726295, 6.5726295, 6.5726295, 1)
+offset_left = 312.0
+offset_top = 114.0
+offset_right = 826.0
+offset_bottom = 554.0
+columns = 7
+script = SubResource("GDScript_wrm1d")
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button11" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button12" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button13" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button14" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button15" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button16" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button17" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button18" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button19" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button20" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button21" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button22" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button23" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button24" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button25" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button26" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button27" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button28" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button29" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button30" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button31" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button32" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button33" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button34" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button35" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button36" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+icon_alignment = 1
+
+[node name="Button37" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button38" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button39" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button40" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button41" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="Button42" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+icon_alignment = 1
+
+[node name="drone" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(568, 65.000015)
+scale = Vector2(0.19042444, 0.23264582)
+texture = ExtResource("4_3dryh")
+
+[node name="DroneMark" type="Marker2D" parent="drone"]
+unique_name_in_owner = true
+position = Vector2(0, 60.177246)
+scale = Vector2(10.276626, 3.3385987)
+
+[node name="RedPlayer" type="Node" parent="."]
+
+[node name="RedTurn" type="Label" parent="RedPlayer"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 42.0
+offset_top = 118.0
+offset_right = 257.0
+offset_bottom = 253.0
+theme_override_fonts/font = ExtResource("3_i6g32")
+theme_override_font_sizes/font_size = 65
+text = "Red Turn"
+horizontal_alignment = 1
+
+[node name="RedTruck" type="Sprite2D" parent="RedPlayer"]
+texture_filter = 1
+position = Vector2(164, 545)
+scale = Vector2(0.413, 0.41)
+texture = ExtResource("5_1l0tm")
+
+[node name="TimeRed" type="Label" parent="RedPlayer"]
+unique_name_in_owner = true
+texture_filter = 1
+offset_left = 56.0
+offset_top = 187.0
+offset_right = 292.0
+offset_bottom = 284.0
+theme_override_fonts/font = ExtResource("3_i6g32")
+theme_override_font_sizes/font_size = 46
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="RedClock" type="Sprite2D" parent="RedPlayer"]
+unique_name_in_owner = true
+texture_filter = 1
+position = Vector2(100.62501, 209.9375)
+scale = Vector2(0.070344165, 0.07153465)
+texture = ExtResource("6_v158k")
+
+[node name="BluePlayer" type="Node" parent="."]
+
+[node name="BlueTurn" type="Label" parent="BluePlayer"]
+texture_filter = 1
+offset_left = 866.0
+offset_top = 118.0
+offset_right = 1102.0
+offset_bottom = 253.0
+theme_override_fonts/font = ExtResource("3_i6g32")
+theme_override_font_sizes/font_size = 65
+text = "Blue Turn
+"
+horizontal_alignment = 1
+
+[node name="BlueTruck" type="Sprite2D" parent="BluePlayer"]
+texture_filter = 1
+position = Vector2(980, 547)
+scale = Vector2(0.58800966, 0.5888659)
+texture = ExtResource("7_h4fw4")
+flip_h = true
+
+[node name="TimeBlue" type="Label" parent="BluePlayer"]
+texture_filter = 1
+offset_left = 902.0
+offset_top = 187.0
+offset_right = 1138.0
+offset_bottom = 284.0
+theme_override_fonts/font = ExtResource("3_i6g32")
+theme_override_font_sizes/font_size = 46
+text = "00:00"
+horizontal_alignment = 1
+
+[node name="BlueClock" type="Sprite2D" parent="BluePlayer"]
+texture_filter = 1
+position = Vector2(945.00006, 209.938)
+scale = Vector2(0.070344165, 0.07153465)
+texture = ExtResource("6_v158k")
+
+[node name="TurnTimer" type="Timer" parent="."]
+unique_name_in_owner = true

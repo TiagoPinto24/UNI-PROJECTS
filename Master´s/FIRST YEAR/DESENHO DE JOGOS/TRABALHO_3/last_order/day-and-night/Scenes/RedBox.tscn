@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnvlhl5dxfxbq"]
+
+[ext_resource type="Texture2D" uid="uid://c7mx3vfsene1o" path="res://Assets/redbox.png" id="1_eryvs"]
+
+[node name="RedBox" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("1_eryvs")

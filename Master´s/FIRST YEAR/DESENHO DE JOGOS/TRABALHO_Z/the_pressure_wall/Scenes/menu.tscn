@@ -1,0 +1,107 @@
+[gd_scene load_steps=11 format=3 uid="uid://bwyqk763tcloo"]
+
+[ext_resource type="Script" uid="uid://chgx1ljf5d1ss" path="res://Scenes/menu.gd" id="1_6swd7"]
+[ext_resource type="Texture2D" uid="uid://cseuox0775otk" path="res://Assets/Yellow.png" id="1_q3rjx"]
+[ext_resource type="Texture2D" uid="uid://d2025umg2x40w" path="res://Assets/ButtonText_Large_Round.png" id="2_6swd7"]
+[ext_resource type="Texture2D" uid="uid://dfyk5t23wl2b7" path="res://Assets/ButtonText_Large_Round_pressed.PNG" id="3_7qvly"]
+[ext_resource type="Texture2D" uid="uid://to2j72vl3ij3" path="res://Assets/ButtonText_Large_Round_hoover.PNG" id="4_rfqti"]
+[ext_resource type="FontFile" uid="uid://dvbams0qns45g" path="res://Assets/ARCADECLASSIC.TTF" id="5_g8i7c"]
+[ext_resource type="Texture2D" uid="uid://pqipdml886hs" path="res://Assets/ButtonText_Large_Orange_Round.png" id="6_23t3j"]
+[ext_resource type="Texture2D" uid="uid://blrsdxlg2kxwh" path="res://Assets/ButtonText_Large_Orange_Round_pressed.PNG" id="7_8ph6h"]
+[ext_resource type="Texture2D" uid="uid://dx2ee6kvdrkrc" path="res://Assets/ButtonText_Large_Orange_Round_hoover.png" id="8_5ti5v"]
+[ext_resource type="Texture2D" uid="uid://ctgjofsp60xh7" path="res://Assets/title.png" id="10_7qvly"]
+
+[node name="Menu" type="Node"]
+script = ExtResource("1_6swd7")
+
+[node name="Background" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_q3rjx")
+stretch_mode = 1
+
+[node name="HowToPlay" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 62.999996
+offset_top = 352.99997
+offset_right = 1204.0
+offset_bottom = 698.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("2_6swd7")
+texture_pressed = ExtResource("3_7qvly")
+texture_hover = ExtResource("4_rfqti")
+
+[node name="Label" type="Label" parent="HowToPlay"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 60.781982
+offset_right = 1422.9004
+offset_bottom = 313.78198
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("5_g8i7c")
+theme_override_font_sizes/font_size = 250
+text = "How  to  Play"
+vertical_alignment = 1
+
+[node name="Quit" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 828.0
+offset_top = 353.00003
+offset_right = 1969.0
+offset_bottom = 698.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("2_6swd7")
+texture_pressed = ExtResource("3_7qvly")
+texture_hover = ExtResource("4_rfqti")
+
+[node name="Label" type="Label" parent="Quit"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 20.260742
+offset_right = 1422.9004
+offset_bottom = 425.26074
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("5_g8i7c")
+theme_override_font_sizes/font_size = 350
+text = "Quit"
+horizontal_alignment = 1
+
+[node name="Play" type="TextureButton" parent="."]
+texture_filter = 1
+offset_left = 437.99988
+offset_top = 470.0
+offset_right = 1596.9999
+offset_bottom = 828.0
+scale = Vector2(0.2284697, 0.24678412)
+texture_normal = ExtResource("6_23t3j")
+texture_pressed = ExtResource("7_8ph6h")
+texture_hover = ExtResource("8_5ti5v")
+
+[node name="Label" type="Label" parent="Play"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 56.90033
+offset_top = 16.208008
+offset_right = 1422.9004
+offset_bottom = 421.208
+scale = Vector2(0.7567572, 0.88627553)
+theme_override_fonts/font = ExtResource("5_g8i7c")
+theme_override_font_sizes/font_size = 350
+text = "PLAY"
+horizontal_alignment = 1
+
+[node name="logo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(568.00006, 169.00002)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("10_7qvly")
+
+[connection signal="pressed" from="HowToPlay" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
