@@ -1,0 +1,31 @@
+function sendEmails() {
+  var url = "https://donkey-sponsor-1038274908396.europe-southwest1.run.app/api/emails-to-send";
+
+  var response = UrlFetchApp.fetch(url, {
+    method: "get",
+    headers: {
+      "x-api-key": //OUR API KEY
+    },
+    muteHttpExceptions: true
+  });
+
+  console.log(response.getContentText());
+
+  /*var emails = JSON.parse(response.getContentText());
+
+  emails.forEach(function(item) {
+
+    if (item.email && item.subject && item.body) {
+      MailApp.sendEmail({
+        to: item.email,
+        subject: item.subject,
+        body: item.body
+      });
+
+      console.log("Email sent to: " + item.email);
+
+    } else {
+      console.log("Invalid email object: " + JSON.stringify(item));
+    }
+  }); */
+}
