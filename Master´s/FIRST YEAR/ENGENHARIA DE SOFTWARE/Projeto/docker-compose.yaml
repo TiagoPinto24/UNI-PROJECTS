@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  mysql-db:
+    image: mysql:8
+    container_name: mysql-db
+    restart: always
+    environment:
+      MYSQL_DATABASE: hotelbaydb
+      MYSQL_USER: joao_tiago
+      MYSQL_PASSWORD: m68290_m68106
+      MYSQL_ROOT_PASSWORD: m68290_m68106_root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  app:
+    build: .
+    container_name: spring-api
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/hotelbaydb
+      SPRING_DATASOURCE_USERNAME: joao_tiago
+      SPRING_DATASOURCE_PASSWORD: m68290_m68106
+      SPRING_JPA_HIBERNATE_DDL_AUTO: update
+    depends_on:
+      mysql-db:
+        condition: service_healthy
+
+volumes:
+  mysql_data:

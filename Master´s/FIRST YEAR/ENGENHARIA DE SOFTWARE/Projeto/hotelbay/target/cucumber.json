@@ -1,0 +1,4275 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.002Z",
+        "line": 3,
+        "name": "User deletes it\u0027s own account",
+        "description": "",
+        "id": "elimination-fo-account;user-deletes-it-s-own-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26707293,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 91136785,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has an account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115068613,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls /account/delete/me",
+            "match": {
+              "location": "com.test.hotelbay.account.AccountDelitionStepDefinition.when_the_client_calls_account_delete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2150097,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 19634568,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the account is successfully deleted",
+            "match": {
+              "location": "com.test.hotelbay.account.AccountDelitionStepDefinition.and_the_account_is_successfully_deleted()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Elimination fo account",
+    "description": "",
+    "id": "elimination-fo-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/account/accountDelition.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.356Z",
+        "line": 3,
+        "name": "Admin alters a guests email",
+        "description": "",
+        "id": "admin-can-alter-guests-information;admin-alters-a-guests-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3106098,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6827228,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 31445537,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "an account with the email user@email.com exists",
+            "match": {
+              "location": "com.test.hotelbay.account.AdminALterUserInfoStepDefinition.and_an_account_with_the_email_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17156842,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the clients gives valid information to alter the user account",
+            "match": {
+              "location": "com.test.hotelbay.account.AdminALterUserInfoStepDefinition.when_the_client_gives_valid_information_to_alter_the_user_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 75323012,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls /account/changeInfo/user",
+            "match": {
+              "location": "com.test.hotelbay.account.AdminALterUserInfoStepDefinition.and_calls_account_changeInfo_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 147577,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6263671,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the info of the respective account is changed",
+            "match": {
+              "location": "com.test.hotelbay.account.AdminALterUserInfoStepDefinition.and_the_info_of_the_respective_account_is_changed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Admin can alter guests information",
+    "description": "",
+    "id": "admin-can-alter-guests-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/account/adminAlterGuestInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.534Z",
+        "line": 3,
+        "name": "User alters it\u0027s own email",
+        "description": "",
+        "id": "alteration-of-user-information;user-alters-it-s-own-email",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1495603,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5009722,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has an account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5436878,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client gives valid information to alter the account",
+            "match": {
+              "location": "com.test.hotelbay.account.AlterAccountInfoStepDefinition.when_the_client_gives_valid_information_to_alter_the_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9172185,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "calls /account/changeInfo/me",
+            "match": {
+              "location": "com.test.hotelbay.account.AlterAccountInfoStepDefinition.and_calls_account_changeInfo_me()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 224334,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3096390,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the informtaion is successfully changed",
+            "match": {
+              "location": "com.test.hotelbay.account.AlterAccountInfoStepDefinition.and_the_information_is_successfully_changed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Alteration of user information",
+    "description": "",
+    "id": "alteration-of-user-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/account/alterAccountInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.594Z",
+        "line": 3,
+        "name": "User creates a new account",
+        "description": "",
+        "id": "creation-of-a-new-account;user-creates-a-new-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1493578,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 20174030,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client does not have an account",
+            "match": {
+              "location": "com.test.hotelbay.account.NewAccountStepDefenition.and_the_current_client_does_not_have_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 629769,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client gives valid information to create a new account",
+            "match": {
+              "location": "com.test.hotelbay.account.NewAccountStepDefenition.when_the_client_gives_valid_information_to_create_a_new_account()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7085715,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "calls /account/register/user",
+            "match": {
+              "location": "com.test.hotelbay.account.NewAccountStepDefenition.and_calls_account_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 394749,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 201",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_201()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2384487,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a new account is created",
+            "match": {
+              "location": "com.test.hotelbay.account.NewAccountStepDefenition.and_a_new_account_is_created()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creation of a new account",
+    "description": "",
+    "id": "creation-of-a-new-account",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/account/newAccount.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.654Z",
+        "line": 3,
+        "name": "Admin deletes a category",
+        "description": "",
+        "id": "deletion-of-a-category;admin-deletes-a-category",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1777976,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29445183,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26477931,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a category with the name Suíte belongs to the existing admin",
+            "match": {
+              "location": "com.test.hotelbay.category.CategoryDeletionStepsDefinition.and_a_category_with_the_name_suite_belongs_to_grand_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21408424,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls category/delete",
+            "match": {
+              "location": "com.test.hotelbay.category.CategoryDeletionStepsDefinition.when_the_client_calls_hotel_category_delete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 153793,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1889445,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the category is deleted from the system",
+            "match": {
+              "location": "com.test.hotelbay.category.CategoryDeletionStepsDefinition.and_the_category_is_deleted_from_the_system()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Deletion of a category",
+    "description": "",
+    "id": "deletion-of-a-category",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/category/categoryDeletion.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.765Z",
+        "line": 3,
+        "name": "Admin creates a new category",
+        "description": "",
+        "id": "creating-a-new-category;admin-creates-a-new-category",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1340135,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12892199,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6402308,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client gives valid category information",
+            "match": {
+              "location": "com.test.hotelbay.category.NewCategoryStepsDefinition.when_the_client_gives_valid_category_informations()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 33437161,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "calls category/create",
+            "match": {
+              "location": "com.test.hotelbay.category.NewCategoryStepsDefinition.and_calls_hotel_category_create()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 164897,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 201",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_201()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4217500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a new category is created",
+            "match": {
+              "location": "com.test.hotelbay.category.NewCategoryStepsDefinition.and_a_new_room_is_created()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creating a new category",
+    "description": "",
+    "id": "creating-a-new-category",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/category/newCategory.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.849Z",
+        "line": 3,
+        "name": "Admin alter a hotel specifications",
+        "description": "",
+        "id": "altering-a-hotel-specifications;admin-alter-a-hotel-specifications",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1042188,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25252826,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12910427,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5514961,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the information given is valid to alter the hotel",
+            "match": {
+              "location": "com.test.hotelbay.hotel.AlterHotelInfoStepsDefinition.the_information_given_is_valid_to_alter_the_hotel()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38064356,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls /hotel/changeInfo",
+            "match": {
+              "location": "com.test.hotelbay.hotel.AlterHotelInfoStepsDefinition.and_calls_hotel_changeInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 198003,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2438755,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the hotel specifications are changed",
+            "match": {
+              "location": "com.test.hotelbay.hotel.AlterHotelInfoStepsDefinition.and_the_hotel_specifications_are_changed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Altering a hotel specifications",
+    "description": "",
+    "id": "altering-a-hotel-specifications",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/hotel/alterHotelInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:53.958Z",
+        "line": 3,
+        "name": "An hotel is deactivated",
+        "description": "",
+        "id": "an-hotel-can-be-deactivated-by-the-respective-admin;an-hotel-is-deactivated",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1210647,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12050807,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24851233,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4061332,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the information given is valid to alter the hotel activation state",
+            "match": {
+              "location": "com.test.hotelbay.hotel.HotelDeactivationStepsDefinition.the_information_given_is_valid_to_alter_the_hotel_activation_state()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8450504,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "client calls /hotel/changeInfo",
+            "match": {
+              "location": "com.test.hotelbay.hotel.HotelDeactivationStepsDefinition.and_calls_hotel_changeInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185990,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1978913,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the hotel should be deactivated",
+            "match": {
+              "location": "com.test.hotelbay.hotel.HotelDeactivationStepsDefinition.the_hotel_should_be_deactivated()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "An hotel can be deactivated by the respective admin",
+    "description": "",
+    "id": "an-hotel-can-be-deactivated-by-the-respective-admin",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/hotel/hotelDeactivation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.051Z",
+        "line": 3,
+        "name": "An administrator delete an hotel from the system",
+        "description": "",
+        "id": "delition-of-a-hotel;an-administrator-delete-an-hotel-from-the-system",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1029895,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15436136,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16127436,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35607234,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls /hotel/delete",
+            "match": {
+              "location": "com.test.hotelbay.hotel.HotelDelitionStepsDefenition.when_the_client_calls_hotel_delete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 269033,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2579836,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the hotel is deleted from the system",
+            "match": {
+              "location": "com.test.hotelbay.hotel.HotelDelitionStepsDefenition.and_the_hotel_is_deleted_from_the_system()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Delition of a hotel",
+    "description": "",
+    "id": "delition-of-a-hotel",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/hotel/hotelDelition.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.171Z",
+        "line": 3,
+        "name": "Admin creates a new hotel",
+        "description": "",
+        "id": "creation-of-a-new-hotel;admin-creates-a-new-hotel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1230553,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11470138,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13972100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "there is no hotel with the name Grand Hotel",
+            "match": {
+              "location": "com.test.hotelbay.hotel.NewHotelStepDefinition.and_there_is_no_hotel_with_the_name_grand_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3154289,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client gives valid information for a hotel creation",
+            "match": {
+              "location": "com.test.hotelbay.hotel.NewHotelStepDefinition.when_the_client_gives_valid_information_for_a_hotel_creation()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12747904,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "calls /hotel/create",
+            "match": {
+              "location": "com.test.hotelbay.hotel.NewHotelStepDefinition.and_calls_hotel_create()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 146110,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 201",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_201()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2295787,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a new hotel is created",
+            "match": {
+              "location": "com.test.hotelbay.hotel.NewHotelStepDefinition.and_a_new_hotel_is_created()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creation of a new hotel",
+    "description": "",
+    "id": "creation-of-a-new-hotel",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/hotel/newHotel.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.243Z",
+        "line": 3,
+        "name": "client updates payment status to successful",
+        "description": "",
+        "id": "reservation-confirmation-after-successful-payment;client-updates-payment-status-to-successful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4725812,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the payment service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_payment_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 10029011,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a payment exists for a reservation with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 43
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.a_payment_exists_for_a_reservation_with_id(java.lang.Long)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20215727,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls PATCH /payments with id 1 and status \"successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 41
+                },
+                {
+                  "val": "\"successful\"",
+                  "offset": 54
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_client_calls_patch(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 789219,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the confirm reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_confirm_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12220315,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the response contains payment status \"successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"successful\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_response_contains_payment_status(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 463334,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the reservation status becomes \"CONFIRMED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CONFIRMED\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_reservation_status_becomes(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Reservation confirmation after successful payment",
+    "description": "",
+    "id": "reservation-confirmation-after-successful-payment",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/payment/confirmReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.320Z",
+        "line": 3,
+        "name": "client makes call to POST create payment for a reservation",
+        "description": "",
+        "id": "create-a-payment-for-a-reservation;client-makes-call-to-post-create-payment-for-a-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2931423,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the create payment service URL",
+            "match": {
+              "location": "com.test.hotelbay.payment.CreatePaymentStepDefinition.the_create_payment_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3325683,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a payment reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.payment.CreatePaymentStepDefinition.a_payment_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13602774,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the create payment client calls POST payments with:",
+            "match": {
+              "location": "com.test.hotelbay.payment.CreatePaymentStepDefinition.the_create_payment_client_calls_post(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "amount",
+                  "100"
+                ]
+              },
+              {
+                "cells": [
+                  "paymentDate",
+                  "2026-01-01"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 430229,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the create payment client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 47
+                }
+              ],
+              "location": "com.test.hotelbay.payment.CreatePaymentStepDefinition.the_create_payment_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 747662,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the create payment response contains payment status \"PENDING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PENDING\"",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.payment.CreatePaymentStepDefinition.the_create_payment_response_contains_payment_status(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create a payment for a reservation",
+    "description": "",
+    "id": "create-a-payment-for-a-reservation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/payment/createPayment.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.368Z",
+        "line": 3,
+        "name": "client makes call to PATCH fail payment for a reservation",
+        "description": "",
+        "id": "failed-payment-attempt;client-makes-call-to-patch-fail-payment-for-a-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3253396,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the failed payment service URL",
+            "match": {
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.theFailedPaymentServiceURL()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15300851,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a failed payment reservation with id 1 exists with status \"PENDING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                },
+                {
+                  "val": "\"PENDING\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.aFailedPaymentReservationExists(int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10216259,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a payment with transaction number 1 exists with status \"processing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 34
+                },
+                {
+                  "val": "\"processing\"",
+                  "offset": 55
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.aPaymentWithTransactionNumberExists(int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9566864,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client updates payment status to \"failed\" for payment 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"failed\"",
+                  "offset": 37
+                },
+                {
+                  "val": "1",
+                  "offset": 58
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.callPatchPayment(java.lang.String,java.lang.Long)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 309192,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the failed payment client receives status code 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 47
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.failedStatus(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 743122,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the failed payment response contains payment status \"failed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"failed\"",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.failedPaymentStatus(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 530174,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the reservation status remains \"PENDING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PENDING\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.test.hotelbay.payment.FailedPaymentStepDefinition.reservationStatusRemains(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Failed payment attempt",
+    "description": "",
+    "id": "failed-payment-attempt",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/payment/failedPayment.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.435Z",
+        "line": 3,
+        "name": "payment status update affects reservation state",
+        "description": "",
+        "id": "payment-status-affects-reservation-state;payment-status-update-affects-reservation-state",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3582632,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the payment status service URL",
+            "match": {
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.thePaymentStatusServiceUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 39930195,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a payment status reservation with id 1 exists with status \"PENDING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                },
+                {
+                  "val": "\"PENDING\"",
+                  "offset": 58
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.createReservation(int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10541654,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a payment with id 1 exists for reservation 1 with status \"processing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 18
+                },
+                {
+                  "val": "1",
+                  "offset": 43
+                },
+                {
+                  "val": "\"processing\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.createPayment(int,int,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14412317,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client updates payment 1 to \"successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 27
+                },
+                {
+                  "val": "\"successful\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.patchPayment(int,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 483658,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the status payment client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 47
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.statusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 502795,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the status payment response contains payment status \"successful\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"successful\"",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.paymentStatus(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 405225,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the reservation with id 1 has status \"CONFIRMED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 24
+                },
+                {
+                  "val": "\"CONFIRMED\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.test.hotelbay.payment.PaymentStatusStepDefinition.reservationStatus(int,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Payment status affects reservation state",
+    "description": "",
+    "id": "payment-status-affects-reservation-state",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/payment/statusPayment.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.534Z",
+        "line": 3,
+        "name": "client makes call to GET payment history by reservation",
+        "description": "",
+        "id": "store-payment-history;client-makes-call-to-get-payment-history-by-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 566910,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the payment service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.ConfirmReservationStepDefinition.the_payment_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4764575,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a reservation with past payments exists",
+            "match": {
+              "location": "com.test.hotelbay.payment.StorePaymentStepDefinition.a_reservation_with_past_payments_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11470278,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls payments with 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 31
+                }
+              ],
+              "location": "com.test.hotelbay.payment.StorePaymentStepDefinition.the_client_calls_get_payments(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3586404,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2511042,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the response contains a list of payments",
+            "match": {
+              "location": "com.test.hotelbay.payment.StorePaymentStepDefinition.the_response_contains_a_list_of_payments()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Store payment history",
+    "description": "",
+    "id": "store-payment-history",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/payment/storePayment.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.585Z",
+        "line": 3,
+        "name": "client makes call to PATCH cancel a reservation",
+        "description": "",
+        "id": "cancel-a-reservation-for-an-available-room;client-makes-call-to-patch-cancel-a-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4702625,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the cancel reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.CancelReservationStepDefinition.the_cancel_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 850959,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an existing reservation with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CancelReservationStepDefinition.an_existing_reservation_with_id(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7736367,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls PATCH /reservations/1 with status \"CANCELED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 37
+                },
+                {
+                  "val": "CANCELED",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CancelReservationStepDefinition.the_client_calls_reservations(java.lang.Integer,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 401872,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the cancel reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CancelReservationStepDefinition.the_cancel_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 377987,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the reservation status is updated to \"CANCELED\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CANCELED\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CancelReservationStepDefinition.the_reservation_is_updated_with_status(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Cancel a reservation for an available room",
+    "description": "",
+    "id": "cancel-a-reservation-for-an-available-room",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/cancelReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.620Z",
+        "line": 3,
+        "name": "client makes call to POST create reservation",
+        "description": "",
+        "id": "create-reservation-for-an-available-room;client-makes-call-to-post-create-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7659121,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the create reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.the_create_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14194689,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a room is available between \"2026-07-01\" and \"2026-07-05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2026-07-01\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"2026-07-05\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.a_room_is_available_between_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4299355,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a registered guest exists",
+            "match": {
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.a_registered_guest_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18602788,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls /reservations with valid reservation data",
+            "match": {
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.the_client_calls_reservations()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1517674,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the create reservation client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 51
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.the_create_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1805005,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the reservation is created with status \"PENDING\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PENDING\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.CreateReservationStepDefinition.the_reservation_is_created_with_status(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create reservation for an available room",
+    "description": "",
+    "id": "create-reservation-for-an-available-room",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/createReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.700Z",
+        "line": 3,
+        "name": "client makes call to GET reservation information",
+        "description": "",
+        "id": "verify-the-reservation-information;client-makes-call-to-get-reservation-information",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2774208,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the info reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.InfoReservationStepDefinition.the_info_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16166617,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an info reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reservation.InfoReservationStepDefinition.an_info_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6233569,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the info reservation client calls GET reservation details",
+            "match": {
+              "location": "com.test.hotelbay.reservation.InfoReservationStepDefinition.the_info_reservation_client_calls_get()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 595336,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the info reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 49
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.InfoReservationStepDefinition.the_info_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1838250,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the info reservation response contains fields:",
+            "match": {
+              "location": "com.test.hotelbay.reservation.InfoReservationStepDefinition.the_info_reservation_response_contains_fields(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "room"
+                ]
+              },
+              {
+                "cells": [
+                  "guest"
+                ]
+              },
+              {
+                "cells": [
+                  "checkInDate"
+                ]
+              },
+              {
+                "cells": [
+                  "checkOutDate"
+                ]
+              },
+              {
+                "cells": [
+                  "numberGuests"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify the reservation information",
+    "description": "",
+    "id": "verify-the-reservation-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/infoReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.751Z",
+        "line": 3,
+        "name": "client makes call to GET reservation lifecycle states",
+        "description": "",
+        "id": "reservation-lifecycle-states;client-makes-call-to-get-reservation-lifecycle-states",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3208069,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the lifecycle reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.LifecycleReservationStepDefinition.the_lifecycle_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3067755,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client calls reservations with statuses",
+            "match": {
+              "location": "com.test.hotelbay.reservation.LifecycleReservationStepDefinition.the_client_calls_reservation_statuses()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 347326,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the lifecycle reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 54
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.LifecycleReservationStepDefinition.the_lifecycle_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1803679,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the response contains:",
+            "match": {
+              "location": "com.test.hotelbay.reservation.LifecycleReservationStepDefinition.the_response_contains(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "PENDING"
+                ]
+              },
+              {
+                "cells": [
+                  "CONFIRMED"
+                ]
+              },
+              {
+                "cells": [
+                  "CANCELED"
+                ]
+              },
+              {
+                "cells": [
+                  "COMPLETED"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Reservation lifecycle states",
+    "description": "",
+    "id": "reservation-lifecycle-states",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/lifecycleReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.778Z",
+        "line": 3,
+        "name": "client makes call to PUT modify an existing reservation",
+        "description": "",
+        "id": "modify-an-existing-reservation;client-makes-call-to-put-modify-an-existing-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3399227,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the modify reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.the_modify_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 308074,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an existing modify reservation with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.an_existing_modify_reservation_with_id(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 716513,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client wants to change the dates to \"2026-07-06\" and \"2026-07-13\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2026-07-06\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"2026-07-13\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.the_client_wants_to_change_the_dates(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3907819,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls PUT /reservations/1 with:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 35
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.the_client_updates_the_reservation_dates(java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkIn",
+                  "2026-07-06"
+                ]
+              },
+              {
+                "cells": [
+                  "checkOut",
+                  "2026-07-13"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 500141,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the modify reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 51
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.the_modify_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 436725,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the reservation is updated with the new dates",
+            "match": {
+              "location": "com.test.hotelbay.reservation.ModifyReservationStepDefinition.the_reservation_is_updated_with_the_new_dates()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Modify an existing reservation",
+    "description": "",
+    "id": "modify-an-existing-reservation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/modifyReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.808Z",
+        "line": 3,
+        "name": "client makes call to GET reservation history",
+        "description": "",
+        "id": "preserve-reservation-history;client-makes-call-to-get-reservation-history",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2562655,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the preserve reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.PreserveReservationStepDefinition.the_preserve_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 249547,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a guest with past reservations exists",
+            "match": {
+              "location": "com.test.hotelbay.reservation.PreserveReservationStepDefinition.a_guest_with_past_reservations_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22371970,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls GET /guests/1/reservations",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.PreserveReservationStepDefinition.the_client_calls_get_guests_reservations(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 193254,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the preserve reservation client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 53
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.PreserveReservationStepDefinition.the_preserve_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4190680,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the response contains a list of past reservations",
+            "match": {
+              "location": "com.test.hotelbay.reservation.PreserveReservationStepDefinition.the_response_contains_reservations()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Preserve reservation history",
+    "description": "",
+    "id": "preserve-reservation-history",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/preserveReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.855Z",
+        "line": 3,
+        "name": "client makes call to POST create reservation for an already booked room",
+        "description": "",
+        "id": "prevent-reservation-for-an-already-booked-room;client-makes-call-to-post-create-reservation-for-an-already-booked-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2053365,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the prevent reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reservation.PreventReservationStepDefinition.the_prevent_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 16442774,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a room is already reserved between \"2026-07-01\" and \"2026-07-05\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"2026-07-01\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"2026-07-05\"",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.PreventReservationStepDefinition.a_room_is_already_reserved_between_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5922561,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client calls /reservations with:",
+            "match": {
+              "location": "com.test.hotelbay.reservation.PreventReservationStepDefinition.the_client_calls_create_reservation(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "checkIn",
+                  "2026-07-03"
+                ]
+              },
+              {
+                "cells": [
+                  "checkOut",
+                  "2026-07-06"
+                ]
+              },
+              {
+                "cells": [
+                  "numberGuests",
+                  "2"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1003983,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the prevent reservation client receives status code 409",
+            "match": {
+              "arguments": [
+                {
+                  "val": "409",
+                  "offset": 52
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.PreventReservationStepDefinition.the_prevent_reservation_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 369815,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the prevent reservation response contains message \"Room is not available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Room is not available\"",
+                  "offset": 50
+                }
+              ],
+              "location": "com.test.hotelbay.reservation.PreventReservationStepDefinition.the_prevent_reservation_response_contains_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Prevent reservation for an already booked room",
+    "description": "",
+    "id": "prevent-reservation-for-an-already-booked-room",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reservation/preventReservation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.899Z",
+        "line": 3,
+        "name": "client makes call to POST create review associated with hotel and guest",
+        "description": "",
+        "id": "verify-the-review-service;client-makes-call-to-post-create-review-associated-with-hotel-and-guest",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 609444,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2536464,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a completed reservation exists for association",
+            "match": {
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.a_completed_reservation_exists_for_association()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2359065,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183546,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the hotel is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_hotel_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7461327,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the associate client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "hotel",
+                  "Evora Hotel"
+                ]
+              },
+              {
+                "cells": [
+                  "nameGuest",
+                  "Jorge"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 364088,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the associate client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 42
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 304512,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the associate response contains reservationId 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 46
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_response_contains_reservationId(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 500840,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the associate response contains a hotel \"Evora Hotel\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Evora Hotel\"",
+                  "offset": 40
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_response_contains_a_hotel(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 309820,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the associate response contains guest called \"Jorge\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Jorge\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_response_contains_guest_called(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 322951,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the associate response contains review with description \"Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_response_contains_review_with_description(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 276645,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the associate response contains rating 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.AssociateReviewStepDefinition.the_associate_response_contains_rating(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Verify the review service",
+    "description": "",
+    "id": "verify-the-review-service",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/associateReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.935Z",
+        "line": 3,
+        "name": "client makes call to POST create review with text and rating",
+        "description": "",
+        "id": "review-must-contain-text-and-rating;client-makes-call-to-post-create-review-with-text-and-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 337059,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2062374,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a completed reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 311078,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15109414,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 278601,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3599605,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the content review is created successfully",
+            "match": {
+              "location": "com.test.hotelbay.reviews.ContentReviewStepDefinition.the_content_review_is_created_successfully()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Review must contain text and rating",
+    "description": "",
+    "id": "review-must-contain-text-and-rating",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/contentReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:54.975Z",
+        "line": 3,
+        "name": "client makes call to POST submit review for an already reviewed reservation",
+        "description": "",
+        "id": "only-one-review-per-reservation;client-makes-call-to-post-submit-review-for-an-already-reviewed-reservation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 383015,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1563980,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a completed reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 241794,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3998824,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the reservation already has a review",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_reservation_already_has_a_review()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3998404,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "1"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197793,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the client receives status code 409",
+            "match": {
+              "arguments": [
+                {
+                  "val": "409",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2072501,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the response contains message \"Reservation already reviewed\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Reservation already reviewed\"",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_response_contains_message(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Only one review per reservation",
+    "description": "",
+    "id": "only-one-review-per-reservation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/oneReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.007Z",
+        "line": 3,
+        "name": "client makes call to POST review with valid rating",
+        "description": "",
+        "id": "validate-rating-score-range;client-makes-call-to-post-review-with-valid-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 409556,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1693118,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "a completed reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 261000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4219315,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 263445,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 457956,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the review response contains:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_response_contains(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-06-20T15:35:55.030Z",
+        "line": 15,
+        "name": "client submits review with minimum valid rating",
+        "description": "",
+        "id": "validate-rating-score-range;client-submits-review-with-minimum-valid-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 471646,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2839231,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "a completed reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 501328,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3766178,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "0"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Minimum rating"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175794,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2026-06-20T15:35:55.060Z",
+        "line": 25,
+        "name": "client submits review with maximum valid rating",
+        "description": "",
+        "id": "validate-rating-score-range;client-submits-review-with-maximum-valid-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 614892,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4916901,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "a completed reservation exists",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 630397,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3365633,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "10"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Maximum rating"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130395,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "the client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validate rating score range",
+    "description": "",
+    "id": "validate-rating-score-range",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/scoreReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.085Z",
+        "line": 3,
+        "name": "client makes call to POST submit a review after stay",
+        "description": "",
+        "id": "guest-submits-a-review-after-completed-stay;client-makes-call-to-post-submit-a-review-after-stay",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 579762,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.OneReviewStepDefinition.the_review_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2913264,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an existing completed reservation with no review",
+            "match": {
+              "location": "com.test.hotelbay.reviews.SubmitReviewStepDefinition.a_completed_reservation_exists()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 342716,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client is associated with the reservation",
+            "match": {
+              "location": "com.test.hotelbay.reviews.CommonReviewStepDefinition.the_client_is_associated_with_the_reservation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4889453,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the submit client calls POST /reviews with:",
+            "match": {
+              "location": "com.test.hotelbay.reviews.SubmitReviewStepDefinition.the_submit_client_calls_post_reviews_with(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "reservationId",
+                  "2"
+                ]
+              },
+              {
+                "cells": [
+                  "textualDescription",
+                  "Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home"
+                ]
+              },
+              {
+                "cells": [
+                  "rating",
+                  "8"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 445245,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the submit client receives status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.SubmitReviewStepDefinition.the_submit_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 765961,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the submit response contains review with description \"Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Had a wonderful stay! The location was perfect for sightseeing, and the staff made us feel at home\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.SubmitReviewStepDefinition.the_submit_response_contains_review_with_description(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 417238,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the submit response contains rating 8",
+            "match": {
+              "arguments": [
+                {
+                  "val": "8",
+                  "offset": 36
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.SubmitReviewStepDefinition.the_submit_response_contains_rating(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Guest submits a review after completed stay",
+    "description": "",
+    "id": "guest-submits-a-review-after-completed-stay",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/submitReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.111Z",
+        "line": 3,
+        "name": "client makes call to update hotel rating",
+        "description": "",
+        "id": "update-hotel-rating-after-new-review;client-makes-call-to-update-hotel-rating",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3640811,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the review reservation service URL",
+            "match": {
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.the_review_reservation_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 509081,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "an existing review reservation with id 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.an_existing_review_reservation_with_id(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 329516,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client wants to change the rate to \"6\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"6\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.the_client_wants_to_change_the_rate_to(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4160369,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls PUT /reviews/1 with:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 30
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.the_client_calls_put_reviews_with(java.lang.Integer,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "rating",
+                  "6"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 446222,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the update client receives status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.the_update_client_receives_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 505309,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the rating is updated with the score",
+            "match": {
+              "location": "com.test.hotelbay.reviews.UpdateReviewStepDefinition.the_rating_is_updated_with_the_score()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Update hotel rating after new review",
+    "description": "",
+    "id": "update-hotel-rating-after-new-review",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/reviews/updateReview.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.148Z",
+        "line": 3,
+        "name": "An administrator Alters a room\u0027s informations",
+        "description": "",
+        "id": "altering-a-room-s-information;an-administrator-alters-a-room-s-informations",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1254089,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29853901,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9236580,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23148477,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a room with the number 121 belongs to Grand Hotel",
+            "match": {
+              "location": "com.test.hotelbay.general.RoomGeneralStepsDefinition.and_a_room_with_the_number_121_belongs_to_Grand_Hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4962648,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client gives valid information to alter the room",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AlterRoomInfoStepsDefinition.when_the_client_gives_valid_informtation_to_alter_the_room()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17987407,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "calls room/changeInfo",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AlterRoomInfoStepsDefinition.and_calls_hotel_hotelID_room_changeInfo()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194441,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2798583,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the information related to the room 121 is changed",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AlterRoomInfoStepsDefinition.and_the_information_related_to_the_room_121_is_changed()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Altering a room\u0027s information",
+    "description": "",
+    "id": "altering-a-room-s-information",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/room/alterRoomInfo.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.255Z",
+        "line": 3,
+        "name": "An admin assigns a room to a category",
+        "description": "",
+        "id": "assigning-a-room-to-an-existing-category;an-admin-assigns-a-room-to-a-category",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 983170,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13483344,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11807337,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3911939,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a room with the number 121 belongs to Grand Hotel",
+            "match": {
+              "location": "com.test.hotelbay.general.RoomGeneralStepsDefinition.and_a_room_with_the_number_121_belongs_to_Grand_Hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15951362,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "a category with the name Suíte belonging to the existing admin",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AssignRoomToCategoryStepsDefinition.a_category_with_the_name_suíte_belonging_to_the_existing_admin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1975281,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client gives the category in the body of the request",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AssignRoomToCategoryStepsDefinition.the_client_gives_the_category_in_the_body_of_the_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 15933692,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the client calls room/changeInfo",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AssignRoomToCategoryStepsDefinition.the_client_calls_room_change_info()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 192485,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7299084,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the room 121 should have the category named Suíte",
+            "match": {
+              "location": "com.test.hotelbay.rooms.AssignRoomToCategoryStepsDefinition.the_room_should_have_the_category_named_suíte()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Assigning a room to an existing category",
+    "description": "",
+    "id": "assigning-a-room-to-an-existing-category",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/room/assignRoomToCategory.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.345Z",
+        "line": 3,
+        "name": "An administrator creates a new room",
+        "description": "",
+        "id": "creation-of-a-new-room;an-administrator-creates-a-new-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1115591,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23366524,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13773469,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3739149,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client gives valid informations for a new room",
+            "match": {
+              "location": "com.test.hotelbay.rooms.NewRoomStepsDefinition.when_the_client_gives_valid_informations_for_a_new_room()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14925309,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "calls room/create",
+            "match": {
+              "location": "com.test.hotelbay.rooms.NewRoomStepsDefinition.and_calls_room_hotelID_create()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 252341,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 201",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_201()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3064613,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a new room is created",
+            "match": {
+              "location": "com.test.hotelbay.rooms.NewRoomStepsDefinition.and_a_new_room_is_created()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Creation of a new room",
+    "description": "",
+    "id": "creation-of-a-new-room",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/room/newRoom.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.424Z",
+        "line": 3,
+        "name": "An administrator deletes a room from the system",
+        "description": "",
+        "id": "removal-of-a-room-from-the-system;an-administrator-deletes-a-room-from-the-system",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 958237,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14371669,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has a valid administrator account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_a_valid_administrator_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15774522,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel wich is managed by the current client",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_a_hotel_with_the_name_grand_hotel_wich_is_menaged_by_the_current_client()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5928917,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a room with the number 121 belongs to Grand Hotel",
+            "match": {
+              "location": "com.test.hotelbay.general.RoomGeneralStepsDefinition.and_a_room_with_the_number_121_belongs_to_Grand_Hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17708666,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls room/delete",
+            "match": {
+              "location": "com.test.hotelbay.rooms.RoomDeletionStepsDefinition.when_the_client_calls_hotel_room_delete()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169159,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1960684,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the room is deleted from the system",
+            "match": {
+              "location": "com.test.hotelbay.rooms.RoomDeletionStepsDefinition.and_the_room_is_deleted_from_the_system()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Removal of a room from the system",
+    "description": "",
+    "id": "removal-of-a-room-from-the-system",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/room/roomDeletion.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.500Z",
+        "line": 3,
+        "name": "A user searches for a room with parameters that match an existing room",
+        "description": "",
+        "id": "searching-for-a-room-and-geting-a-result;a-user-searches-for-a-room-with-parameters-that-match-an-existing-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1161199,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7138725,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has an account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21515492,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "a hotel with the name Grand Hotel",
+            "match": {
+              "location": "com.test.hotelbay.general.SearchGeneralStepsDefinition.and_a_hotel_with_the_name_grand_hotel()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 21443835,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "a room with the number 121 available between 1/1/2027 and 8/1/2027 in the location Lisbon belongs to Grand Hotel",
+            "match": {
+              "arguments": [
+                {
+                  "val": "121",
+                  "offset": 23
+                },
+                {
+                  "val": "1",
+                  "offset": 45
+                },
+                {
+                  "val": "1",
+                  "offset": 47
+                },
+                {
+                  "val": "2027",
+                  "offset": 49
+                },
+                {
+                  "val": "8",
+                  "offset": 58
+                },
+                {
+                  "val": "1",
+                  "offset": 60
+                },
+                {
+                  "val": "2027",
+                  "offset": 62
+                }
+              ],
+              "location": "com.test.hotelbay.search.SearchExistsStepsDefinition.and_room_with_number_121_available_location_Lisbon_belongs_grand_hotel(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36668697,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client calls search rooms with location Lisbon and checkin 1/1/2027 and checkout 8/1/2027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 63
+                },
+                {
+                  "val": "1",
+                  "offset": 65
+                },
+                {
+                  "val": "2027",
+                  "offset": 67
+                },
+                {
+                  "val": "8",
+                  "offset": 85
+                },
+                {
+                  "val": "1",
+                  "offset": 87
+                },
+                {
+                  "val": "2027",
+                  "offset": 89
+                }
+              ],
+              "location": "com.test.hotelbay.general.SearchGeneralStepsDefinition.call_search_rooms(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 123621,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1329380,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the response should contain at least the room with the number 121",
+            "match": {
+              "location": "com.test.hotelbay.general.SearchGeneralStepsDefinition.the_response_should_contain_the_information_that_this_room_is_not_available_in_this_time_period()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 546027,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "contain the information that this room is available in this time period",
+            "match": {
+              "location": "com.test.hotelbay.search.SearchExistsStepsDefinition.and_contain_the_information_that_this_room_is_available_n_this_tome_period()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Searching for a room and geting a result",
+    "description": "",
+    "id": "searching-for-a-room-and-geting-a-result",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/search/searchExist.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2026-06-20T15:35:55.613Z",
+        "line": 3,
+        "name": "A user searches for a room with parameters that don\u0027t match any existing room",
+        "description": "",
+        "id": "searching-for-a-room-and-not-geting-a-result;a-user-searches-for-a-room-with-parameters-that-don-t-match-any-existing-room",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 898382,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the service URL",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.given_the_service_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5482345,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the current client has an account",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.and_the_current_client_has_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50302691,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "no room is available between 1/1/2027 and 8/1/2027 in the location Lisbon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 29
+                },
+                {
+                  "val": "1",
+                  "offset": 31
+                },
+                {
+                  "val": "2027",
+                  "offset": 33
+                },
+                {
+                  "val": "8",
+                  "offset": 42
+                },
+                {
+                  "val": "1",
+                  "offset": 44
+                },
+                {
+                  "val": "2027",
+                  "offset": 46
+                }
+              ],
+              "location": "com.test.hotelbay.search.SearchNotExistStepsDefinition.and_no_room_is_available_between_in_the_location_lisbon(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9823815,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client calls search rooms with location Lisbon and checkin 1/1/2027 and checkout 8/1/2027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 63
+                },
+                {
+                  "val": "1",
+                  "offset": 65
+                },
+                {
+                  "val": "2027",
+                  "offset": 67
+                },
+                {
+                  "val": "8",
+                  "offset": 85
+                },
+                {
+                  "val": "1",
+                  "offset": 87
+                },
+                {
+                  "val": "2027",
+                  "offset": 89
+                }
+              ],
+              "location": "com.test.hotelbay.general.SearchGeneralStepsDefinition.call_search_rooms(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 202264,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client recieves code 200",
+            "match": {
+              "location": "com.test.hotelbay.general.generalStepsDefinition.then_the_client_recieves_code_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 862553,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the response should not contain any rooms",
+            "match": {
+              "location": "com.test.hotelbay.search.SearchNotExistStepsDefinition.and_the_response_should_not_contain_any_rooms()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Searching for a room and not geting a result",
+    "description": "",
+    "id": "searching-for-a-room-and-not-geting-a-result",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hotelbay/search/searchNotExist.feature",
+    "tags": []
+  }
+]
